@@ -103,7 +103,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(225, 43);
             this.btnIngresar.TabIndex = 6;
-            this.btnIngresar.Text = "&Ingresar";
+            this.btnIngresar.Text = "&Login";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
@@ -114,7 +114,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(254, 43);
             this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "&Salir";
+            this.btnSalir.Text = "&Exit";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
