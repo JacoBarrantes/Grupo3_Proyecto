@@ -92,16 +92,16 @@
             this.lblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContrasena.Location = new System.Drawing.Point(218, 141);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(175, 33);
+            this.lblContrasena.Size = new System.Drawing.Size(151, 33);
             this.lblContrasena.TabIndex = 4;
-            this.lblContrasena.Text = "Contraseña";
+            this.lblContrasena.Text = "Password";
             // 
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(494, 285);
+            this.btnIngresar.Location = new System.Drawing.Point(224, 223);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(143, 43);
+            this.btnIngresar.Size = new System.Drawing.Size(225, 43);
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.Text = "&Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -110,9 +110,9 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(658, 285);
+            this.btnSalir.Location = new System.Drawing.Point(488, 223);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(143, 43);
+            this.btnSalir.Size = new System.Drawing.Size(254, 43);
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
