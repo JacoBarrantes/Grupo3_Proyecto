@@ -68,9 +68,9 @@
             this.lblCedula.Location = new System.Drawing.Point(291, 75);
             this.lblCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(56, 42);
+            this.lblCedula.Size = new System.Drawing.Size(179, 53);
             this.lblCedula.TabIndex = 2;
-            this.lblCedula.Text = "ID";
+            this.lblCedula.Text = "Cedula";
             this.lblCedula.Click += new System.EventHandler(this.txtCedula_Click);
             // 
             // txtCedula
@@ -110,7 +110,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(300, 53);
             this.btnIngresar.TabIndex = 6;
-            this.btnIngresar.Text = "&Login";
+            this.btnIngresar.Text = "&Iniciar sesion";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
