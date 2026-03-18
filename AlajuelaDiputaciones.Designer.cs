@@ -80,7 +80,7 @@
             // 
             this.btnASiguiente.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnASiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnASiguiente.Location = new System.Drawing.Point(673, 675);
+            this.btnASiguiente.Location = new System.Drawing.Point(663, 676);
             this.btnASiguiente.Name = "btnASiguiente";
             this.btnASiguiente.Size = new System.Drawing.Size(121, 41);
             this.btnASiguiente.TabIndex = 34;
@@ -94,7 +94,7 @@
             this.panel7.Controls.Add(this.AcheckPS);
             this.panel7.Controls.Add(this.pctPS);
             this.panel7.Controls.Add(this.lblPS);
-            this.panel7.Location = new System.Drawing.Point(600, 470);
+            this.panel7.Location = new System.Drawing.Point(590, 471);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(194, 163);
             this.panel7.TabIndex = 33;
@@ -126,7 +126,7 @@
             this.panel4.Controls.Add(this.AcheckUSC);
             this.panel4.Controls.Add(this.picUSC);
             this.panel4.Controls.Add(this.lblUSC);
-            this.panel4.Location = new System.Drawing.Point(338, 470);
+            this.panel4.Location = new System.Drawing.Point(328, 471);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(194, 163);
             this.panel4.TabIndex = 32;
@@ -159,7 +159,7 @@
             this.panel2.Controls.Add(this.AcheckLN);
             this.panel2.Controls.Add(this.pctLN);
             this.panel2.Controls.Add(this.lblLiberacion);
-            this.panel2.Location = new System.Drawing.Point(82, 470);
+            this.panel2.Location = new System.Drawing.Point(72, 471);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 163);
             this.panel2.TabIndex = 31;
@@ -189,7 +189,7 @@
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.panel3);
-            this.panel5.Location = new System.Drawing.Point(338, 246);
+            this.panel5.Location = new System.Drawing.Point(328, 247);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(194, 163);
             this.panel5.TabIndex = 29;
@@ -233,7 +233,7 @@
             this.panel6.Controls.Add(this.AcheckLP);
             this.panel6.Controls.Add(this.lblLP);
             this.panel6.Controls.Add(this.pctLP);
-            this.panel6.Location = new System.Drawing.Point(600, 246);
+            this.panel6.Location = new System.Drawing.Point(590, 247);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(194, 163);
             this.panel6.TabIndex = 30;
@@ -265,7 +265,7 @@
             this.panel1.Controls.Add(this.AcheckCAC);
             this.panel1.Controls.Add(this.pctCAC);
             this.panel1.Controls.Add(this.lblCAC);
-            this.panel1.Location = new System.Drawing.Point(82, 246);
+            this.panel1.Location = new System.Drawing.Point(72, 247);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(194, 163);
             this.panel1.TabIndex = 28;
@@ -294,7 +294,7 @@
             // 
             this.txtAlajuela.AutoSize = true;
             this.txtAlajuela.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlajuela.Location = new System.Drawing.Point(318, 93);
+            this.txtAlajuela.Location = new System.Drawing.Point(308, 94);
             this.txtAlajuela.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtAlajuela.Name = "txtAlajuela";
             this.txtAlajuela.Size = new System.Drawing.Size(253, 57);
@@ -305,7 +305,7 @@
             // 
             this.txtDiputacionesS.AutoSize = true;
             this.txtDiputacionesS.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiputacionesS.Location = new System.Drawing.Point(281, 46);
+            this.txtDiputacionesS.Location = new System.Drawing.Point(271, 47);
             this.txtDiputacionesS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtDiputacionesS.Name = "txtDiputacionesS";
             this.txtDiputacionesS.Size = new System.Drawing.Size(308, 47);
@@ -401,7 +401,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(227, 198);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -414,7 +414,7 @@
             this.pctTSE.ErrorImage = null;
             this.pctTSE.Image = ((System.Drawing.Image)(resources.GetObject("pctTSE.Image")));
             this.pctTSE.InitialImage = null;
-            this.pctTSE.Location = new System.Drawing.Point(626, 46);
+            this.pctTSE.Location = new System.Drawing.Point(616, 47);
             this.pctTSE.Name = "pctTSE";
             this.pctTSE.Size = new System.Drawing.Size(168, 149);
             this.pctTSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
