@@ -16,7 +16,7 @@ namespace grupo3_Proyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new txtLogin());
+            Application.Run(new frmLogin());
         }
     }
 }

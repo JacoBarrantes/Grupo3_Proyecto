@@ -13,9 +13,9 @@ namespace grupo3_Proyecto
 
 
 
-    public partial class txtLogin : Form
+    public partial class frmLogin : Form
     {
-        public txtLogin()
+        public frmLogin()
         {
             InitializeComponent();
         }
