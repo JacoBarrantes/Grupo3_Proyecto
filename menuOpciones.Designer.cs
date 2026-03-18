@@ -1,6 +1,6 @@
 ﻿namespace grupo3_Proyecto
 {
-    partial class menuOpciones
+    partial class frmMenuOpciones
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             this.lblPadron.TabIndex = 85;
             this.lblPadron.Text = "Administrar Padron";
             // 
-            // menuOpciones
+            // frmMenuOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.lblCredenciales);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtMenu);
-            this.Name = "menuOpciones";
+            this.Name = "frmMenuOpciones";
             this.Text = "Menú de opciones";
             this.ResumeLayout(false);
             this.PerformLayout();

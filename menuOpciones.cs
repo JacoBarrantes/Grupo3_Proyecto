@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace grupo3_Proyecto
 {
-    public partial class menuOpciones : Form
+    public partial class frmMenuOpciones : Form
     {
-        public menuOpciones()
+        public frmMenuOpciones()
         {
             InitializeComponent();
         }
