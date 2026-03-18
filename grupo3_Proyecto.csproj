@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlajuelaDiputaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlajuelaDiputaciones.Designer.cs">
+      <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="EleccionPresidencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="SJODiputaciones.Designer.cs">
       <DependentUpon>SJODiputaciones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlajuelaDiputaciones.resx">
+      <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EleccionPresidencia.resx">
       <DependentUpon>EleccionPresidencia.cs</DependentUpon>
     </EmbeddedResource>
