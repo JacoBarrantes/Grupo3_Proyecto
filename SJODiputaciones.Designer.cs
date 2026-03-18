@@ -32,45 +32,45 @@
             this.btnSSiguiente = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.ScheckPS = new System.Windows.Forms.CheckBox();
-            this.pctPS = new System.Windows.Forms.PictureBox();
             this.lblPS = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.ScheckUSC = new System.Windows.Forms.CheckBox();
-            this.picUSC = new System.Windows.Forms.PictureBox();
             this.lblUSC = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ScheckLN = new System.Windows.Forms.CheckBox();
-            this.pctLN = new System.Windows.Forms.PictureBox();
             this.lblLiberacion = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ScheckFA = new System.Windows.Forms.CheckBox();
             this.lblFA = new System.Windows.Forms.Label();
-            this.PCTfa = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.ScheckLP = new System.Windows.Forms.CheckBox();
             this.lblLP = new System.Windows.Forms.Label();
-            this.pctLP = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ScheckCAC = new System.Windows.Forms.CheckBox();
-            this.pctCAC = new System.Windows.Forms.PictureBox();
             this.lblCAC = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pctTSE = new System.Windows.Forms.PictureBox();
             this.txtSJO = new System.Windows.Forms.Label();
             this.txtDiputacionesS = new System.Windows.Forms.Label();
+            this.pctPS = new System.Windows.Forms.PictureBox();
+            this.picUSC = new System.Windows.Forms.PictureBox();
+            this.pctLN = new System.Windows.Forms.PictureBox();
+            this.PCTfa = new System.Windows.Forms.PictureBox();
+            this.pctLP = new System.Windows.Forms.PictureBox();
+            this.pctCAC = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctTSE = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLP)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).BeginInit();
@@ -80,12 +80,13 @@
             // 
             this.btnSSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSSiguiente.Location = new System.Drawing.Point(656, 666);
+            this.btnSSiguiente.Location = new System.Drawing.Point(659, 668);
             this.btnSSiguiente.Name = "btnSSiguiente";
             this.btnSSiguiente.Size = new System.Drawing.Size(121, 41);
             this.btnSSiguiente.TabIndex = 23;
             this.btnSSiguiente.Text = "Siguiente";
             this.btnSSiguiente.UseVisualStyleBackColor = true;
+            this.btnSSiguiente.Click += new System.EventHandler(this.btnSSiguiente_Click);
             // 
             // panel7
             // 
@@ -94,10 +95,11 @@
             this.panel7.Controls.Add(this.ScheckPS);
             this.panel7.Controls.Add(this.pctPS);
             this.panel7.Controls.Add(this.lblPS);
-            this.panel7.Location = new System.Drawing.Point(583, 461);
+            this.panel7.Location = new System.Drawing.Point(586, 463);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(194, 163);
             this.panel7.TabIndex = 22;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // ScheckPS
             // 
@@ -108,21 +110,6 @@
             this.ScheckPS.Size = new System.Drawing.Size(15, 14);
             this.ScheckPS.TabIndex = 20;
             this.ScheckPS.UseVisualStyleBackColor = true;
-            // 
-            // pctPS
-            // 
-            this.pctPS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pctPS.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pctPS.Enabled = false;
-            this.pctPS.ErrorImage = null;
-            this.pctPS.Image = ((System.Drawing.Image)(resources.GetObject("pctPS.Image")));
-            this.pctPS.InitialImage = null;
-            this.pctPS.Location = new System.Drawing.Point(67, 74);
-            this.pctPS.Name = "pctPS";
-            this.pctPS.Size = new System.Drawing.Size(64, 51);
-            this.pctPS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctPS.TabIndex = 22;
-            this.pctPS.TabStop = false;
             // 
             // lblPS
             // 
@@ -141,10 +128,11 @@
             this.panel4.Controls.Add(this.ScheckUSC);
             this.panel4.Controls.Add(this.picUSC);
             this.panel4.Controls.Add(this.lblUSC);
-            this.panel4.Location = new System.Drawing.Point(321, 461);
+            this.panel4.Location = new System.Drawing.Point(324, 463);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(194, 163);
             this.panel4.TabIndex = 21;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // ScheckUSC
             // 
@@ -155,20 +143,6 @@
             this.ScheckUSC.Size = new System.Drawing.Size(15, 14);
             this.ScheckUSC.TabIndex = 17;
             this.ScheckUSC.UseVisualStyleBackColor = true;
-            // 
-            // picUSC
-            // 
-            this.picUSC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picUSC.Enabled = false;
-            this.picUSC.ErrorImage = null;
-            this.picUSC.Image = ((System.Drawing.Image)(resources.GetObject("picUSC.Image")));
-            this.picUSC.InitialImage = null;
-            this.picUSC.Location = new System.Drawing.Point(54, 82);
-            this.picUSC.Name = "picUSC";
-            this.picUSC.Size = new System.Drawing.Size(87, 43);
-            this.picUSC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picUSC.TabIndex = 19;
-            this.picUSC.TabStop = false;
             // 
             // lblUSC
             // 
@@ -188,10 +162,11 @@
             this.panel2.Controls.Add(this.ScheckLN);
             this.panel2.Controls.Add(this.pctLN);
             this.panel2.Controls.Add(this.lblLiberacion);
-            this.panel2.Location = new System.Drawing.Point(65, 461);
+            this.panel2.Location = new System.Drawing.Point(68, 463);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 163);
             this.panel2.TabIndex = 20;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // ScheckLN
             // 
@@ -203,19 +178,6 @@
             this.ScheckLN.TabIndex = 14;
             this.ScheckLN.UseVisualStyleBackColor = true;
             this.ScheckLN.CheckedChanged += new System.EventHandler(this.PcheckLN_CheckedChanged);
-            // 
-            // pctLN
-            // 
-            this.pctLN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pctLN.ErrorImage = null;
-            this.pctLN.Image = ((System.Drawing.Image)(resources.GetObject("pctLN.Image")));
-            this.pctLN.InitialImage = null;
-            this.pctLN.Location = new System.Drawing.Point(41, 82);
-            this.pctLN.Name = "pctLN";
-            this.pctLN.Size = new System.Drawing.Size(110, 43);
-            this.pctLN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctLN.TabIndex = 16;
-            this.pctLN.TabStop = false;
             // 
             // lblLiberacion
             // 
@@ -232,10 +194,11 @@
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.panel3);
-            this.panel5.Location = new System.Drawing.Point(321, 237);
+            this.panel5.Location = new System.Drawing.Point(324, 239);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(194, 163);
             this.panel5.TabIndex = 18;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel3
             // 
@@ -269,20 +232,6 @@
             this.lblFA.Text = "FRENTE AMPLIO";
             this.lblFA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PCTfa
-            // 
-            this.PCTfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PCTfa.Enabled = false;
-            this.PCTfa.ErrorImage = null;
-            this.PCTfa.Image = ((System.Drawing.Image)(resources.GetObject("PCTfa.Image")));
-            this.PCTfa.InitialImage = null;
-            this.PCTfa.Location = new System.Drawing.Point(54, 80);
-            this.PCTfa.Name = "PCTfa";
-            this.PCTfa.Size = new System.Drawing.Size(87, 43);
-            this.PCTfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PCTfa.TabIndex = 16;
-            this.PCTfa.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -290,10 +239,11 @@
             this.panel6.Controls.Add(this.ScheckLP);
             this.panel6.Controls.Add(this.lblLP);
             this.panel6.Controls.Add(this.pctLP);
-            this.panel6.Location = new System.Drawing.Point(583, 237);
+            this.panel6.Location = new System.Drawing.Point(586, 239);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(194, 163);
             this.panel6.TabIndex = 19;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // ScheckLP
             // 
@@ -315,6 +265,119 @@
             this.lblLP.Text = "LIBERAL PROGRESISTA";
             this.lblLP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.ScheckCAC);
+            this.panel1.Controls.Add(this.pctCAC);
+            this.panel1.Controls.Add(this.lblCAC);
+            this.panel1.Location = new System.Drawing.Point(68, 239);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(194, 163);
+            this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // ScheckCAC
+            // 
+            this.ScheckCAC.AutoSize = true;
+            this.ScheckCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScheckCAC.Location = new System.Drawing.Point(90, 137);
+            this.ScheckCAC.Name = "ScheckCAC";
+            this.ScheckCAC.Size = new System.Drawing.Size(15, 14);
+            this.ScheckCAC.TabIndex = 0;
+            this.ScheckCAC.UseVisualStyleBackColor = true;
+            // 
+            // lblCAC
+            // 
+            this.lblCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCAC.Location = new System.Drawing.Point(27, 9);
+            this.lblCAC.Name = "lblCAC";
+            this.lblCAC.Size = new System.Drawing.Size(135, 65);
+            this.lblCAC.TabIndex = 0;
+            this.lblCAC.Text = "COALICION AGENDA CIUDADANA";
+            this.lblCAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSJO
+            // 
+            this.txtSJO.AutoSize = true;
+            this.txtSJO.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSJO.Location = new System.Drawing.Point(304, 86);
+            this.txtSJO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtSJO.Name = "txtSJO";
+            this.txtSJO.Size = new System.Drawing.Size(237, 57);
+            this.txtSJO.TabIndex = 14;
+            this.txtSJO.Text = "SAN JOSÉ";
+            this.txtSJO.Click += new System.EventHandler(this.txtSJO_Click);
+            // 
+            // txtDiputacionesS
+            // 
+            this.txtDiputacionesS.AutoSize = true;
+            this.txtDiputacionesS.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiputacionesS.Location = new System.Drawing.Point(267, 39);
+            this.txtDiputacionesS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtDiputacionesS.Name = "txtDiputacionesS";
+            this.txtDiputacionesS.Size = new System.Drawing.Size(308, 47);
+            this.txtDiputacionesS.TabIndex = 13;
+            this.txtDiputacionesS.Text = "Diputaciones 2026";
+            this.txtDiputacionesS.Click += new System.EventHandler(this.txtDiputacionesS_Click);
+            // 
+            // pctPS
+            // 
+            this.pctPS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pctPS.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pctPS.Enabled = false;
+            this.pctPS.ErrorImage = null;
+            this.pctPS.Image = ((System.Drawing.Image)(resources.GetObject("pctPS.Image")));
+            this.pctPS.InitialImage = null;
+            this.pctPS.Location = new System.Drawing.Point(67, 74);
+            this.pctPS.Name = "pctPS";
+            this.pctPS.Size = new System.Drawing.Size(64, 51);
+            this.pctPS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctPS.TabIndex = 22;
+            this.pctPS.TabStop = false;
+            // 
+            // picUSC
+            // 
+            this.picUSC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picUSC.Enabled = false;
+            this.picUSC.ErrorImage = null;
+            this.picUSC.Image = ((System.Drawing.Image)(resources.GetObject("picUSC.Image")));
+            this.picUSC.InitialImage = null;
+            this.picUSC.Location = new System.Drawing.Point(54, 82);
+            this.picUSC.Name = "picUSC";
+            this.picUSC.Size = new System.Drawing.Size(87, 43);
+            this.picUSC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUSC.TabIndex = 19;
+            this.picUSC.TabStop = false;
+            // 
+            // pctLN
+            // 
+            this.pctLN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pctLN.ErrorImage = null;
+            this.pctLN.Image = ((System.Drawing.Image)(resources.GetObject("pctLN.Image")));
+            this.pctLN.InitialImage = null;
+            this.pctLN.Location = new System.Drawing.Point(41, 82);
+            this.pctLN.Name = "pctLN";
+            this.pctLN.Size = new System.Drawing.Size(110, 43);
+            this.pctLN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctLN.TabIndex = 16;
+            this.pctLN.TabStop = false;
+            // 
+            // PCTfa
+            // 
+            this.PCTfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.PCTfa.Enabled = false;
+            this.PCTfa.ErrorImage = null;
+            this.PCTfa.Image = ((System.Drawing.Image)(resources.GetObject("PCTfa.Image")));
+            this.PCTfa.InitialImage = null;
+            this.PCTfa.Location = new System.Drawing.Point(54, 80);
+            this.PCTfa.Name = "PCTfa";
+            this.PCTfa.Size = new System.Drawing.Size(87, 43);
+            this.PCTfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PCTfa.TabIndex = 16;
+            this.PCTfa.TabStop = false;
+            // 
             // pctLP
             // 
             this.pctLP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -329,28 +392,6 @@
             this.pctLP.TabIndex = 19;
             this.pctLP.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.ScheckCAC);
-            this.panel1.Controls.Add(this.pctCAC);
-            this.panel1.Controls.Add(this.lblCAC);
-            this.panel1.Location = new System.Drawing.Point(65, 237);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 163);
-            this.panel1.TabIndex = 17;
-            // 
-            // ScheckCAC
-            // 
-            this.ScheckCAC.AutoSize = true;
-            this.ScheckCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScheckCAC.Location = new System.Drawing.Point(90, 137);
-            this.ScheckCAC.Name = "ScheckCAC";
-            this.ScheckCAC.Size = new System.Drawing.Size(15, 14);
-            this.ScheckCAC.TabIndex = 0;
-            this.ScheckCAC.UseVisualStyleBackColor = true;
-            // 
             // pctCAC
             // 
             this.pctCAC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -364,28 +405,19 @@
             this.pctCAC.TabIndex = 13;
             this.pctCAC.TabStop = false;
             // 
-            // lblCAC
-            // 
-            this.lblCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCAC.Location = new System.Drawing.Point(27, 9);
-            this.lblCAC.Name = "lblCAC";
-            this.lblCAC.Size = new System.Drawing.Size(135, 65);
-            this.lblCAC.TabIndex = 0;
-            this.lblCAC.Text = "COALICION AGENDA CIUDADANA";
-            this.lblCAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(227, 198);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pctTSE
             // 
@@ -393,34 +425,13 @@
             this.pctTSE.ErrorImage = null;
             this.pctTSE.Image = ((System.Drawing.Image)(resources.GetObject("pctTSE.Image")));
             this.pctTSE.InitialImage = null;
-            this.pctTSE.Location = new System.Drawing.Point(609, 37);
+            this.pctTSE.Location = new System.Drawing.Point(612, 39);
             this.pctTSE.Name = "pctTSE";
             this.pctTSE.Size = new System.Drawing.Size(168, 149);
             this.pctTSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctTSE.TabIndex = 15;
             this.pctTSE.TabStop = false;
-            // 
-            // txtSJO
-            // 
-            this.txtSJO.AutoSize = true;
-            this.txtSJO.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSJO.Location = new System.Drawing.Point(301, 84);
-            this.txtSJO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtSJO.Name = "txtSJO";
-            this.txtSJO.Size = new System.Drawing.Size(237, 57);
-            this.txtSJO.TabIndex = 14;
-            this.txtSJO.Text = "SAN JOSÉ";
-            // 
-            // txtDiputacionesS
-            // 
-            this.txtDiputacionesS.AutoSize = true;
-            this.txtDiputacionesS.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiputacionesS.Location = new System.Drawing.Point(264, 37);
-            this.txtDiputacionesS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtDiputacionesS.Name = "txtDiputacionesS";
-            this.txtDiputacionesS.Size = new System.Drawing.Size(308, 47);
-            this.txtDiputacionesS.TabIndex = 13;
-            this.txtDiputacionesS.Text = "Diputaciones 2026";
+            this.pctTSE.Click += new System.EventHandler(this.pctTSE_Click);
             // 
             // SJODiputaciones
             // 
@@ -443,22 +454,22 @@
             this.Text = "Diputaciones San José";
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLP)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).EndInit();
