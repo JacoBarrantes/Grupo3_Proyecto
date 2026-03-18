@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministrarPadron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarPadron.Designer.cs">
+      <DependentUpon>AdministrarPadron.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlajuelaDiputaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="SJODiputaciones.Designer.cs">
       <DependentUpon>SJODiputaciones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdministrarPadron.resx">
+      <DependentUpon>AdministrarPadron.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlajuelaDiputaciones.resx">
       <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
     </EmbeddedResource>
