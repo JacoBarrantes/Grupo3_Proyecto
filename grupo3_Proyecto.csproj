@@ -64,6 +64,12 @@
     <Compile Include="CartagoDiputaciones.Designer.cs">
       <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearUsuario.Designer.cs">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Credenciales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartagoDiputaciones.resx">
       <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearUsuario.resx">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Credenciales.resx">
       <DependentUpon>Credenciales.cs</DependentUpon>
