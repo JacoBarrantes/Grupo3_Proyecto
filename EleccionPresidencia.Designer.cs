@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EleccionPresidencia));
             this.txtElecciones = new System.Windows.Forms.Label();
             this.txtPresidencia = new System.Windows.Forms.Label();
-            this.pctTSE = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -40,27 +38,27 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnSiguiente = new System.Windows.Forms.Button();
-            this.checkCAC = new System.Windows.Forms.CheckBox();
+            this.btnPSiguiente = new System.Windows.Forms.Button();
+            this.PcheckCAC = new System.Windows.Forms.CheckBox();
             this.lblCAC = new System.Windows.Forms.Label();
-            this.pctCAC = new System.Windows.Forms.PictureBox();
-            this.checkFA = new System.Windows.Forms.CheckBox();
-            this.PCTfa = new System.Windows.Forms.PictureBox();
+            this.PcheckFA = new System.Windows.Forms.CheckBox();
             this.lblFA = new System.Windows.Forms.Label();
-            this.checkLP = new System.Windows.Forms.CheckBox();
+            this.PcheckLP = new System.Windows.Forms.CheckBox();
             this.lblLP = new System.Windows.Forms.Label();
-            this.pctLP = new System.Windows.Forms.PictureBox();
-            this.checkLN = new System.Windows.Forms.CheckBox();
-            this.pctLN = new System.Windows.Forms.PictureBox();
+            this.PcheckLN = new System.Windows.Forms.CheckBox();
             this.lblLiberacion = new System.Windows.Forms.Label();
-            this.checkUSC = new System.Windows.Forms.CheckBox();
+            this.PcheckUSC = new System.Windows.Forms.CheckBox();
             this.lblUSC = new System.Windows.Forms.Label();
-            this.picUSC = new System.Windows.Forms.PictureBox();
-            this.checkPS = new System.Windows.Forms.CheckBox();
+            this.PcheckPS = new System.Windows.Forms.CheckBox();
             this.lblPS = new System.Windows.Forms.Label();
             this.pctPS = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picUSC = new System.Windows.Forms.PictureBox();
+            this.pctLN = new System.Windows.Forms.PictureBox();
+            this.PCTfa = new System.Windows.Forms.PictureBox();
+            this.pctLP = new System.Windows.Forms.PictureBox();
+            this.pctCAC = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctTSE = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -68,12 +66,14 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).BeginInit();
             this.SuspendLayout();
             // 
             // txtElecciones
@@ -98,37 +98,11 @@
             this.txtPresidencia.TabIndex = 1;
             this.txtPresidencia.Text = "Presidencia";
             // 
-            // pctTSE
-            // 
-            this.pctTSE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctTSE.ErrorImage = null;
-            this.pctTSE.Image = ((System.Drawing.Image)(resources.GetObject("pctTSE.Image")));
-            this.pctTSE.InitialImage = null;
-            this.pctTSE.Location = new System.Drawing.Point(603, 32);
-            this.pctTSE.Name = "pctTSE";
-            this.pctTSE.Size = new System.Drawing.Size(168, 149);
-            this.pctTSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctTSE.TabIndex = 2;
-            this.pctTSE.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 198);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.checkCAC);
+            this.panel1.Controls.Add(this.PcheckCAC);
             this.panel1.Controls.Add(this.pctCAC);
             this.panel1.Controls.Add(this.lblCAC);
             this.panel1.Location = new System.Drawing.Point(59, 232);
@@ -140,7 +114,7 @@
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.checkLP);
+            this.panel6.Controls.Add(this.PcheckLP);
             this.panel6.Controls.Add(this.lblLP);
             this.panel6.Controls.Add(this.pctLP);
             this.panel6.Location = new System.Drawing.Point(577, 232);
@@ -162,7 +136,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.checkLN);
+            this.panel2.Controls.Add(this.PcheckLN);
             this.panel2.Controls.Add(this.pctLN);
             this.panel2.Controls.Add(this.lblLiberacion);
             this.panel2.Location = new System.Drawing.Point(59, 456);
@@ -174,7 +148,7 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.checkFA);
+            this.panel3.Controls.Add(this.PcheckFA);
             this.panel3.Controls.Add(this.lblFA);
             this.panel3.Controls.Add(this.PCTfa);
             this.panel3.Location = new System.Drawing.Point(-1, -1);
@@ -186,7 +160,7 @@
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.checkUSC);
+            this.panel4.Controls.Add(this.PcheckUSC);
             this.panel4.Controls.Add(this.picUSC);
             this.panel4.Controls.Add(this.lblUSC);
             this.panel4.Location = new System.Drawing.Point(315, 456);
@@ -198,7 +172,7 @@
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.checkPS);
+            this.panel7.Controls.Add(this.PcheckPS);
             this.panel7.Controls.Add(this.pctPS);
             this.panel7.Controls.Add(this.lblPS);
             this.panel7.Location = new System.Drawing.Point(577, 456);
@@ -206,27 +180,27 @@
             this.panel7.Size = new System.Drawing.Size(194, 163);
             this.panel7.TabIndex = 11;
             // 
-            // btnSiguiente
+            // btnPSiguiente
             // 
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(650, 661);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(121, 41);
-            this.btnSiguiente.TabIndex = 12;
-            this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnPSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPSiguiente.Location = new System.Drawing.Point(650, 661);
+            this.btnPSiguiente.Name = "btnPSiguiente";
+            this.btnPSiguiente.Size = new System.Drawing.Size(121, 41);
+            this.btnPSiguiente.TabIndex = 12;
+            this.btnPSiguiente.Text = "Siguiente";
+            this.btnPSiguiente.UseVisualStyleBackColor = true;
             // 
-            // checkCAC
+            // PcheckCAC
             // 
-            this.checkCAC.AutoSize = true;
-            this.checkCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkCAC.Location = new System.Drawing.Point(90, 137);
-            this.checkCAC.Name = "checkCAC";
-            this.checkCAC.Size = new System.Drawing.Size(15, 14);
-            this.checkCAC.TabIndex = 0;
-            this.checkCAC.UseVisualStyleBackColor = true;
-            this.checkCAC.CheckedChanged += new System.EventHandler(this.checkCAC_CheckedChanged);
+            this.PcheckCAC.AutoSize = true;
+            this.PcheckCAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckCAC.Location = new System.Drawing.Point(90, 137);
+            this.PcheckCAC.Name = "PcheckCAC";
+            this.PcheckCAC.Size = new System.Drawing.Size(15, 14);
+            this.PcheckCAC.TabIndex = 0;
+            this.PcheckCAC.UseVisualStyleBackColor = true;
+            this.PcheckCAC.CheckedChanged += new System.EventHandler(this.checkCAC_CheckedChanged);
             // 
             // lblCAC
             // 
@@ -238,42 +212,15 @@
             this.lblCAC.Text = "COALICION AGENDA CIUDADANA";
             this.lblCAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pctCAC
+            // PcheckFA
             // 
-            this.pctCAC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pctCAC.ErrorImage = null;
-            this.pctCAC.Image = ((System.Drawing.Image)(resources.GetObject("pctCAC.Image")));
-            this.pctCAC.InitialImage = null;
-            this.pctCAC.Location = new System.Drawing.Point(41, 80);
-            this.pctCAC.Name = "pctCAC";
-            this.pctCAC.Size = new System.Drawing.Size(110, 43);
-            this.pctCAC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctCAC.TabIndex = 13;
-            this.pctCAC.TabStop = false;
-            // 
-            // checkFA
-            // 
-            this.checkFA.AutoSize = true;
-            this.checkFA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkFA.Location = new System.Drawing.Point(90, 137);
-            this.checkFA.Name = "checkFA";
-            this.checkFA.Size = new System.Drawing.Size(15, 14);
-            this.checkFA.TabIndex = 14;
-            this.checkFA.UseVisualStyleBackColor = true;
-            // 
-            // PCTfa
-            // 
-            this.PCTfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.PCTfa.Enabled = false;
-            this.PCTfa.ErrorImage = null;
-            this.PCTfa.Image = ((System.Drawing.Image)(resources.GetObject("PCTfa.Image")));
-            this.PCTfa.InitialImage = null;
-            this.PCTfa.Location = new System.Drawing.Point(54, 80);
-            this.PCTfa.Name = "PCTfa";
-            this.PCTfa.Size = new System.Drawing.Size(87, 43);
-            this.PCTfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PCTfa.TabIndex = 16;
-            this.PCTfa.TabStop = false;
+            this.PcheckFA.AutoSize = true;
+            this.PcheckFA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckFA.Location = new System.Drawing.Point(90, 137);
+            this.PcheckFA.Name = "PcheckFA";
+            this.PcheckFA.Size = new System.Drawing.Size(15, 14);
+            this.PcheckFA.TabIndex = 14;
+            this.PcheckFA.UseVisualStyleBackColor = true;
             // 
             // lblFA
             // 
@@ -285,15 +232,15 @@
             this.lblFA.Text = "FRENTE AMPLIO";
             this.lblFA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkLP
+            // PcheckLP
             // 
-            this.checkLP.AutoSize = true;
-            this.checkLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkLP.Location = new System.Drawing.Point(93, 137);
-            this.checkLP.Name = "checkLP";
-            this.checkLP.Size = new System.Drawing.Size(15, 14);
-            this.checkLP.TabIndex = 17;
-            this.checkLP.UseVisualStyleBackColor = true;
+            this.PcheckLP.AutoSize = true;
+            this.PcheckLP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckLP.Location = new System.Drawing.Point(93, 137);
+            this.PcheckLP.Name = "PcheckLP";
+            this.PcheckLP.Size = new System.Drawing.Size(15, 14);
+            this.PcheckLP.TabIndex = 17;
+            this.PcheckLP.UseVisualStyleBackColor = true;
             // 
             // lblLP
             // 
@@ -305,42 +252,15 @@
             this.lblLP.Text = "LIBERAL PROGRESISTA";
             this.lblLP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pctLP
+            // PcheckLN
             // 
-            this.pctLP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pctLP.Enabled = false;
-            this.pctLP.ErrorImage = null;
-            this.pctLP.Image = ((System.Drawing.Image)(resources.GetObject("pctLP.Image")));
-            this.pctLP.InitialImage = null;
-            this.pctLP.Location = new System.Drawing.Point(53, 80);
-            this.pctLP.Name = "pctLP";
-            this.pctLP.Size = new System.Drawing.Size(87, 43);
-            this.pctLP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctLP.TabIndex = 19;
-            this.pctLP.TabStop = false;
-            // 
-            // checkLN
-            // 
-            this.checkLN.AutoSize = true;
-            this.checkLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkLN.Location = new System.Drawing.Point(90, 139);
-            this.checkLN.Name = "checkLN";
-            this.checkLN.Size = new System.Drawing.Size(15, 14);
-            this.checkLN.TabIndex = 14;
-            this.checkLN.UseVisualStyleBackColor = true;
-            // 
-            // pctLN
-            // 
-            this.pctLN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pctLN.ErrorImage = null;
-            this.pctLN.Image = ((System.Drawing.Image)(resources.GetObject("pctLN.Image")));
-            this.pctLN.InitialImage = null;
-            this.pctLN.Location = new System.Drawing.Point(41, 82);
-            this.pctLN.Name = "pctLN";
-            this.pctLN.Size = new System.Drawing.Size(110, 43);
-            this.pctLN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctLN.TabIndex = 16;
-            this.pctLN.TabStop = false;
+            this.PcheckLN.AutoSize = true;
+            this.PcheckLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckLN.Location = new System.Drawing.Point(90, 139);
+            this.PcheckLN.Name = "PcheckLN";
+            this.PcheckLN.Size = new System.Drawing.Size(15, 14);
+            this.PcheckLN.TabIndex = 14;
+            this.PcheckLN.UseVisualStyleBackColor = true;
             // 
             // lblLiberacion
             // 
@@ -352,15 +272,15 @@
             this.lblLiberacion.Text = "LIBERACION NACIONAL";
             this.lblLiberacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkUSC
+            // PcheckUSC
             // 
-            this.checkUSC.AutoSize = true;
-            this.checkUSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkUSC.Location = new System.Drawing.Point(90, 139);
-            this.checkUSC.Name = "checkUSC";
-            this.checkUSC.Size = new System.Drawing.Size(15, 14);
-            this.checkUSC.TabIndex = 17;
-            this.checkUSC.UseVisualStyleBackColor = true;
+            this.PcheckUSC.AutoSize = true;
+            this.PcheckUSC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckUSC.Location = new System.Drawing.Point(90, 139);
+            this.PcheckUSC.Name = "PcheckUSC";
+            this.PcheckUSC.Size = new System.Drawing.Size(15, 14);
+            this.PcheckUSC.TabIndex = 17;
+            this.PcheckUSC.UseVisualStyleBackColor = true;
             // 
             // lblUSC
             // 
@@ -373,29 +293,15 @@
             this.lblUSC.Text = "UNIDAD SOCIAL CRISTIANA";
             this.lblUSC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picUSC
+            // PcheckPS
             // 
-            this.picUSC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picUSC.Enabled = false;
-            this.picUSC.ErrorImage = null;
-            this.picUSC.Image = ((System.Drawing.Image)(resources.GetObject("picUSC.Image")));
-            this.picUSC.InitialImage = null;
-            this.picUSC.Location = new System.Drawing.Point(54, 82);
-            this.picUSC.Name = "picUSC";
-            this.picUSC.Size = new System.Drawing.Size(87, 43);
-            this.picUSC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picUSC.TabIndex = 19;
-            this.picUSC.TabStop = false;
-            // 
-            // checkPS
-            // 
-            this.checkPS.AutoSize = true;
-            this.checkPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPS.Location = new System.Drawing.Point(93, 139);
-            this.checkPS.Name = "checkPS";
-            this.checkPS.Size = new System.Drawing.Size(15, 14);
-            this.checkPS.TabIndex = 20;
-            this.checkPS.UseVisualStyleBackColor = true;
+            this.PcheckPS.AutoSize = true;
+            this.PcheckPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PcheckPS.Location = new System.Drawing.Point(93, 139);
+            this.PcheckPS.Name = "PcheckPS";
+            this.PcheckPS.Size = new System.Drawing.Size(15, 14);
+            this.PcheckPS.TabIndex = 20;
+            this.PcheckPS.UseVisualStyleBackColor = true;
             // 
             // lblPS
             // 
@@ -423,13 +329,107 @@
             this.pctPS.TabStop = false;
             this.pctPS.Click += new System.EventHandler(this.pctPS_Click);
             // 
+            // picUSC
+            // 
+            this.picUSC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picUSC.Enabled = false;
+            this.picUSC.ErrorImage = null;
+            this.picUSC.Image = ((System.Drawing.Image)(resources.GetObject("picUSC.Image")));
+            this.picUSC.InitialImage = null;
+            this.picUSC.Location = new System.Drawing.Point(54, 82);
+            this.picUSC.Name = "picUSC";
+            this.picUSC.Size = new System.Drawing.Size(87, 43);
+            this.picUSC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUSC.TabIndex = 19;
+            this.picUSC.TabStop = false;
+            // 
+            // pctLN
+            // 
+            this.pctLN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pctLN.ErrorImage = null;
+            this.pctLN.Image = ((System.Drawing.Image)(resources.GetObject("pctLN.Image")));
+            this.pctLN.InitialImage = null;
+            this.pctLN.Location = new System.Drawing.Point(41, 82);
+            this.pctLN.Name = "pctLN";
+            this.pctLN.Size = new System.Drawing.Size(110, 43);
+            this.pctLN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctLN.TabIndex = 16;
+            this.pctLN.TabStop = false;
+            // 
+            // PCTfa
+            // 
+            this.PCTfa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.PCTfa.Enabled = false;
+            this.PCTfa.ErrorImage = null;
+            this.PCTfa.Image = ((System.Drawing.Image)(resources.GetObject("PCTfa.Image")));
+            this.PCTfa.InitialImage = null;
+            this.PCTfa.Location = new System.Drawing.Point(54, 80);
+            this.PCTfa.Name = "PCTfa";
+            this.PCTfa.Size = new System.Drawing.Size(87, 43);
+            this.PCTfa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PCTfa.TabIndex = 16;
+            this.PCTfa.TabStop = false;
+            // 
+            // pctLP
+            // 
+            this.pctLP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pctLP.Enabled = false;
+            this.pctLP.ErrorImage = null;
+            this.pctLP.Image = ((System.Drawing.Image)(resources.GetObject("pctLP.Image")));
+            this.pctLP.InitialImage = null;
+            this.pctLP.Location = new System.Drawing.Point(53, 80);
+            this.pctLP.Name = "pctLP";
+            this.pctLP.Size = new System.Drawing.Size(87, 43);
+            this.pctLP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctLP.TabIndex = 19;
+            this.pctLP.TabStop = false;
+            // 
+            // pctCAC
+            // 
+            this.pctCAC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pctCAC.ErrorImage = null;
+            this.pctCAC.Image = ((System.Drawing.Image)(resources.GetObject("pctCAC.Image")));
+            this.pctCAC.InitialImage = null;
+            this.pctCAC.Location = new System.Drawing.Point(41, 80);
+            this.pctCAC.Name = "pctCAC";
+            this.pctCAC.Size = new System.Drawing.Size(110, 43);
+            this.pctCAC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctCAC.TabIndex = 13;
+            this.pctCAC.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(227, 198);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pctTSE
+            // 
+            this.pctTSE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pctTSE.ErrorImage = null;
+            this.pctTSE.Image = ((System.Drawing.Image)(resources.GetObject("pctTSE.Image")));
+            this.pctTSE.InitialImage = null;
+            this.pctTSE.Location = new System.Drawing.Point(603, 32);
+            this.pctTSE.Name = "pctTSE";
+            this.pctTSE.Size = new System.Drawing.Size(168, 149);
+            this.pctTSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctTSE.TabIndex = 2;
+            this.pctTSE.TabStop = false;
+            // 
             // EleccionPresidencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(843, 736);
-            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnPSiguiente);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -443,8 +443,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EleccionPresidencia";
             this.Text = "EleccionPresidencia";
-            ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -458,12 +456,14 @@
             this.panel4.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCTfa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUSC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCAC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctTSE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,22 +483,22 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lblCAC;
-        private System.Windows.Forms.CheckBox checkCAC;
-        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.CheckBox PcheckCAC;
+        private System.Windows.Forms.Button btnPSiguiente;
         private System.Windows.Forms.PictureBox pctCAC;
-        private System.Windows.Forms.CheckBox checkFA;
+        private System.Windows.Forms.CheckBox PcheckFA;
         private System.Windows.Forms.Label lblFA;
         private System.Windows.Forms.PictureBox PCTfa;
-        private System.Windows.Forms.CheckBox checkLP;
+        private System.Windows.Forms.CheckBox PcheckLP;
         private System.Windows.Forms.Label lblLP;
         private System.Windows.Forms.PictureBox pctLP;
-        private System.Windows.Forms.CheckBox checkLN;
+        private System.Windows.Forms.CheckBox PcheckLN;
         private System.Windows.Forms.PictureBox pctLN;
         private System.Windows.Forms.Label lblLiberacion;
-        private System.Windows.Forms.CheckBox checkUSC;
+        private System.Windows.Forms.CheckBox PcheckUSC;
         private System.Windows.Forms.PictureBox picUSC;
         private System.Windows.Forms.Label lblUSC;
-        private System.Windows.Forms.CheckBox checkPS;
+        private System.Windows.Forms.CheckBox PcheckPS;
         private System.Windows.Forms.PictureBox pctPS;
         private System.Windows.Forms.Label lblPS;
     }
