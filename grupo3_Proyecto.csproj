@@ -52,6 +52,12 @@
     <Compile Include="AlajuelaDiputaciones.Designer.cs">
       <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="CartagoDiputaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartagoDiputaciones.Designer.cs">
+      <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="EleccionPresidencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="AlajuelaDiputaciones.resx">
       <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartagoDiputaciones.resx">
+      <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EleccionPresidencia.resx">
       <DependentUpon>EleccionPresidencia.cs</DependentUpon>

@@ -439,7 +439,7 @@
             this.Controls.Add(this.txtAlajuela);
             this.Controls.Add(this.txtDiputacionesS);
             this.Name = "AlajuelaDiputaciones";
-            this.Text = "AlajuelaDiputaciones";
+            this.Text = "Diputaciones Alajuela";
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel4.ResumeLayout(false);
