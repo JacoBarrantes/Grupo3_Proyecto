@@ -34,7 +34,7 @@
             this.lblUsuarioNuevo = new System.Windows.Forms.Label();
             this.lblContraseñaNueva = new System.Windows.Forms.Label();
             this.txtContraseñaNueva = new System.Windows.Forms.TextBox();
-            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnRegistrarCredenciales = new System.Windows.Forms.Button();
             this.btnMenuCredenciales = new System.Windows.Forms.Button();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.pctUsuario = new System.Windows.Forms.PictureBox();
@@ -91,17 +91,17 @@
             this.txtContraseñaNueva.Size = new System.Drawing.Size(479, 26);
             this.txtContraseñaNueva.TabIndex = 85;
             // 
-            // btnRegistrar
+            // btnRegistrarCredenciales
             // 
-            this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(244, 299);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(121, 45);
-            this.btnRegistrar.TabIndex = 88;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrarCredenciales.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegistrarCredenciales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarCredenciales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCredenciales.Location = new System.Drawing.Point(244, 299);
+            this.btnRegistrarCredenciales.Name = "btnRegistrarCredenciales";
+            this.btnRegistrarCredenciales.Size = new System.Drawing.Size(121, 45);
+            this.btnRegistrarCredenciales.TabIndex = 88;
+            this.btnRegistrarCredenciales.Text = "Registrar";
+            this.btnRegistrarCredenciales.UseVisualStyleBackColor = false;
             // 
             // btnMenuCredenciales
             // 
@@ -140,7 +140,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 372);
             this.Controls.Add(this.btnMenuCredenciales);
-            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.btnRegistrarCredenciales);
             this.Controls.Add(this.pctContraseña);
             this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.txtContraseñaNueva);
@@ -166,7 +166,7 @@
         private System.Windows.Forms.TextBox txtContraseñaNueva;
         private System.Windows.Forms.PictureBox pctUsuario;
         private System.Windows.Forms.PictureBox pctContraseña;
-        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnRegistrarCredenciales;
         private System.Windows.Forms.Button btnMenuCredenciales;
     }
 }

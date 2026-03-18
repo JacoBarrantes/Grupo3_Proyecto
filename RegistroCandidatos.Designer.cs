@@ -29,89 +29,89 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroCandidatos));
-            this.btnSalirCredenciales = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.txtContraseñaNueva = new System.Windows.Forms.TextBox();
-            this.lblContraseñaNueva = new System.Windows.Forms.Label();
-            this.lblUsuarioNuevo = new System.Windows.Forms.Label();
-            this.txtUsuarioNuevo = new System.Windows.Forms.TextBox();
-            this.lblCredenciales = new System.Windows.Forms.Label();
+            this.btnMenuCandidato = new System.Windows.Forms.Button();
+            this.btnRegistrarCandidato = new System.Windows.Forms.Button();
+            this.txtPartidoNuevo = new System.Windows.Forms.TextBox();
+            this.lblPartidoNuevo = new System.Windows.Forms.Label();
+            this.lblCandidatoNuevo = new System.Windows.Forms.Label();
+            this.txtUsuarioCandidato = new System.Windows.Forms.TextBox();
+            this.lblNuevoCandidato = new System.Windows.Forms.Label();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.pctUsuario = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnSalirCredenciales
+            // btnMenuCandidato
             // 
-            this.btnSalirCredenciales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalirCredenciales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirCredenciales.Location = new System.Drawing.Point(439, 298);
-            this.btnSalirCredenciales.Name = "btnSalirCredenciales";
-            this.btnSalirCredenciales.Size = new System.Drawing.Size(121, 45);
-            this.btnSalirCredenciales.TabIndex = 98;
-            this.btnSalirCredenciales.Text = "Menú";
-            this.btnSalirCredenciales.UseVisualStyleBackColor = true;
+            this.btnMenuCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuCandidato.Location = new System.Drawing.Point(439, 298);
+            this.btnMenuCandidato.Name = "btnMenuCandidato";
+            this.btnMenuCandidato.Size = new System.Drawing.Size(121, 45);
+            this.btnMenuCandidato.TabIndex = 98;
+            this.btnMenuCandidato.Text = "Menú";
+            this.btnMenuCandidato.UseVisualStyleBackColor = true;
             // 
-            // btnRegistrar
+            // btnRegistrarCandidato
             // 
-            this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(256, 298);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(121, 45);
-            this.btnRegistrar.TabIndex = 97;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrarCandidato.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegistrarCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCandidato.Location = new System.Drawing.Point(256, 298);
+            this.btnRegistrarCandidato.Name = "btnRegistrarCandidato";
+            this.btnRegistrarCandidato.Size = new System.Drawing.Size(121, 45);
+            this.btnRegistrarCandidato.TabIndex = 97;
+            this.btnRegistrarCandidato.Text = "Registrar";
+            this.btnRegistrarCandidato.UseVisualStyleBackColor = false;
             // 
-            // txtContraseñaNueva
+            // txtPartidoNuevo
             // 
-            this.txtContraseñaNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseñaNueva.Location = new System.Drawing.Point(267, 214);
-            this.txtContraseñaNueva.Name = "txtContraseñaNueva";
-            this.txtContraseñaNueva.Size = new System.Drawing.Size(479, 26);
-            this.txtContraseñaNueva.TabIndex = 94;
+            this.txtPartidoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPartidoNuevo.Location = new System.Drawing.Point(267, 214);
+            this.txtPartidoNuevo.Name = "txtPartidoNuevo";
+            this.txtPartidoNuevo.Size = new System.Drawing.Size(479, 26);
+            this.txtPartidoNuevo.TabIndex = 94;
             // 
-            // lblContraseñaNueva
+            // lblPartidoNuevo
             // 
-            this.lblContraseñaNueva.AutoSize = true;
-            this.lblContraseñaNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseñaNueva.Location = new System.Drawing.Point(120, 215);
-            this.lblContraseñaNueva.Name = "lblContraseñaNueva";
-            this.lblContraseñaNueva.Size = new System.Drawing.Size(123, 25);
-            this.lblContraseñaNueva.TabIndex = 93;
-            this.lblContraseñaNueva.Text = "Contraseña";
+            this.lblPartidoNuevo.AutoSize = true;
+            this.lblPartidoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartidoNuevo.Location = new System.Drawing.Point(120, 215);
+            this.lblPartidoNuevo.Name = "lblPartidoNuevo";
+            this.lblPartidoNuevo.Size = new System.Drawing.Size(80, 25);
+            this.lblPartidoNuevo.TabIndex = 93;
+            this.lblPartidoNuevo.Text = "Partido";
             // 
-            // lblUsuarioNuevo
+            // lblCandidatoNuevo
             // 
-            this.lblUsuarioNuevo.AutoSize = true;
-            this.lblUsuarioNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioNuevo.Location = new System.Drawing.Point(120, 124);
-            this.lblUsuarioNuevo.Name = "lblUsuarioNuevo";
-            this.lblUsuarioNuevo.Size = new System.Drawing.Size(86, 25);
-            this.lblUsuarioNuevo.TabIndex = 92;
-            this.lblUsuarioNuevo.Text = "Usuario";
+            this.lblCandidatoNuevo.AutoSize = true;
+            this.lblCandidatoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCandidatoNuevo.Location = new System.Drawing.Point(120, 124);
+            this.lblCandidatoNuevo.Name = "lblCandidatoNuevo";
+            this.lblCandidatoNuevo.Size = new System.Drawing.Size(86, 25);
+            this.lblCandidatoNuevo.TabIndex = 92;
+            this.lblCandidatoNuevo.Text = "Usuario";
             // 
-            // txtUsuarioNuevo
+            // txtUsuarioCandidato
             // 
-            this.txtUsuarioNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuarioNuevo.Location = new System.Drawing.Point(267, 123);
-            this.txtUsuarioNuevo.Name = "txtUsuarioNuevo";
-            this.txtUsuarioNuevo.Size = new System.Drawing.Size(479, 26);
-            this.txtUsuarioNuevo.TabIndex = 91;
+            this.txtUsuarioCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuarioCandidato.Location = new System.Drawing.Point(267, 123);
+            this.txtUsuarioCandidato.Name = "txtUsuarioCandidato";
+            this.txtUsuarioCandidato.Size = new System.Drawing.Size(479, 26);
+            this.txtUsuarioCandidato.TabIndex = 91;
             // 
-            // lblCredenciales
+            // lblNuevoCandidato
             // 
-            this.lblCredenciales.AutoSize = true;
-            this.lblCredenciales.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCredenciales.Location = new System.Drawing.Point(180, 29);
-            this.lblCredenciales.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCredenciales.Name = "lblCredenciales";
-            this.lblCredenciales.Size = new System.Drawing.Size(378, 36);
-            this.lblCredenciales.TabIndex = 90;
-            this.lblCredenciales.Text = "Ingrese nuevo candidato";
-            this.lblCredenciales.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNuevoCandidato.AutoSize = true;
+            this.lblNuevoCandidato.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNuevoCandidato.Location = new System.Drawing.Point(214, 28);
+            this.lblNuevoCandidato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNuevoCandidato.Name = "lblNuevoCandidato";
+            this.lblNuevoCandidato.Size = new System.Drawing.Size(378, 36);
+            this.lblNuevoCandidato.TabIndex = 90;
+            this.lblNuevoCandidato.Text = "Ingrese nuevo candidato";
+            this.lblNuevoCandidato.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pctContraseña
             // 
@@ -137,15 +137,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 372);
-            this.Controls.Add(this.btnSalirCredenciales);
-            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.btnMenuCandidato);
+            this.Controls.Add(this.btnRegistrarCandidato);
             this.Controls.Add(this.pctContraseña);
             this.Controls.Add(this.pctUsuario);
-            this.Controls.Add(this.txtContraseñaNueva);
-            this.Controls.Add(this.lblContraseñaNueva);
-            this.Controls.Add(this.lblUsuarioNuevo);
-            this.Controls.Add(this.txtUsuarioNuevo);
-            this.Controls.Add(this.lblCredenciales);
+            this.Controls.Add(this.txtPartidoNuevo);
+            this.Controls.Add(this.lblPartidoNuevo);
+            this.Controls.Add(this.lblCandidatoNuevo);
+            this.Controls.Add(this.txtUsuarioCandidato);
+            this.Controls.Add(this.lblNuevoCandidato);
             this.Name = "frmRegistroCandidatos";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Registro de Candidatos";
@@ -158,14 +158,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSalirCredenciales;
-        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnMenuCandidato;
+        private System.Windows.Forms.Button btnRegistrarCandidato;
         private System.Windows.Forms.PictureBox pctContraseña;
         private System.Windows.Forms.PictureBox pctUsuario;
-        private System.Windows.Forms.TextBox txtContraseñaNueva;
-        private System.Windows.Forms.Label lblContraseñaNueva;
-        private System.Windows.Forms.Label lblUsuarioNuevo;
-        private System.Windows.Forms.TextBox txtUsuarioNuevo;
-        private System.Windows.Forms.Label lblCredenciales;
+        private System.Windows.Forms.TextBox txtPartidoNuevo;
+        private System.Windows.Forms.Label lblPartidoNuevo;
+        private System.Windows.Forms.Label lblCandidatoNuevo;
+        private System.Windows.Forms.TextBox txtUsuarioCandidato;
+        private System.Windows.Forms.Label lblNuevoCandidato;
     }
 }
