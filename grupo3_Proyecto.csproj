@@ -108,6 +108,12 @@
     <Compile Include="PuntarenasDiputaciones.Designer.cs">
       <DependentUpon>PuntarenasDiputaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroCandidatos.Designer.cs">
+      <DependentUpon>RegistroCandidatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="SJODiputaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </Compile>
     <EmbeddedResource Include="PuntarenasDiputaciones.resx">
       <DependentUpon>PuntarenasDiputaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroCandidatos.resx">
+      <DependentUpon>RegistroCandidatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SJODiputaciones.resx">
       <DependentUpon>SJODiputaciones.cs</DependentUpon>
