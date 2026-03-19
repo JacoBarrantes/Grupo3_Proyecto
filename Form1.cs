@@ -45,7 +45,15 @@ namespace grupo3_Proyecto
 
         }
 
+
+
+
         private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContrasena_TextChanged(object sender, EventArgs e)
         {
 
         }
