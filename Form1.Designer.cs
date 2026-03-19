@@ -110,7 +110,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(225, 43);
             this.btnIngresar.TabIndex = 6;
-            this.btnIngresar.Text = "&Iniciar sesion";
+            this.btnIngresar.Text = "&Login";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
