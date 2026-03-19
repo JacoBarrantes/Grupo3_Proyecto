@@ -42,7 +42,7 @@ namespace grupo3_Proyecto
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
+           
         }
 
 
@@ -56,6 +56,14 @@ namespace grupo3_Proyecto
         private void txtContrasena_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+        
+            frmCrearUsuario crearUsuario = new frmCrearUsuario();
+            crearUsuario.ShowDialog();
+            
         }
     }
 }

@@ -39,6 +39,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.pctContraseña = new System.Windows.Forms.PictureBox();
             this.pctUsuario = new System.Windows.Forms.PictureBox();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
@@ -111,7 +112,7 @@
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(316, 354);
+            this.btnIngresar.Location = new System.Drawing.Point(305, 317);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(300, 53);
@@ -123,10 +124,10 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(704, 354);
+            this.btnSalir.Location = new System.Drawing.Point(967, 380);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(307, 53);
+            this.btnSalir.Size = new System.Drawing.Size(100, 42);
             this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -152,12 +153,24 @@
             this.pctUsuario.TabIndex = 88;
             this.pctUsuario.TabStop = false;
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Location = new System.Drawing.Point(627, 317);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(303, 53);
+            this.btnRegistrar.TabIndex = 90;
+            this.btnRegistrar.Text = "&Registrarse";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1120, 446);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.pctContraseña);
             this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.btnSalir);
@@ -193,6 +206,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pctContraseña;
         private System.Windows.Forms.PictureBox pctUsuario;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }
 
