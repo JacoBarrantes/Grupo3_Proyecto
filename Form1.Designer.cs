@@ -51,18 +51,16 @@
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(251, 436);
+            this.panel1.Size = new System.Drawing.Size(188, 354);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::grupo3_Proyecto.Properties.Resources.LOGOCOLOR;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 142);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 115);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(231, 116);
+            this.pictureBox1.Size = new System.Drawing.Size(173, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -71,10 +69,9 @@
             // 
             this.lblCedula.AutoSize = true;
             this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCedula.Location = new System.Drawing.Point(383, 79);
-            this.lblCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCedula.Location = new System.Drawing.Point(287, 64);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(143, 42);
+            this.lblCedula.Size = new System.Drawing.Size(113, 33);
             this.lblCedula.TabIndex = 2;
             this.lblCedula.Text = "Cédula";
             this.lblCedula.Click += new System.EventHandler(this.txtCedula_Click);
@@ -82,19 +79,17 @@
             // txtCedula
             // 
             this.txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedula.Location = new System.Drawing.Point(627, 73);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCedula.Location = new System.Drawing.Point(470, 59);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(440, 46);
+            this.txtCedula.Size = new System.Drawing.Size(331, 38);
             this.txtCedula.TabIndex = 3;
             // 
             // txtContrasena
             // 
             this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.Location = new System.Drawing.Point(627, 206);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContrasena.Location = new System.Drawing.Point(470, 167);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(440, 46);
+            this.txtContrasena.Size = new System.Drawing.Size(331, 38);
             this.txtContrasena.TabIndex = 5;
             this.txtContrasena.TextChanged += new System.EventHandler(this.txtContrasena_TextChanged);
             // 
@@ -102,20 +97,18 @@
             // 
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasena.Location = new System.Drawing.Point(383, 208);
-            this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContrasena.Location = new System.Drawing.Point(287, 169);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(222, 42);
+            this.lblContrasena.Size = new System.Drawing.Size(175, 33);
             this.lblContrasena.TabIndex = 4;
             this.lblContrasena.Text = "Contraseña";
             // 
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(305, 317);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngresar.Location = new System.Drawing.Point(229, 258);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(300, 53);
+            this.btnIngresar.Size = new System.Drawing.Size(225, 43);
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.Text = "&Iniciar sesion";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -124,41 +117,39 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(967, 380);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(725, 309);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(100, 42);
+            this.btnSalir.Size = new System.Drawing.Size(75, 34);
             this.btnSalir.TabIndex = 7;
-            this.btnSalir.Text = "&Salir";
+            this.btnSalir.Text = "&Exit";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // pctContraseña
             // 
             this.pctContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pctContraseña.Image")));
-            this.pctContraseña.Location = new System.Drawing.Point(307, 196);
-            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctContraseña.Location = new System.Drawing.Point(230, 159);
             this.pctContraseña.Name = "pctContraseña";
-            this.pctContraseña.Size = new System.Drawing.Size(61, 62);
+            this.pctContraseña.Size = new System.Drawing.Size(46, 50);
             this.pctContraseña.TabIndex = 89;
             this.pctContraseña.TabStop = false;
             // 
             // pctUsuario
             // 
             this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
-            this.pctUsuario.Location = new System.Drawing.Point(307, 69);
-            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctUsuario.Location = new System.Drawing.Point(230, 56);
             this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(61, 62);
+            this.pctUsuario.Size = new System.Drawing.Size(46, 50);
             this.pctUsuario.TabIndex = 88;
             this.pctUsuario.TabStop = false;
             // 
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(627, 317);
+            this.btnRegistrar.Location = new System.Drawing.Point(470, 258);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(303, 53);
+            this.btnRegistrar.Size = new System.Drawing.Size(227, 43);
             this.btnRegistrar.TabIndex = 90;
             this.btnRegistrar.Text = "&Registrarse";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -166,10 +157,10 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1120, 446);
+            this.ClientSize = new System.Drawing.Size(840, 362);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.pctContraseña);
             this.Controls.Add(this.pctUsuario);
@@ -180,7 +171,6 @@
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Login";
