@@ -160,11 +160,11 @@
 
         private System.Windows.Forms.Button btnAtrásModificar;
         private System.Windows.Forms.Button btnModificarUsuario;
-        //private System.Windows.Forms.PictureBox pctUsuario;
+        private System.Windows.Forms.PictureBox pctUsuario;
         private System.Windows.Forms.Label lblUsuarioAnterior;
         private System.Windows.Forms.TextBox txtUsuarioAnterior;
         private System.Windows.Forms.Label txtModificarUsuario;
-        //private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblUsuarioModificado;
         private System.Windows.Forms.TextBox txtUsuarioModificado;
     }
