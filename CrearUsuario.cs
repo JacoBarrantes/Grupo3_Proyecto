@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace grupo3_Proyecto
 {
-    public partial class frmCrearUsuario : Form
+    public partial class CrearPadron : Form
     {
-        public frmCrearUsuario()
+        public CrearPadron()
         {
             InitializeComponent();
         }
