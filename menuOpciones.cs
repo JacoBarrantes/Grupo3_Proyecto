@@ -31,5 +31,10 @@ namespace grupo3_Proyecto
         {
 
         }
+
+        private void candidatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
