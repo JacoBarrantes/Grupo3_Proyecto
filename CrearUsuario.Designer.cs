@@ -1,6 +1,6 @@
 ﻿namespace grupo3_Proyecto
 {
-    partial class CrearUsuario
+    partial class CrearPadron
     {
         /// <summary>
         /// Required designer variable.

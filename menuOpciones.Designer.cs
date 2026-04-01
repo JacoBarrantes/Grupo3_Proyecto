@@ -75,26 +75,26 @@
             this.iniciarSesiónToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(73, 34);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.loginToolStripMenuItem.Text = "Archivo";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // votaciónToolStripMenuItem
             // 
             this.votaciónToolStripMenuItem.Name = "votaciónToolStripMenuItem";
-            this.votaciónToolStripMenuItem.Size = new System.Drawing.Size(58, 34);
+            this.votaciónToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.votaciónToolStripMenuItem.Text = "Votar";
             // 
             // mantenimientoToolStripMenuItem
@@ -114,6 +114,7 @@
             this.padrónNacionalToolStripMenuItem.Name = "padrónNacionalToolStripMenuItem";
             this.padrónNacionalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.padrónNacionalToolStripMenuItem.Text = "Padrón Nacional";
+            this.padrónNacionalToolStripMenuItem.Click += new System.EventHandler(this.padrónNacionalToolStripMenuItem_Click);
             // 
             // distritoElectoralToolStripMenuItem
             // 
@@ -161,19 +162,19 @@
             this.gráficoProvinciaToolStripMenuItem,
             this.gráficoCandidatosToolStripMenuItem});
             this.estadísticaToolStripMenuItem.Name = "estadísticaToolStripMenuItem";
-            this.estadísticaToolStripMenuItem.Size = new System.Drawing.Size(93, 34);
+            this.estadísticaToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.estadísticaToolStripMenuItem.Text = "Estadística";
             // 
             // gráficoProvinciaToolStripMenuItem
             // 
             this.gráficoProvinciaToolStripMenuItem.Name = "gráficoProvinciaToolStripMenuItem";
-            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gráficoProvinciaToolStripMenuItem.Text = "Gráfico provincia";
             // 
             // gráficoCandidatosToolStripMenuItem
             // 
             this.gráficoCandidatosToolStripMenuItem.Name = "gráficoCandidatosToolStripMenuItem";
-            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gráficoCandidatosToolStripMenuItem.Text = "Gráfico candidatos";
             // 
             // reportesToolStripMenuItem
@@ -182,19 +183,19 @@
             this.informeProvinciaToolStripMenuItem,
             this.informeCandidatoToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(82, 34);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // informeProvinciaToolStripMenuItem
             // 
             this.informeProvinciaToolStripMenuItem.Name = "informeProvinciaToolStripMenuItem";
-            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia";
             // 
             // informeCandidatoToolStripMenuItem
             // 
             this.informeCandidatoToolStripMenuItem.Name = "informeCandidatoToolStripMenuItem";
-            this.informeCandidatoToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.informeCandidatoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.informeCandidatoToolStripMenuItem.Text = "Informe Candidato";
             // 
             // acercaDeToolStripMenuItem
@@ -203,7 +204,7 @@
             this.créditosToolStripMenuItem,
             this.manualDeUsuarioToolStripMenuItem});
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(98, 34);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             // 
             // créditosToolStripMenuItem
@@ -227,9 +228,10 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenuOpciones";
             this.Text = "Menú de opciones";
+            this.Load += new System.EventHandler(this.frmMenuOpciones_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

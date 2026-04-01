@@ -36,5 +36,17 @@ namespace grupo3_Proyecto
         {
 
         }
+
+        private void frmMenuOpciones_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void padrónNacionalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
     }
 }

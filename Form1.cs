@@ -43,7 +43,10 @@ namespace grupo3_Proyecto
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-           
+            frmMenuOpciones menuOpciones = new frmMenuOpciones();
+            menuOpciones.ShowDialog();
+
+
         }
 
 
@@ -62,7 +65,7 @@ namespace grupo3_Proyecto
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
         
-            frmCrearUsuario crearUsuario = new frmCrearUsuario();
+            frmCredenciales crearUsuario = new frmCredenciales();
             crearUsuario.ShowDialog();
             
         }
