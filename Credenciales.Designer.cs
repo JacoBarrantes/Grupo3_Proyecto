@@ -55,11 +55,11 @@
             // 
             this.lblCredenciales.AutoSize = true;
             this.lblCredenciales.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCredenciales.Location = new System.Drawing.Point(224, 37);
+            this.lblCredenciales.Location = new System.Drawing.Point(114, 24);
             this.lblCredenciales.Name = "lblCredenciales";
-            this.lblCredenciales.Size = new System.Drawing.Size(595, 45);
+            this.lblCredenciales.Size = new System.Drawing.Size(533, 45);
             this.lblCredenciales.TabIndex = 81;
-            this.lblCredenciales.Text = "Ingrese los nuevos credenciales";
+            this.lblCredenciales.Text = "Registro de nuevos usuarios";
             this.lblCredenciales.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblCredenciales.Click += new System.EventHandler(this.lblCredenciales_Click);
             // 
@@ -67,7 +67,7 @@
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(444, 163);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(257, 30);
             this.txtId.TabIndex = 82;
@@ -79,7 +79,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(144, 154);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(220, 39);
+            this.lblUsuario.Size = new System.Drawing.Size(176, 31);
             this.lblUsuario.TabIndex = 83;
             this.lblUsuario.Text = "Ingrese su ID";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuarioNuevo_Click);
@@ -99,7 +99,7 @@
             // 
             this.txtPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword1.Location = new System.Drawing.Point(444, 247);
-            this.txtPassword1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword1.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.Size = new System.Drawing.Size(257, 30);
             this.txtPassword1.TabIndex = 85;
@@ -110,7 +110,7 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(216, 487);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(161, 55);
             this.btnRegistrar.TabIndex = 88;
@@ -123,7 +123,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(646, 487);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(161, 55);
             this.btnSalir.TabIndex = 89;
@@ -134,7 +134,7 @@
             // 
             this.pctContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pctContraseña.Image")));
             this.pctContraseña.Location = new System.Drawing.Point(57, 226);
-            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.pctContraseña.Name = "pctContraseña";
             this.pctContraseña.Size = new System.Drawing.Size(61, 62);
             this.pctContraseña.TabIndex = 87;
@@ -144,7 +144,7 @@
             // 
             this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
             this.pctUsuario.Location = new System.Drawing.Point(57, 139);
-            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.pctUsuario.Name = "pctUsuario";
             this.pctUsuario.Size = new System.Drawing.Size(61, 62);
             this.pctUsuario.TabIndex = 86;
@@ -177,7 +177,7 @@
             this.label1.Location = new System.Drawing.Point(144, 326);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 39);
+            this.label1.Size = new System.Drawing.Size(302, 31);
             this.label1.TabIndex = 90;
             this.label1.Text = "Confirme su contraseña";
             // 
@@ -198,7 +198,7 @@
             this.lblCorreo.Location = new System.Drawing.Point(144, 407);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(281, 39);
+            this.lblCorreo.Size = new System.Drawing.Size(225, 31);
             this.lblCorreo.TabIndex = 94;
             this.lblCorreo.Text = "Ingrese su correo";
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblCredenciales);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCredenciales";
             this.Text = "Credenciales";
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).EndInit();

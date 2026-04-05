@@ -54,6 +54,8 @@ namespace grupo3_Proyecto
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            // Cerrar la aplicación
+            Application.Exit();
 
         }
 
@@ -64,7 +66,8 @@ namespace grupo3_Proyecto
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-  
+            frmCredenciales credenciales = new frmCredenciales();
+            credenciales.ShowDialog();
 
         }
     }
