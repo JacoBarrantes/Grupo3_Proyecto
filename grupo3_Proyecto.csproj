@@ -144,6 +144,7 @@
     <Compile Include="SJODiputaciones.Designer.cs">
       <DependentUpon>SJODiputaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQL\Class1.cs" />
     <EmbeddedResource Include="AdministrarPadron.resx">
       <DependentUpon>AdministrarPadron.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,8 +219,6 @@
   <ItemGroup>
     <None Include="Resources\LOGOCOLOR.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SQL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

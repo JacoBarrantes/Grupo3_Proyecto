@@ -1,0 +1,354 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+
+namespace grupo3_Proyecto.SQL
+{
+    internal class Class1
+    {
+
+        USE[master]
+GO
+/****** Object:  Database [SistemaVotacion2026_2030]    Script Date: 3/31/2026 9:10:33 PM ******/
+CREATE DATABASE[SistemaVotacion2026_2030]
+ CONTAINMENT = NONE
+ ON  PRIMARY
+(NAME = N'SistemaVotacion2026_2030', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER2026\MSSQL\DATA\SistemaVotacion2026_2030.mdf' , SIZE = 598016KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON
+(NAME = N'SistemaVotacion2026_2030_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL17.MSSQLSERVER2026\MSSQL\DATA\SistemaVotacion2026_2030_log.ldf' , SIZE = 598016KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET COMPATIBILITY_LEVEL = 170
+GO
+IF(1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC[SistemaVotacion2026_2030].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ANSI_NULL_DEFAULT OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ANSI_NULLS OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ANSI_PADDING OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ANSI_WARNINGS OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ARITHABORT OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET AUTO_CLOSE OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET AUTO_SHRINK OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET AUTO_UPDATE_STATISTICS ON
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET CURSOR_CLOSE_ON_COMMIT OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET CURSOR_DEFAULT  GLOBAL
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET CONCAT_NULL_YIELDS_NULL OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET NUMERIC_ROUNDABORT OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET QUOTED_IDENTIFIER OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET RECURSIVE_TRIGGERS OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET DISABLE_BROKER
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET AUTO_UPDATE_STATISTICS_ASYNC OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET DATE_CORRELATION_OPTIMIZATION OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET TRUSTWORTHY OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ALLOW_SNAPSHOT_ISOLATION OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET PARAMETERIZATION SIMPLE
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET READ_COMMITTED_SNAPSHOT OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET HONOR_BROKER_PRIORITY OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET RECOVERY FULL
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET MULTI_USER
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET PAGE_VERIFY CHECKSUM
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET DB_CHAINING OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET FILESTREAM(NON_TRANSACTED_ACCESS = OFF)
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET TARGET_RECOVERY_TIME = 60 SECONDS
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET DELAYED_DURABILITY = DISABLED
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET ACCELERATED_DATABASE_RECOVERY = OFF
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET OPTIMIZED_LOCKING = OFF
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'SistemaVotacion2026_2030', N'ON'
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET QUERY_STORE = ON
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET QUERY_STORE(OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
+GO
+USE[SistemaVotacion2026_2030]
+GO
+/****** Object:  Table [dbo].[Candidatos]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[Candidatos]
+        (
+
+    [IdCandidato][int] IDENTITY(1,1) NOT NULL,
+
+    [Nombre] [varchar] (50) NULL,
+	[PrimerApellido][varchar] (50) NULL,
+	[SegundoApellido][varchar] (50) NULL,
+	[IdPartido][int] NOT NULL,
+
+    [IdTipoEleccion] [int] NOT NULL,
+
+    [Foto] [varchar] (200) NULL,
+PRIMARY KEY CLUSTERED
+(
+    [IdCandidato] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[DistritoElectoral]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[DistritoElectoral]
+        (
+
+    [CodigoElectoral][varchar](10) NOT NULL,
+
+    [Provincia] [varchar] (50) NULL,
+	[Canton][varchar] (50) NULL,
+	[Distrito][varchar] (50) NULL,
+PRIMARY KEY CLUSTERED
+(
+    [CodigoElectoral] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[EstadoVotante]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[EstadoVotante]
+        (
+
+    [Cedula][varchar](12) NOT NULL,
+
+    [VotoPresidencial] [bit] NULL,
+	[VotoDiputados][bit] NULL,
+PRIMARY KEY CLUSTERED
+(
+    [Cedula] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[PadronNacional]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[PadronNacional]
+        (
+
+    [Cedula][varchar](12) NOT NULL,
+
+    [CodigoElectoral] [varchar] (10) NULL,
+	[Relleno][varchar] (10) Null,
+	[FechaVencimientoCedula][char](8) NULL,
+	[NumeroJuntaReceptora][varchar] (5) NULL,
+	[Nombre][varchar] (60) NULL,
+	[PrimerApellido][varchar] (60) NULL,
+	[SegundoApellido][varchar] (60) NULL,
+PRIMARY KEY CLUSTERED
+(
+    [Cedula] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[PartidosPoliticos]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[PartidosPoliticos]
+        (
+
+    [IdPartido][int] IDENTITY(1,1) NOT NULL,
+
+    [NombrePartido] [varchar] (100) NULL,
+	[Bandera][varchar] (200) NULL,
+PRIMARY KEY CLUSTERED
+(
+    [IdPartido] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[TipoEleccion]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[TipoEleccion]
+        (
+
+    [IdTipoEleccion][int] NOT NULL,
+
+    [Descripcion] [varchar] (50) NULL,
+PRIMARY KEY CLUSTERED
+(
+    [IdTipoEleccion] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 3/31/2026 9:10:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[Usuarios]
+        (
+
+    [Cedula][varchar](12) NOT NULL,
+
+    [PasswordHash] [varchar] (255) NULL,
+	[CorreoElectronico][varchar] (100) NULL,
+	[Perfil][varchar] (20) NOT NULL,
+PRIMARY KEY CLUSTERED
+(
+    [Cedula] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY],
+ CONSTRAINT[UQ_Usuarios_Correo] UNIQUE NONCLUSTERED
+(
+    [CorreoElectronico] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+/****** Object:  Table [dbo].[Votacion]    Script Date: 3/31/2026 9:10:33 PM ********/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE[dbo].[Votacion]
+        (
+
+    [IdVoto][int] IDENTITY(1,1) NOT NULL,
+
+    [Cedula] [varchar] (12) NOT NULL,
+
+    [FechaHora] [datetime] NULL,
+	[IdCandidato][int] NOT NULL,
+
+    [IdTipoEleccion] [int] NOT NULL,
+PRIMARY KEY CLUSTERED
+(
+    [IdVoto] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY],
+ CONSTRAINT[UQ_Voto_Presidencial] UNIQUE NONCLUSTERED
+(
+    [Cedula] ASC,
+    [IdTipoEleccion] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY],
+ CONSTRAINT[UQ_Voto_Unico] UNIQUE NONCLUSTERED
+(
+    [Cedula] ASC,
+    [IdTipoEleccion] ASC
+)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+) ON[PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+/****** Object:  Index [IDX_Padron_Cedula]    Script Date: 3/31/2026 9:10:33 PM ******/
+CREATE NONCLUSTERED INDEX[IDX_Padron_Cedula] ON[dbo].[PadronNacional]
+        (
+
+    [Cedula] ASC
+) WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+GO
+/****** Object:  Index [IDX_Votos_Candidato]    Script Date: 3/31/2026 9:10:33 PM ******/
+CREATE NONCLUSTERED INDEX[IDX_Votos_Candidato] ON[dbo].[Votacion]
+        (
+
+    [IdCandidato] ASC
+) WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON[PRIMARY]
+GO
+ALTER TABLE[dbo].[EstadoVotante] ADD DEFAULT((0)) FOR[VotoPresidencial]
+GO
+ALTER TABLE[dbo].[EstadoVotante] ADD DEFAULT((0)) FOR[VotoDiputados]
+GO
+ALTER TABLE[dbo].[Candidatos] WITH CHECK ADD FOREIGN KEY([IdPartido])
+REFERENCES[dbo].[PartidosPoliticos]
+        ([IdPartido])
+GO
+ALTER TABLE[dbo].[Candidatos] WITH CHECK ADD FOREIGN KEY([IdTipoEleccion])
+REFERENCES[dbo].[TipoEleccion]
+        ([IdTipoEleccion])
+GO
+ALTER TABLE[dbo].[EstadoVotante] WITH CHECK ADD FOREIGN KEY([Cedula])
+REFERENCES[dbo].[PadronNacional]
+        ([Cedula])
+GO
+ALTER TABLE[dbo].[PadronNacional] WITH NOCHECK ADD FOREIGN KEY([CodigoElectoral])
+REFERENCES[dbo].[DistritoElectoral]
+        ([CodigoElectoral])
+GO
+ALTER TABLE[dbo].[Usuarios] WITH CHECK ADD FOREIGN KEY([Cedula])
+REFERENCES[dbo].[PadronNacional]
+        ([Cedula])
+GO
+ALTER TABLE[dbo].[Votacion] WITH CHECK ADD FOREIGN KEY([Cedula])
+REFERENCES[dbo].[PadronNacional]
+        ([Cedula])
+GO
+ALTER TABLE[dbo].[Votacion] WITH CHECK ADD FOREIGN KEY([IdCandidato])
+REFERENCES[dbo].[Candidatos]
+        ([IdCandidato])
+GO
+ALTER TABLE[dbo].[Votacion] WITH CHECK ADD FOREIGN KEY([IdTipoEleccion])
+REFERENCES[dbo].[TipoEleccion]
+        ([IdTipoEleccion])
+GO
+ALTER TABLE[dbo].[Usuarios] WITH CHECK ADD CONSTRAINT[CK_Usuarios_Perfil] CHECK(([Perfil]= 'VOTANTE' OR[Perfil]= 'ADMIN'))
+GO
+ALTER TABLE[dbo].[Usuarios]
+        CHECK CONSTRAINT[CK_Usuarios_Perfil]
+GO
+USE[master]
+GO
+ALTER DATABASE[SistemaVotacion2026_2030] SET READ_WRITE
+GO
+
+
+
+BULK INSERT[SistemaVotacion2026_2030].[dbo].[PadronNacional]
+        FROM 'C:\Users\steve\Downloads\padron_completo\PADRON_COMPLETO.txt'
+WITH
+(
+    FIRSTROW = 1,              -- no hay encabezados
+    FIELDTERMINATOR = ','-- separado por com
+)
+
+
+    }
+}
