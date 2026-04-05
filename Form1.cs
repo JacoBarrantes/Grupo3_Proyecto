@@ -64,10 +64,8 @@ namespace grupo3_Proyecto
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-        
-            frmCredenciales crearUsuario = new frmCredenciales();
-            crearUsuario.ShowDialog();
-            
+  
+
         }
     }
 }

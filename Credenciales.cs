@@ -26,5 +26,23 @@ namespace grupo3_Proyecto
         {
 
         }
+
+        private void lblCredenciales_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCorreo.Clear();
+            txtId.Clear();
+            txtPassword1.Clear();
+            txtPassword2.Clear();
+        }
     }
 }
