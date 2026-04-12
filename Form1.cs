@@ -13,8 +13,6 @@ namespace grupo3_Proyecto
 {
     
 
-
-
     public partial class frmLogin : Form
     {
         public frmLogin()
