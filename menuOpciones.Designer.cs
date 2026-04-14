@@ -144,6 +144,7 @@
             this.diputacionesToolStripMenuItem.Name = "diputacionesToolStripMenuItem";
             this.diputacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.diputacionesToolStripMenuItem.Text = "Diputaciones";
+            this.diputacionesToolStripMenuItem.Click += new System.EventHandler(this.diputacionesToolStripMenuItem_Click);
             // 
             // partidosPolíticosToolStripMenuItem
             // 

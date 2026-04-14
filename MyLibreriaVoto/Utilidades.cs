@@ -13,7 +13,7 @@ namespace MyLibreriaVoto
 
         public static DataSet ejecutar(string comando)
         {
-            SqlConnection conn = new SqlConnection("Data Source=Jacob;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;");
+            SqlConnection conn = new SqlConnection("Data Source=Jacob;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;Encrypt=True;");
             conn.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter adaptador = new SqlDataAdapter(comando, conn);
@@ -36,5 +36,20 @@ namespace MyLibreriaVoto
             return Encoding.UTF8.GetString(datos, 0, datos.Length);
         }
 
+        public static int ejecutarAccion(string comando)
+        {
+           
+            
+                SqlConnection conn = new SqlConnection("Data Source=Jacob;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;");
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(comando, conn);
+                int filas = cmd.ExecuteNonQuery();
+                conn.Close();
+                return filas;
+            
+           
+        }
     }
+
 }
+

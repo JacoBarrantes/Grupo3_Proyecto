@@ -54,5 +54,11 @@ namespace grupo3_Proyecto
             ModificarUsuario frmModificarUsuario = new ModificarUsuario();
             frmModificarUsuario.ShowDialog();
         }
+
+        private void diputacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarUsuario frmEliminarUsuario = new EliminarUsuario();
+            frmEliminarUsuario.ShowDialog();
+        }
     }
 }

@@ -25,9 +25,10 @@ namespace grupo3_Proyecto
         {
             try
             {
-                string cmd = string.Format("SELECT Perfil FROM Perfiles WHERE DESCPERFIL = 'Usuario votante' ", cmbPerfil.Text);
+                string cmd = string.Format("SELECT Perfil FROM Perfiles where DESCPERFIL = '{0}'", cmbPerfil.Text);
                 ds = Utilidades.ejecutar(cmd);
                 numPerfil = ds.Tables[0].Rows[0]["Perfil"].ToString();
+
             }
             catch (Exception ex)
             {

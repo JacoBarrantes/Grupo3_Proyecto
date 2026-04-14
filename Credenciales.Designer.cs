@@ -250,6 +250,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCredenciales";
             this.Text = "Credenciales";
+            this.Load += new System.EventHandler(this.frmCredenciales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
