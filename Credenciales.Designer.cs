@@ -66,7 +66,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(444, 163);
+            this.txtId.Location = new System.Drawing.Point(454, 171);
             this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(257, 30);
@@ -98,7 +98,7 @@
             // txtPassword1
             // 
             this.txtPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword1.Location = new System.Drawing.Point(444, 247);
+            this.txtPassword1.Location = new System.Drawing.Point(454, 247);
             this.txtPassword1.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.Size = new System.Drawing.Size(257, 30);
@@ -164,7 +164,7 @@
             // txtPassword2
             // 
             this.txtPassword2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword2.Location = new System.Drawing.Point(444, 328);
+            this.txtPassword2.Location = new System.Drawing.Point(454, 328);
             this.txtPassword2.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(257, 30);
@@ -205,7 +205,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(444, 416);
+            this.txtCorreo.Location = new System.Drawing.Point(454, 424);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(257, 30);

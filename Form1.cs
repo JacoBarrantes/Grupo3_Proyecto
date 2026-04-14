@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,7 @@ using System.Windows.Forms;
 
 namespace grupo3_Proyecto
 {
-
-
+    
 
     public partial class frmLogin : Form
     {
@@ -54,7 +54,8 @@ namespace grupo3_Proyecto
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            // Cerrar la aplicación
+          
+
             Application.Exit();
 
         }
