@@ -251,5 +251,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MyLibreriaVoto\MyLibreriaVoto.csproj">
+      <Project>{0dec1be1-fc34-475f-8a89-1c8cfbf555ee}</Project>
+      <Name>MyLibreriaVoto</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
