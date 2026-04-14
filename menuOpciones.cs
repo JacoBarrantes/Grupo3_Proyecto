@@ -48,5 +48,11 @@ namespace grupo3_Proyecto
 
 
         }
+
+        private void presidenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarUsuario frmModificarUsuario = new ModificarUsuario();
+            frmModificarUsuario.ShowDialog();
+        }
     }
 }

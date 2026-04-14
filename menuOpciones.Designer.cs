@@ -82,13 +82,13 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // votaciónToolStripMenuItem
@@ -135,13 +135,14 @@
             // presidenciaToolStripMenuItem
             // 
             this.presidenciaToolStripMenuItem.Name = "presidenciaToolStripMenuItem";
-            this.presidenciaToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.presidenciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.presidenciaToolStripMenuItem.Text = "Presidencia";
+            this.presidenciaToolStripMenuItem.Click += new System.EventHandler(this.presidenciaToolStripMenuItem_Click);
             // 
             // diputacionesToolStripMenuItem
             // 
             this.diputacionesToolStripMenuItem.Name = "diputacionesToolStripMenuItem";
-            this.diputacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.diputacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.diputacionesToolStripMenuItem.Text = "Diputaciones";
             // 
             // partidosPolíticosToolStripMenuItem
@@ -168,13 +169,13 @@
             // gráficoProvinciaToolStripMenuItem
             // 
             this.gráficoProvinciaToolStripMenuItem.Name = "gráficoProvinciaToolStripMenuItem";
-            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.gráficoProvinciaToolStripMenuItem.Text = "Gráfico provincia";
             // 
             // gráficoCandidatosToolStripMenuItem
             // 
             this.gráficoCandidatosToolStripMenuItem.Name = "gráficoCandidatosToolStripMenuItem";
-            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.gráficoCandidatosToolStripMenuItem.Text = "Gráfico candidatos";
             // 
             // reportesToolStripMenuItem
@@ -189,13 +190,13 @@
             // informeProvinciaToolStripMenuItem
             // 
             this.informeProvinciaToolStripMenuItem.Name = "informeProvinciaToolStripMenuItem";
-            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia";
             // 
             // informeCandidatoToolStripMenuItem
             // 
             this.informeCandidatoToolStripMenuItem.Name = "informeCandidatoToolStripMenuItem";
-            this.informeCandidatoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.informeCandidatoToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.informeCandidatoToolStripMenuItem.Text = "Informe Candidato";
             // 
             // acercaDeToolStripMenuItem
