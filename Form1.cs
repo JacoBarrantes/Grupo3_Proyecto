@@ -50,18 +50,22 @@ namespace grupo3_Proyecto
 
         }
 
-       private void IniciarSesion()
+
+        private void IniciarSesion()
         {
             try
             {
                 string cedula = txtCedula.Text.Trim();
-                string contrasena = Utilidades.codificar(txtContrasena.Text.Trim());
+                string contrasenaHash = Utilidades.codificar(txtContrasena.Text.Trim());
+
                 string cmd = string.Format(
                     "SELECT * FROM Usuarios WHERE Cedula = '{0}' AND PasswordHash = '{1}'",
-                    cedula, contrasena
+                    cedula, contrasenaHash
                 );
+
                 DataSet ds = Utilidades.ejecutar(cmd);
-                if (contrasena == txtContrasena.Text.Trim())
+
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                 {
                     MessageBox.Show("Bienvenido al sistema de votación");
                     frmMenuOpciones menuOpciones = new frmMenuOpciones();
