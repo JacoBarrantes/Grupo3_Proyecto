@@ -33,12 +33,12 @@
             this.iniciarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.votaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.votarPresidenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.votarDiputadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.padrónNacionalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.distritoElectoralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.candidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.presidenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diputacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosPolíticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoElecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,20 +82,40 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.iniciarSesiónToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // votaciónToolStripMenuItem
             // 
+            this.votaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.votarPresidenteToolStripMenuItem,
+            this.votarDiputadosToolStripMenuItem});
             this.votaciónToolStripMenuItem.Name = "votaciónToolStripMenuItem";
             this.votaciónToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.votaciónToolStripMenuItem.Text = "Votar";
+            this.votaciónToolStripMenuItem.Click += new System.EventHandler(this.votaciónToolStripMenuItem_Click);
+            // 
+            // votarPresidenteToolStripMenuItem
+            // 
+            this.votarPresidenteToolStripMenuItem.Name = "votarPresidenteToolStripMenuItem";
+            this.votarPresidenteToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.votarPresidenteToolStripMenuItem.Text = "Votar Presidente";
+            this.votarPresidenteToolStripMenuItem.Click += new System.EventHandler(this.votarPresidenteToolStripMenuItem_Click);
+            // 
+            // votarDiputadosToolStripMenuItem
+            // 
+            this.votarDiputadosToolStripMenuItem.Name = "votarDiputadosToolStripMenuItem";
+            this.votarDiputadosToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.votarDiputadosToolStripMenuItem.Text = "Votar Diputados";
+            this.votarDiputadosToolStripMenuItem.Click += new System.EventHandler(this.votarDiputadosToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 
@@ -124,33 +144,17 @@
             // 
             // candidatosToolStripMenuItem
             // 
-            this.candidatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.presidenciaToolStripMenuItem,
-            this.diputacionesToolStripMenuItem});
             this.candidatosToolStripMenuItem.Name = "candidatosToolStripMenuItem";
-            this.candidatosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.candidatosToolStripMenuItem.Text = "Candidatos";
+            this.candidatosToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.candidatosToolStripMenuItem.Text = "Registro de Candidatos";
             this.candidatosToolStripMenuItem.Click += new System.EventHandler(this.candidatosToolStripMenuItem_Click);
-            // 
-            // presidenciaToolStripMenuItem
-            // 
-            this.presidenciaToolStripMenuItem.Name = "presidenciaToolStripMenuItem";
-            this.presidenciaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.presidenciaToolStripMenuItem.Text = "Presidencia";
-            this.presidenciaToolStripMenuItem.Click += new System.EventHandler(this.presidenciaToolStripMenuItem_Click);
-            // 
-            // diputacionesToolStripMenuItem
-            // 
-            this.diputacionesToolStripMenuItem.Name = "diputacionesToolStripMenuItem";
-            this.diputacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.diputacionesToolStripMenuItem.Text = "Diputaciones";
-            this.diputacionesToolStripMenuItem.Click += new System.EventHandler(this.diputacionesToolStripMenuItem_Click);
             // 
             // partidosPolíticosToolStripMenuItem
             // 
             this.partidosPolíticosToolStripMenuItem.Name = "partidosPolíticosToolStripMenuItem";
-            this.partidosPolíticosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.partidosPolíticosToolStripMenuItem.Text = "Partidos Políticos";
+            this.partidosPolíticosToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.partidosPolíticosToolStripMenuItem.Text = "Crear Partidos Políticos";
+            this.partidosPolíticosToolStripMenuItem.Click += new System.EventHandler(this.partidosPolíticosToolStripMenuItem_Click);
             // 
             // tipoElecciónToolStripMenuItem
             // 
@@ -263,7 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem créditosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem presidenciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diputacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem votarPresidenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem votarDiputadosToolStripMenuItem;
     }
 }

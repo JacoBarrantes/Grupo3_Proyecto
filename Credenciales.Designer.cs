@@ -36,19 +36,25 @@
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.pctContraseña = new System.Windows.Forms.PictureBox();
-            this.pctUsuario = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctContraseña = new System.Windows.Forms.PictureBox();
+            this.pctUsuario = new System.Windows.Forms.PictureBox();
+            this.lblDistrito = new System.Windows.Forms.Label();
+            this.lblCanton = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.cmbProvincia = new System.Windows.Forms.ComboBox();
+            this.cmbCanton = new System.Windows.Forms.ComboBox();
+            this.cmbDistrito = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCredenciales
@@ -76,7 +82,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(144, 154);
+            this.lblUsuario.Location = new System.Drawing.Point(144, 169);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(176, 31);
@@ -129,37 +135,7 @@
             this.btnSalir.TabIndex = 89;
             this.btnSalir.Text = "salir";
             this.btnSalir.UseVisualStyleBackColor = true;
-            // 
-            // pctContraseña
-            // 
-            this.pctContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pctContraseña.Image")));
-            this.pctContraseña.Location = new System.Drawing.Point(57, 226);
-            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4);
-            this.pctContraseña.Name = "pctContraseña";
-            this.pctContraseña.Size = new System.Drawing.Size(61, 62);
-            this.pctContraseña.TabIndex = 87;
-            this.pctContraseña.TabStop = false;
-            // 
-            // pctUsuario
-            // 
-            this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
-            this.pctUsuario.Location = new System.Drawing.Point(57, 139);
-            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(61, 62);
-            this.pctUsuario.TabIndex = 86;
-            this.pctUsuario.TabStop = false;
-            this.pctUsuario.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(57, 307);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 62);
-            this.pictureBox1.TabIndex = 92;
-            this.pictureBox1.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtPassword2
             // 
@@ -180,16 +156,6 @@
             this.label1.Size = new System.Drawing.Size(302, 31);
             this.label1.TabIndex = 90;
             this.label1.Text = "Confirme su contraseña";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(57, 392);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
-            this.pictureBox2.TabIndex = 95;
-            this.pictureBox2.TabStop = false;
             // 
             // lblCorreo
             // 
@@ -225,12 +191,149 @@
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(57, 392);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
+            this.pictureBox2.TabIndex = 95;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(57, 307);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 62);
+            this.pictureBox1.TabIndex = 92;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pctContraseña
+            // 
+            this.pctContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pctContraseña.Image")));
+            this.pctContraseña.Location = new System.Drawing.Point(57, 226);
+            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.pctContraseña.Name = "pctContraseña";
+            this.pctContraseña.Size = new System.Drawing.Size(61, 62);
+            this.pctContraseña.TabIndex = 87;
+            this.pctContraseña.TabStop = false;
+            // 
+            // pctUsuario
+            // 
+            this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
+            this.pctUsuario.Location = new System.Drawing.Point(57, 139);
+            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.pctUsuario.Name = "pctUsuario";
+            this.pctUsuario.Size = new System.Drawing.Size(61, 62);
+            this.pctUsuario.TabIndex = 86;
+            this.pctUsuario.TabStop = false;
+            this.pctUsuario.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lblDistrito
+            // 
+            this.lblDistrito.AutoSize = true;
+            this.lblDistrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDistrito.Location = new System.Drawing.Point(722, 326);
+            this.lblDistrito.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDistrito.Name = "lblDistrito";
+            this.lblDistrito.Size = new System.Drawing.Size(100, 31);
+            this.lblDistrito.TabIndex = 101;
+            this.lblDistrito.Text = "Distrito";
+            // 
+            // lblCanton
+            // 
+            this.lblCanton.AutoSize = true;
+            this.lblCanton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCanton.Location = new System.Drawing.Point(722, 245);
+            this.lblCanton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCanton.Name = "lblCanton";
+            this.lblCanton.Size = new System.Drawing.Size(102, 31);
+            this.lblCanton.TabIndex = 99;
+            this.lblCanton.Text = "Canton";
+            // 
+            // lblProvincia
+            // 
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.Location = new System.Drawing.Point(722, 169);
+            this.lblProvincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(126, 31);
+            this.lblProvincia.TabIndex = 98;
+            this.lblProvincia.Text = "Provincia";
+            // 
+            // cmbProvincia
+            // 
+            this.cmbProvincia.FormattingEnabled = true;
+            this.cmbProvincia.Items.AddRange(new object[] {
+            "ALAJUELA",
+            "HEREDIA",
+            "SAN JOSE",
+            "CARTAGO",
+            "PUNTARENAS",
+            "GUANACASTE",
+            "LIMON"});
+            this.cmbProvincia.Location = new System.Drawing.Point(897, 181);
+            this.cmbProvincia.Name = "cmbProvincia";
+            this.cmbProvincia.Size = new System.Drawing.Size(148, 24);
+            this.cmbProvincia.TabIndex = 103;
+            this.cmbProvincia.SelectedIndexChanged += new System.EventHandler(this.cmbProvincia_SelectedIndexChanged);
+            // 
+            // cmbCanton
+            // 
+            this.cmbCanton.FormattingEnabled = true;
+            this.cmbCanton.Items.AddRange(new object[] {
+            "CURRIDABAT ",
+            "PEREZ ZELEDON",
+            "LIBERIA NICOYA",
+            "GRECIA",
+            "SAN MATEO",
+            "ATENAS",
+            "QUEPOS ",
+            "OSA",
+            "GOLFITO",
+            "PARRITA"});
+            this.cmbCanton.Location = new System.Drawing.Point(897, 253);
+            this.cmbCanton.Name = "cmbCanton";
+            this.cmbCanton.Size = new System.Drawing.Size(148, 24);
+            this.cmbCanton.TabIndex = 104;
+            this.cmbCanton.SelectedIndexChanged += new System.EventHandler(this.cmbCanton_SelectedIndexChanged);
+            // 
+            // cmbDistrito
+            // 
+            this.cmbDistrito.FormattingEnabled = true;
+            this.cmbDistrito.Items.AddRange(new object[] {
+            "PILAS",
+            "PALMAR",
+            "SANTA CRUZ",
+            "SAN JUAN",
+            "SAN MATEO",
+            "TRES RIOS",
+            "OROSI",
+            "SANTIAGO",
+            "EL ROSARIO",
+            "SAN PEDRO"});
+            this.cmbDistrito.Location = new System.Drawing.Point(897, 335);
+            this.cmbDistrito.Name = "cmbDistrito";
+            this.cmbDistrito.Size = new System.Drawing.Size(148, 24);
+            this.cmbDistrito.TabIndex = 105;
+            this.cmbDistrito.SelectedIndexChanged += new System.EventHandler(this.cmbDistrito_SelectedIndexChanged);
+            // 
             // frmCredenciales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(948, 598);
+            this.ClientSize = new System.Drawing.Size(1167, 598);
+            this.Controls.Add(this.cmbDistrito);
+            this.Controls.Add(this.cmbCanton);
+            this.Controls.Add(this.cmbProvincia);
+            this.Controls.Add(this.lblDistrito);
+            this.Controls.Add(this.lblCanton);
+            this.Controls.Add(this.lblProvincia);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblCorreo);
@@ -251,10 +354,10 @@
             this.Name = "frmCredenciales";
             this.Text = "Credenciales";
             this.Load += new System.EventHandler(this.frmCredenciales_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctContraseña)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +381,11 @@
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblDistrito;
+        private System.Windows.Forms.Label lblCanton;
+        private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.ComboBox cmbProvincia;
+        private System.Windows.Forms.ComboBox cmbCanton;
+        private System.Windows.Forms.ComboBox cmbDistrito;
     }
 }

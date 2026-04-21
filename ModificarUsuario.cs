@@ -41,5 +41,10 @@ namespace grupo3_Proyecto
         {
 
         }
+
+        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

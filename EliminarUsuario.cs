@@ -1,13 +1,14 @@
-﻿using System;
+﻿using MyLibreriaVoto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyLibreriaVoto;
 
 namespace grupo3_Proyecto
 {
@@ -20,16 +21,15 @@ namespace grupo3_Proyecto
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
+
             try
             {
-                
                 if (txtUsuarioEliminado.Text.Trim() == "")
                 {
                     MessageBox.Show("Debe ingresar la cédula", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-               
                 DialogResult resp = MessageBox.Show(
                     "¿Está seguro de eliminar este usuario?",
                     "Confirmar eliminación",
@@ -40,16 +40,12 @@ namespace grupo3_Proyecto
                 if (resp == DialogResult.No)
                     return;
 
-                
-                string cmd = string.Format(
-                    "DELETE FROM PadronNacional WHERE Cedula = '{0}'",
-                    txtUsuarioEliminado.Text.Trim()
+                string cmd = "DELETE FROM Usuarios WHERE Cedula = @cedula";
+
+                int resultado = Utilidades.ejecutarAccion(cmd,
+                    new SqlParameter("@cedula", txtUsuarioEliminado.Text.Trim())
                 );
 
-                // 🚀 Ejecutar
-                int resultado = Utilidades.ejecutarAccion(cmd);
-
-                // ✅ Resultado
                 if (resultado > 0)
                 {
                     MessageBox.Show("Usuario eliminado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -61,10 +57,17 @@ namespace grupo3_Proyecto
                     MessageBox.Show("No se encontró la cédula", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+
+
+
             catch (Exception ex)
             {
                 MessageBox.Show("Error al eliminar: " + ex.Message);
             }
+
+
+
         }
 
         private void EliminarUsuario_Load(object sender, EventArgs e)

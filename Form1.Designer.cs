@@ -46,7 +46,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, -25);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 515);
             this.panel1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.pictureBox1.Image = global::grupo3_Proyecto.Properties.Resources.LOGOCOLOR;
             this.pictureBox1.Location = new System.Drawing.Point(13, 217);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(231, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -79,7 +79,7 @@
             // 
             this.txtCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedula.Location = new System.Drawing.Point(455, 115);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(440, 30);
             this.txtCedula.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.Location = new System.Drawing.Point(270, 286);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(300, 53);
             this.btnIngresar.TabIndex = 6;
@@ -100,7 +100,7 @@
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(909, 368);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 42);
             this.btnSalir.TabIndex = 7;
@@ -154,7 +154,7 @@
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Login";

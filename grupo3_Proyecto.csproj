@@ -72,18 +72,6 @@
     <Compile Include="AdministrarPadron.Designer.cs">
       <DependentUpon>AdministrarPadron.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlajuelaDiputaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlajuelaDiputaciones.Designer.cs">
-      <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartagoDiputaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CartagoDiputaciones.Designer.cs">
-      <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="CrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,23 +102,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuanacasteDiputaciones.cs">
+    <Compile Include="frmPadronNacional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuanacasteDiputaciones.Designer.cs">
-      <DependentUpon>GuanacasteDiputaciones.cs</DependentUpon>
+    <Compile Include="frmPadronNacional.Designer.cs">
+      <DependentUpon>frmPadronNacional.cs</DependentUpon>
     </Compile>
-    <Compile Include="HerediaDiputaciones.cs">
+    <Compile Include="frmPartidosPoliticos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HerediaDiputaciones.Designer.cs">
-      <DependentUpon>HerediaDiputaciones.cs</DependentUpon>
+    <Compile Include="frmPartidosPoliticos.Designer.cs">
+      <DependentUpon>frmPartidosPoliticos.cs</DependentUpon>
     </Compile>
-    <Compile Include="LimonDiputaciones.cs">
+    <Compile Include="frmVotacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LimonDiputaciones.Designer.cs">
-      <DependentUpon>LimonDiputaciones.cs</DependentUpon>
+    <Compile Include="frmVotacion.Designer.cs">
+      <DependentUpon>frmVotacion.cs</DependentUpon>
     </Compile>
     <Compile Include="menuOpciones.cs">
       <SubType>Form</SubType>
@@ -146,33 +134,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntarenasDiputaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PuntarenasDiputaciones.Designer.cs">
-      <DependentUpon>PuntarenasDiputaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroCandidatos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroCandidatos.Designer.cs">
       <DependentUpon>RegistroCandidatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="SJODiputaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SJODiputaciones.Designer.cs">
-      <DependentUpon>SJODiputaciones.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Sesion.cs" />
     <Compile Include="SQL\Class1.cs" />
     <EmbeddedResource Include="AdministrarPadron.resx">
       <DependentUpon>AdministrarPadron.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AlajuelaDiputaciones.resx">
-      <DependentUpon>AlajuelaDiputaciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CartagoDiputaciones.resx">
-      <DependentUpon>CartagoDiputaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearUsuario.resx">
       <DependentUpon>CrearUsuario.cs</DependentUpon>
@@ -189,14 +160,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuanacasteDiputaciones.resx">
-      <DependentUpon>GuanacasteDiputaciones.cs</DependentUpon>
+    <EmbeddedResource Include="frmPadronNacional.resx">
+      <DependentUpon>frmPadronNacional.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HerediaDiputaciones.resx">
-      <DependentUpon>HerediaDiputaciones.cs</DependentUpon>
+    <EmbeddedResource Include="frmPartidosPoliticos.resx">
+      <DependentUpon>frmPartidosPoliticos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LimonDiputaciones.resx">
-      <DependentUpon>LimonDiputaciones.cs</DependentUpon>
+    <EmbeddedResource Include="frmVotacion.resx">
+      <DependentUpon>frmVotacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuOpciones.resx">
       <DependentUpon>menuOpciones.cs</DependentUpon>
@@ -214,14 +185,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="PuntarenasDiputaciones.resx">
-      <DependentUpon>PuntarenasDiputaciones.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegistroCandidatos.resx">
       <DependentUpon>RegistroCandidatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SJODiputaciones.resx">
-      <DependentUpon>SJODiputaciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -47,7 +47,7 @@
             this.btnAtrásModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtrásModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtrásModificar.Location = new System.Drawing.Point(572, 428);
-            this.btnAtrásModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAtrásModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtrásModificar.Name = "btnAtrásModificar";
             this.btnAtrásModificar.Size = new System.Drawing.Size(161, 55);
             this.btnAtrásModificar.TabIndex = 118;
@@ -60,12 +60,13 @@
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarUsuario.Location = new System.Drawing.Point(328, 428);
-            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(161, 55);
             this.btnModificarUsuario.TabIndex = 117;
             this.btnModificarUsuario.Text = "Modificar";
             this.btnModificarUsuario.UseVisualStyleBackColor = false;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
             // 
             // lblNumeroCedula
             // 
@@ -83,7 +84,7 @@
             // 
             this.txtNumeroCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroCedula.Location = new System.Drawing.Point(395, 197);
-            this.txtNumeroCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroCedula.Name = "txtNumeroCedula";
             this.txtNumeroCedula.Size = new System.Drawing.Size(603, 30);
             this.txtNumeroCedula.TabIndex = 114;
@@ -102,7 +103,7 @@
             // 
             this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
             this.pctUsuario.Location = new System.Drawing.Point(72, 177);
-            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.pctUsuario.Name = "pctUsuario";
             this.pctUsuario.Size = new System.Drawing.Size(61, 62);
             this.pctUsuario.TabIndex = 116;
@@ -112,7 +113,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(72, 283);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 62);
             this.pictureBox1.TabIndex = 121;
@@ -155,7 +156,7 @@
             this.Controls.Add(this.lblNumeroCedula);
             this.Controls.Add(this.txtNumeroCedula);
             this.Controls.Add(this.txtModificarUsuario);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificarUsuario";
             this.Text = "ModificarUsuario";
             this.Load += new System.EventHandler(this.ModificarUsuario_Load);
