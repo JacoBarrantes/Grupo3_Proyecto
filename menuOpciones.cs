@@ -131,5 +131,10 @@ namespace grupo3_Proyecto
         {
             AbrirFormulario(new frmPartidosPoliticos());
         }
+
+        private void distritoElectoralToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmDistritoElectoral());
+        }
     }
 }

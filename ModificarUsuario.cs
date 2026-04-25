@@ -46,5 +46,10 @@ namespace grupo3_Proyecto
         {
 
         }
+
+        private void cmbPerfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

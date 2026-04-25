@@ -82,14 +82,14 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.iniciarSesiónToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -132,15 +132,16 @@
             // padrónNacionalToolStripMenuItem
             // 
             this.padrónNacionalToolStripMenuItem.Name = "padrónNacionalToolStripMenuItem";
-            this.padrónNacionalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.padrónNacionalToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.padrónNacionalToolStripMenuItem.Text = "Padrón Nacional";
             this.padrónNacionalToolStripMenuItem.Click += new System.EventHandler(this.padrónNacionalToolStripMenuItem_Click);
             // 
             // distritoElectoralToolStripMenuItem
             // 
             this.distritoElectoralToolStripMenuItem.Name = "distritoElectoralToolStripMenuItem";
-            this.distritoElectoralToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.distritoElectoralToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.distritoElectoralToolStripMenuItem.Text = "Distrito Electoral";
+            this.distritoElectoralToolStripMenuItem.Click += new System.EventHandler(this.distritoElectoralToolStripMenuItem_Click);
             // 
             // candidatosToolStripMenuItem
             // 
@@ -152,14 +153,14 @@
             // partidosPolíticosToolStripMenuItem
             // 
             this.partidosPolíticosToolStripMenuItem.Name = "partidosPolíticosToolStripMenuItem";
-            this.partidosPolíticosToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.partidosPolíticosToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.partidosPolíticosToolStripMenuItem.Text = "Crear Partidos Políticos";
             this.partidosPolíticosToolStripMenuItem.Click += new System.EventHandler(this.partidosPolíticosToolStripMenuItem_Click);
             // 
             // tipoElecciónToolStripMenuItem
             // 
             this.tipoElecciónToolStripMenuItem.Name = "tipoElecciónToolStripMenuItem";
-            this.tipoElecciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipoElecciónToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.tipoElecciónToolStripMenuItem.Text = "Tipo Elección";
             // 
             // estadísticaToolStripMenuItem
