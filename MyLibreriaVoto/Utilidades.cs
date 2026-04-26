@@ -11,7 +11,7 @@ namespace MyLibreriaVoto
     public class Utilidades
     {
        
-        private static readonly string _cnn = @"Data Source=Jacob;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;";
+        private static readonly string _cnn = @"Data Source=Nazareth;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;";
         public static DataSet ejecutar(string comando)
         {
             using (SqlConnection conn = new SqlConnection(_cnn))
