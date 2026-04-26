@@ -61,7 +61,7 @@
             // 
             this.lblCredenciales.AutoSize = true;
             this.lblCredenciales.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCredenciales.Location = new System.Drawing.Point(86, 20);
+            this.lblCredenciales.Location = new System.Drawing.Point(237, 33);
             this.lblCredenciales.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCredenciales.Name = "lblCredenciales";
             this.lblCredenciales.Size = new System.Drawing.Size(428, 36);
@@ -73,7 +73,7 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(340, 139);
+            this.txtId.Location = new System.Drawing.Point(357, 138);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(194, 26);
             this.txtId.TabIndex = 82;
@@ -102,7 +102,7 @@
             // txtPassword1
             // 
             this.txtPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword1.Location = new System.Drawing.Point(340, 201);
+            this.txtPassword1.Location = new System.Drawing.Point(357, 200);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.Size = new System.Drawing.Size(194, 26);
             this.txtPassword1.TabIndex = 85;
@@ -112,7 +112,7 @@
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(162, 396);
+            this.btnRegistrar.Location = new System.Drawing.Point(227, 395);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(121, 45);
             this.btnRegistrar.TabIndex = 88;
@@ -124,18 +124,18 @@
             // 
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(484, 396);
+            this.btnSalir.Location = new System.Drawing.Point(564, 395);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(121, 45);
             this.btnSalir.TabIndex = 89;
-            this.btnSalir.Text = "salir";
+            this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtPassword2
             // 
             this.txtPassword2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword2.Location = new System.Drawing.Point(340, 266);
+            this.txtPassword2.Location = new System.Drawing.Point(357, 265);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.Size = new System.Drawing.Size(194, 26);
             this.txtPassword2.TabIndex = 91;
@@ -163,17 +163,17 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(340, 344);
+            this.txtCorreo.Location = new System.Drawing.Point(357, 332);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(194, 26);
             this.txtCorreo.TabIndex = 93;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(325, 396);
+            this.btnLimpiar.Location = new System.Drawing.Point(392, 395);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(121, 45);
             this.btnLimpiar.TabIndex = 96;
@@ -222,7 +222,7 @@
             // 
             this.lblDistrito.AutoSize = true;
             this.lblDistrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistrito.Location = new System.Drawing.Point(542, 265);
+            this.lblDistrito.Location = new System.Drawing.Point(584, 265);
             this.lblDistrito.Name = "lblDistrito";
             this.lblDistrito.Size = new System.Drawing.Size(79, 25);
             this.lblDistrito.TabIndex = 101;
@@ -232,7 +232,7 @@
             // 
             this.lblCanton.AutoSize = true;
             this.lblCanton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCanton.Location = new System.Drawing.Point(542, 199);
+            this.lblCanton.Location = new System.Drawing.Point(584, 199);
             this.lblCanton.Name = "lblCanton";
             this.lblCanton.Size = new System.Drawing.Size(81, 25);
             this.lblCanton.TabIndex = 99;
@@ -242,7 +242,7 @@
             // 
             this.lblProvincia.AutoSize = true;
             this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProvincia.Location = new System.Drawing.Point(542, 137);
+            this.lblProvincia.Location = new System.Drawing.Point(584, 137);
             this.lblProvincia.Name = "lblProvincia";
             this.lblProvincia.Size = new System.Drawing.Size(101, 25);
             this.lblProvincia.TabIndex = 98;
@@ -259,7 +259,7 @@
             "PUNTARENAS",
             "GUANACASTE",
             "LIMON"});
-            this.cmbProvincia.Location = new System.Drawing.Point(673, 147);
+            this.cmbProvincia.Location = new System.Drawing.Point(690, 146);
             this.cmbProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbProvincia.Name = "cmbProvincia";
             this.cmbProvincia.Size = new System.Drawing.Size(112, 21);
@@ -280,7 +280,7 @@
             "OSA",
             "GOLFITO",
             "PARRITA"});
-            this.cmbCanton.Location = new System.Drawing.Point(673, 206);
+            this.cmbCanton.Location = new System.Drawing.Point(690, 205);
             this.cmbCanton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCanton.Name = "cmbCanton";
             this.cmbCanton.Size = new System.Drawing.Size(112, 21);
@@ -301,7 +301,7 @@
             "SANTIAGO",
             "EL ROSARIO",
             "SAN PEDRO"});
-            this.cmbDistrito.Location = new System.Drawing.Point(673, 272);
+            this.cmbDistrito.Location = new System.Drawing.Point(690, 271);
             this.cmbDistrito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbDistrito.Name = "cmbDistrito";
             this.cmbDistrito.Size = new System.Drawing.Size(112, 21);
