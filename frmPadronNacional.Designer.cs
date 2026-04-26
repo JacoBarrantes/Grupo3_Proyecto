@@ -53,81 +53,90 @@
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(32, 35);
+            this.lblCedula.Location = new System.Drawing.Point(24, 28);
+            this.lblCedula.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(50, 16);
+            this.lblCedula.Size = new System.Drawing.Size(40, 13);
             this.lblCedula.TabIndex = 0;
             this.lblCedula.Text = "Cedula";
             // 
             // lblCodigoElectoral
             // 
             this.lblCodigoElectoral.AutoSize = true;
-            this.lblCodigoElectoral.Location = new System.Drawing.Point(251, 35);
+            this.lblCodigoElectoral.Location = new System.Drawing.Point(188, 28);
+            this.lblCodigoElectoral.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigoElectoral.Name = "lblCodigoElectoral";
-            this.lblCodigoElectoral.Size = new System.Drawing.Size(107, 16);
+            this.lblCodigoElectoral.Size = new System.Drawing.Size(84, 13);
             this.lblCodigoElectoral.TabIndex = 1;
             this.lblCodigoElectoral.Text = "Codigo Electoral";
             // 
             // lblJunta
             // 
             this.lblJunta.AutoSize = true;
-            this.lblJunta.Location = new System.Drawing.Point(790, 124);
+            this.lblJunta.Location = new System.Drawing.Point(592, 101);
+            this.lblJunta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJunta.Name = "lblJunta";
-            this.lblJunta.Size = new System.Drawing.Size(39, 16);
+            this.lblJunta.Size = new System.Drawing.Size(33, 13);
             this.lblJunta.TabIndex = 2;
             this.lblJunta.Text = "Junta";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(32, 124);
+            this.lblNombre.Location = new System.Drawing.Point(24, 101);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre";
             // 
             // lblApellido1
             // 
             this.lblApellido1.AutoSize = true;
-            this.lblApellido1.Location = new System.Drawing.Point(251, 124);
+            this.lblApellido1.Location = new System.Drawing.Point(188, 101);
+            this.lblApellido1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido1.Name = "lblApellido1";
-            this.lblApellido1.Size = new System.Drawing.Size(67, 16);
+            this.lblApellido1.Size = new System.Drawing.Size(53, 13);
             this.lblApellido1.TabIndex = 4;
             this.lblApellido1.Text = "Apellido 1";
             // 
             // lblApellido2
             // 
             this.lblApellido2.AutoSize = true;
-            this.lblApellido2.Location = new System.Drawing.Point(537, 124);
+            this.lblApellido2.Location = new System.Drawing.Point(403, 101);
+            this.lblApellido2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido2.Name = "lblApellido2";
-            this.lblApellido2.Size = new System.Drawing.Size(67, 16);
+            this.lblApellido2.Size = new System.Drawing.Size(53, 13);
             this.lblApellido2.TabIndex = 5;
             this.lblApellido2.Text = "Apellido 2";
             // 
             // dtpVencimiento
             // 
-            this.dtpVencimiento.Location = new System.Drawing.Point(726, 33);
+            this.dtpVencimiento.Location = new System.Drawing.Point(544, 27);
+            this.dtpVencimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpVencimiento.Name = "dtpVencimiento";
-            this.dtpVencimiento.Size = new System.Drawing.Size(252, 22);
+            this.dtpVencimiento.Size = new System.Drawing.Size(190, 20);
             this.dtpVencimiento.TabIndex = 6;
             this.dtpVencimiento.ValueChanged += new System.EventHandler(this.dtpVencimientoCedula_ValueChanged);
             // 
             // dgvPadron
             // 
             this.dgvPadron.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPadron.Location = new System.Drawing.Point(23, 155);
+            this.dgvPadron.Location = new System.Drawing.Point(17, 126);
+            this.dgvPadron.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPadron.Name = "dgvPadron";
             this.dgvPadron.RowHeadersWidth = 51;
             this.dgvPadron.RowTemplate.Height = 24;
-            this.dgvPadron.Size = new System.Drawing.Size(955, 210);
+            this.dgvPadron.Size = new System.Drawing.Size(716, 171);
             this.dgvPadron.TabIndex = 7;
             this.dgvPadron.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPadron_CellContentClick);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(832, 400);
+            this.btnEliminar.Location = new System.Drawing.Point(624, 325);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(146, 48);
+            this.btnEliminar.Size = new System.Drawing.Size(110, 39);
             this.btnEliminar.TabIndex = 8;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -135,9 +144,10 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(23, 400);
+            this.btnNuevo.Location = new System.Drawing.Point(17, 325);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(146, 48);
+            this.btnNuevo.Size = new System.Drawing.Size(110, 39);
             this.btnNuevo.TabIndex = 9;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -145,9 +155,10 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(279, 400);
+            this.btnGuardar.Location = new System.Drawing.Point(209, 325);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(146, 48);
+            this.btnGuardar.Size = new System.Drawing.Size(110, 39);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -155,9 +166,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(563, 400);
+            this.btnModificar.Location = new System.Drawing.Point(422, 325);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(146, 48);
+            this.btnModificar.Size = new System.Drawing.Size(110, 39);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -165,66 +177,73 @@
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(88, 35);
+            this.txtCedula.Location = new System.Drawing.Point(66, 28);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(143, 22);
+            this.txtCedula.Size = new System.Drawing.Size(108, 20);
             this.txtCedula.TabIndex = 12;
             this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // txtCodigoElectoral
             // 
-            this.txtCodigoElectoral.Location = new System.Drawing.Point(367, 29);
+            this.txtCodigoElectoral.Location = new System.Drawing.Point(275, 24);
+            this.txtCodigoElectoral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigoElectoral.Name = "txtCodigoElectoral";
-            this.txtCodigoElectoral.Size = new System.Drawing.Size(143, 22);
+            this.txtCodigoElectoral.Size = new System.Drawing.Size(108, 20);
             this.txtCodigoElectoral.TabIndex = 13;
             this.txtCodigoElectoral.TextChanged += new System.EventHandler(this.txtCodigoElectoral_TextChanged);
             // 
             // txtJunta
             // 
-            this.txtJunta.Location = new System.Drawing.Point(835, 118);
+            this.txtJunta.Location = new System.Drawing.Point(626, 96);
+            this.txtJunta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtJunta.Name = "txtJunta";
-            this.txtJunta.Size = new System.Drawing.Size(143, 22);
+            this.txtJunta.Size = new System.Drawing.Size(108, 20);
             this.txtJunta.TabIndex = 14;
             this.txtJunta.TextChanged += new System.EventHandler(this.txtJunta_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(94, 118);
+            this.txtNombre.Location = new System.Drawing.Point(70, 96);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(143, 22);
+            this.txtNombre.Size = new System.Drawing.Size(108, 20);
             this.txtNombre.TabIndex = 15;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtApellido1
             // 
-            this.txtApellido1.Location = new System.Drawing.Point(324, 118);
+            this.txtApellido1.Location = new System.Drawing.Point(243, 96);
+            this.txtApellido1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido1.Name = "txtApellido1";
-            this.txtApellido1.Size = new System.Drawing.Size(143, 22);
+            this.txtApellido1.Size = new System.Drawing.Size(108, 20);
             this.txtApellido1.TabIndex = 16;
             this.txtApellido1.TextChanged += new System.EventHandler(this.txtApellido1_TextChanged);
             // 
             // txtApellido2
             // 
-            this.txtApellido2.Location = new System.Drawing.Point(610, 118);
+            this.txtApellido2.Location = new System.Drawing.Point(458, 96);
+            this.txtApellido2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido2.Name = "txtApellido2";
-            this.txtApellido2.Size = new System.Drawing.Size(143, 22);
+            this.txtApellido2.Size = new System.Drawing.Size(108, 20);
             this.txtApellido2.TabIndex = 17;
             this.txtApellido2.TextChanged += new System.EventHandler(this.txtApellido2_TextChanged);
             // 
             // lblFechaVencimientoCed
             // 
             this.lblFechaVencimientoCed.AutoSize = true;
-            this.lblFechaVencimientoCed.Location = new System.Drawing.Point(541, 38);
+            this.lblFechaVencimientoCed.Location = new System.Drawing.Point(406, 31);
+            this.lblFechaVencimientoCed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaVencimientoCed.Name = "lblFechaVencimientoCed";
-            this.lblFechaVencimientoCed.Size = new System.Drawing.Size(168, 16);
+            this.lblFechaVencimientoCed.Size = new System.Drawing.Size(134, 13);
             this.lblFechaVencimientoCed.TabIndex = 18;
             this.lblFechaVencimientoCed.Text = "Fecha Vencimiento Cedula";
             // 
             // frmPadronNacional
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 450);
+            this.ClientSize = new System.Drawing.Size(774, 366);
             this.Controls.Add(this.lblFechaVencimientoCed);
             this.Controls.Add(this.txtApellido2);
             this.Controls.Add(this.txtApellido1);
@@ -244,7 +263,9 @@
             this.Controls.Add(this.lblJunta);
             this.Controls.Add(this.lblCodigoElectoral);
             this.Controls.Add(this.lblCedula);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmPadronNacional";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPadronNacional";
             this.Load += new System.EventHandler(this.frmPadronNacional_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPadron)).EndInit();

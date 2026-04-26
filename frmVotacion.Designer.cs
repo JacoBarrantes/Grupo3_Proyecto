@@ -38,18 +38,20 @@
             // lblTipoEleccion
             // 
             this.lblTipoEleccion.AutoSize = true;
-            this.lblTipoEleccion.Location = new System.Drawing.Point(74, 50);
+            this.lblTipoEleccion.Location = new System.Drawing.Point(56, 41);
+            this.lblTipoEleccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoEleccion.Name = "lblTipoEleccion";
-            this.lblTipoEleccion.Size = new System.Drawing.Size(108, 16);
+            this.lblTipoEleccion.Size = new System.Drawing.Size(86, 13);
             this.lblTipoEleccion.TabIndex = 0;
             this.lblTipoEleccion.Text = "Tipo de eleccion";
             // 
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(489, 50);
+            this.lblTiempo.Location = new System.Drawing.Point(367, 41);
+            this.lblTiempo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(54, 16);
+            this.lblTiempo.Size = new System.Drawing.Size(42, 13);
             this.lblTiempo.TabIndex = 1;
             this.lblTiempo.Text = "Tiempo";
             // 
@@ -57,22 +59,24 @@
             // 
             this.dgvCandidatos.AllowUserToAddRows = false;
             this.dgvCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCandidatos.Location = new System.Drawing.Point(77, 90);
+            this.dgvCandidatos.Location = new System.Drawing.Point(58, 73);
+            this.dgvCandidatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvCandidatos.MultiSelect = false;
             this.dgvCandidatos.Name = "dgvCandidatos";
             this.dgvCandidatos.ReadOnly = true;
             this.dgvCandidatos.RowHeadersWidth = 51;
             this.dgvCandidatos.RowTemplate.Height = 24;
             this.dgvCandidatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCandidatos.Size = new System.Drawing.Size(752, 297);
+            this.dgvCandidatos.Size = new System.Drawing.Size(564, 241);
             this.dgvCandidatos.TabIndex = 2;
             this.dgvCandidatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCandidatos_CellContentClick);
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(370, 393);
+            this.btnConfirmar.Location = new System.Drawing.Point(278, 319);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(108, 45);
+            this.btnConfirmar.Size = new System.Drawing.Size(81, 37);
             this.btnConfirmar.TabIndex = 4;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
@@ -80,14 +84,16 @@
             // 
             // frmVotacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 450);
+            this.ClientSize = new System.Drawing.Size(645, 366);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.dgvCandidatos);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblTipoEleccion);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmVotacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmVotacion";
             this.Load += new System.EventHandler(this.frmVotacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidatos)).EndInit();
