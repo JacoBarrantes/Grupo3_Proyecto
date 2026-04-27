@@ -67,7 +67,7 @@ namespace grupo3_Proyecto
             _cargando = true;
 
             var provincias = _dtDistritos.AsEnumerable()
-                .Select(r => r["Provincia"].ToString().Trim())
+                .Select(r => r["Provincia"].ToString().Trim().ToUpper()) 
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
                 .OrderBy(x => x)
@@ -77,6 +77,9 @@ namespace grupo3_Proyecto
 
             cmbCanton.DataSource = null;
             cmbDistrito.DataSource = null;
+
+            cmbProvincia.SelectedIndex = -1;
+            cmbProvincia.Text = "";
 
             _cargando = false;
 
@@ -88,7 +91,6 @@ namespace grupo3_Proyecto
         private void cmbProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (_cargando) return;
-
             if (string.IsNullOrEmpty(cmbProvincia.Text)) return;
 
             _cargando = true;
@@ -104,6 +106,8 @@ namespace grupo3_Proyecto
                 .ToList();
 
             cmbCanton.DataSource = cantones;
+
+            cmbCanton.SelectedIndex = -1;
             cmbDistrito.DataSource = null;
 
             _cargando = false;
@@ -113,6 +117,7 @@ namespace grupo3_Proyecto
         private void cmbCanton_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (_cargando) return;
+            if (string.IsNullOrEmpty(cmbCanton.Text)) return;
 
             _cargando = true;
 
@@ -121,15 +126,17 @@ namespace grupo3_Proyecto
 
             var distritos = _dtDistritos.AsEnumerable()
                 .Where(r =>
-                r["Provincia"].ToString().ToUpper() == prov.ToUpper() &&
-                r["Canton"].ToString().ToUpper() == canton.ToUpper())
-                .Select(r => r["Distrito"].ToString())
+                    string.Equals(r["Provincia"].ToString(), prov, StringComparison.OrdinalIgnoreCase) &&
+                    string.Equals(r["Canton"].ToString(), canton, StringComparison.OrdinalIgnoreCase))
+                .Select(r => r["Distrito"].ToString().ToUpper()) 
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
                 .OrderBy(x => x)
                 .ToList();
 
             cmbDistrito.DataSource = distritos;
+
+            cmbDistrito.SelectedIndex = -1;
 
             _cargando = false;
         }
