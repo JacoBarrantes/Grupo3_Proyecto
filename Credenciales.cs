@@ -90,7 +90,7 @@ namespace grupo3_Proyecto
             _cargando = true;
 
             var provincias = _dtDistritos.AsEnumerable()
-                .Select(r => r["Provincia"].ToString().Trim().ToUpper())
+                .Where(r => r["Provincia"].ToString().ToUpper() == prov.ToUpper())
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
                 .OrderBy(x => x)
@@ -118,7 +118,9 @@ namespace grupo3_Proyecto
             string canton = cmbCanton.Text;
 
             var distritos = _dtDistritos.AsEnumerable()
-                .Where(r => r["Provincia"].ToString() == prov && r["Canton"].ToString() == canton)
+                .Where(r =>
+                r["Provincia"].ToString().ToUpper() == prov.ToUpper() &&
+                r["Canton"].ToString().ToUpper() == canton.ToUpper())
                 .Select(r => r["Distrito"].ToString())
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
