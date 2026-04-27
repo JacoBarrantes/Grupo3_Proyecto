@@ -109,6 +109,7 @@ namespace grupo3_Proyecto
         private void frmMenuOpciones_Load(object sender, EventArgs e)
         {
             ConfigurarMenuPorPerfil();
+            MessageBox.Show("Perfil actual: " + Sesion.Perfil);
         }
 
         private void padrónNacionalToolStripMenuItem_Click(object sender, EventArgs e)
