@@ -106,12 +106,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.btnAtrásEliminar);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.lblUsuarioEliminado);
             this.Controls.Add(this.txtUsuarioEliminado);
             this.Controls.Add(this.txtCrearUsuario);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EliminarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";

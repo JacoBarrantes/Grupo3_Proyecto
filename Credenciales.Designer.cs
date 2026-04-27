@@ -215,7 +215,7 @@
             "GUANACASTE",
             "LIMON"});
             this.cmbProvincia.Location = new System.Drawing.Point(170, 225);
-            this.cmbProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProvincia.Name = "cmbProvincia";
             this.cmbProvincia.Size = new System.Drawing.Size(146, 21);
             this.cmbProvincia.TabIndex = 103;
@@ -236,7 +236,7 @@
             "GOLFITO",
             "PARRITA"});
             this.cmbCanton.Location = new System.Drawing.Point(427, 225);
-            this.cmbCanton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCanton.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCanton.Name = "cmbCanton";
             this.cmbCanton.Size = new System.Drawing.Size(146, 21);
             this.cmbCanton.TabIndex = 104;
@@ -257,7 +257,7 @@
             "EL ROSARIO",
             "SAN PEDRO"});
             this.cmbDistrito.Location = new System.Drawing.Point(679, 224);
-            this.cmbDistrito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbDistrito.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDistrito.Name = "cmbDistrito";
             this.cmbDistrito.Size = new System.Drawing.Size(146, 21);
             this.cmbDistrito.TabIndex = 105;
@@ -354,6 +354,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(892, 440);
+            this.ControlBox = false;
             this.Controls.Add(this.lblVencimiento);
             this.Controls.Add(this.dtpVencimiento);
             this.Controls.Add(this.lblApellido2);
@@ -380,6 +381,8 @@
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblCredenciales);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCredenciales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Credenciales";

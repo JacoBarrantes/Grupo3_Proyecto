@@ -52,10 +52,9 @@
             // 
             this.btnSalirAlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirAlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirAlMenu.Location = new System.Drawing.Point(576, 487);
-            this.btnSalirAlMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalirAlMenu.Location = new System.Drawing.Point(432, 396);
             this.btnSalirAlMenu.Name = "btnSalirAlMenu";
-            this.btnSalirAlMenu.Size = new System.Drawing.Size(161, 55);
+            this.btnSalirAlMenu.Size = new System.Drawing.Size(121, 45);
             this.btnSalirAlMenu.TabIndex = 98;
             this.btnSalirAlMenu.Text = "Salir";
             this.btnSalirAlMenu.UseVisualStyleBackColor = true;
@@ -66,10 +65,9 @@
             this.btnRegistrarCandidato.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnRegistrarCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarCandidato.Location = new System.Drawing.Point(356, 487);
-            this.btnRegistrarCandidato.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarCandidato.Location = new System.Drawing.Point(267, 396);
             this.btnRegistrarCandidato.Name = "btnRegistrarCandidato";
-            this.btnRegistrarCandidato.Size = new System.Drawing.Size(161, 55);
+            this.btnRegistrarCandidato.Size = new System.Drawing.Size(121, 45);
             this.btnRegistrarCandidato.TabIndex = 97;
             this.btnRegistrarCandidato.Text = "Registrar";
             this.btnRegistrarCandidato.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@
             // 
             this.lblPartidoNuevo.AutoSize = true;
             this.lblPartidoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartidoNuevo.Location = new System.Drawing.Point(168, 286);
-            this.lblPartidoNuevo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPartidoNuevo.Location = new System.Drawing.Point(126, 232);
             this.lblPartidoNuevo.Name = "lblPartidoNuevo";
-            this.lblPartidoNuevo.Size = new System.Drawing.Size(108, 31);
+            this.lblPartidoNuevo.Size = new System.Drawing.Size(86, 25);
             this.lblPartidoNuevo.TabIndex = 93;
             this.lblPartidoNuevo.Text = "Partido:";
             // 
@@ -90,20 +87,18 @@
             // 
             this.lblCandidatoNuevo.AutoSize = true;
             this.lblCandidatoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCandidatoNuevo.Location = new System.Drawing.Point(160, 153);
-            this.lblCandidatoNuevo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCandidatoNuevo.Location = new System.Drawing.Point(120, 124);
             this.lblCandidatoNuevo.Name = "lblCandidatoNuevo";
-            this.lblCandidatoNuevo.Size = new System.Drawing.Size(203, 31);
+            this.lblCandidatoNuevo.Size = new System.Drawing.Size(161, 25);
             this.lblCandidatoNuevo.TabIndex = 92;
             this.lblCandidatoNuevo.Text = "ID del postulate";
             // 
             // txtIDUsuarioCandidato
             // 
             this.txtIDUsuarioCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDUsuarioCandidato.Location = new System.Drawing.Point(470, 153);
-            this.txtIDUsuarioCandidato.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIDUsuarioCandidato.Location = new System.Drawing.Point(352, 124);
             this.txtIDUsuarioCandidato.Name = "txtIDUsuarioCandidato";
-            this.txtIDUsuarioCandidato.Size = new System.Drawing.Size(154, 30);
+            this.txtIDUsuarioCandidato.Size = new System.Drawing.Size(116, 26);
             this.txtIDUsuarioCandidato.TabIndex = 91;
             this.txtIDUsuarioCandidato.TextChanged += new System.EventHandler(this.txtIDUsuarioCandidato_TextChanged);
             // 
@@ -111,9 +106,10 @@
             // 
             this.lblNuevoCandidato.AutoSize = true;
             this.lblNuevoCandidato.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNuevoCandidato.Location = new System.Drawing.Point(285, 34);
+            this.lblNuevoCandidato.Location = new System.Drawing.Point(214, 28);
+            this.lblNuevoCandidato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNuevoCandidato.Name = "lblNuevoCandidato";
-            this.lblNuevoCandidato.Size = new System.Drawing.Size(471, 45);
+            this.lblNuevoCandidato.Size = new System.Drawing.Size(378, 36);
             this.lblNuevoCandidato.TabIndex = 90;
             this.lblNuevoCandidato.Text = "Ingrese nuevo candidato";
             this.lblNuevoCandidato.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -121,20 +117,18 @@
             // pctContraseña
             // 
             this.pctContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pctContraseña.Image")));
-            this.pctContraseña.Location = new System.Drawing.Point(73, 246);
-            this.pctContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.pctContraseña.Location = new System.Drawing.Point(55, 200);
             this.pctContraseña.Name = "pctContraseña";
-            this.pctContraseña.Size = new System.Drawing.Size(61, 64);
+            this.pctContraseña.Size = new System.Drawing.Size(46, 52);
             this.pctContraseña.TabIndex = 96;
             this.pctContraseña.TabStop = false;
             // 
             // pctUsuario
             // 
             this.pctUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pctUsuario.Image")));
-            this.pctUsuario.Location = new System.Drawing.Point(73, 138);
-            this.pctUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.pctUsuario.Location = new System.Drawing.Point(55, 112);
             this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(61, 62);
+            this.pctUsuario.Size = new System.Drawing.Size(46, 50);
             this.pctUsuario.TabIndex = 95;
             this.pctUsuario.TabStop = false;
             // 
@@ -142,10 +136,9 @@
             // 
             this.lblProvincia.AutoSize = true;
             this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProvincia.Location = new System.Drawing.Point(168, 341);
-            this.lblProvincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProvincia.Location = new System.Drawing.Point(126, 277);
             this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(141, 31);
+            this.lblProvincia.Size = new System.Drawing.Size(113, 25);
             this.lblProvincia.TabIndex = 99;
             this.lblProvincia.Text = "Provincia: ";
             // 
@@ -153,19 +146,19 @@
             // 
             this.lblCandidatura.AutoSize = true;
             this.lblCandidatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCandidatura.Location = new System.Drawing.Point(168, 408);
-            this.lblCandidatura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCandidatura.Location = new System.Drawing.Point(126, 332);
             this.lblCandidatura.Name = "lblCandidatura";
-            this.lblCandidatura.Size = new System.Drawing.Size(175, 31);
+            this.lblCandidatura.Size = new System.Drawing.Size(140, 25);
             this.lblCandidatura.TabIndex = 101;
             this.lblCandidatura.Text = "Candidato a: ";
             // 
             // cmbCandidatura
             // 
             this.cmbCandidatura.FormattingEnabled = true;
-            this.cmbCandidatura.Location = new System.Drawing.Point(356, 417);
+            this.cmbCandidatura.Location = new System.Drawing.Point(267, 339);
+            this.cmbCandidatura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCandidatura.Name = "cmbCandidatura";
-            this.cmbCandidatura.Size = new System.Drawing.Size(268, 24);
+            this.cmbCandidatura.Size = new System.Drawing.Size(202, 21);
             this.cmbCandidatura.TabIndex = 102;
             this.cmbCandidatura.SelectedIndexChanged += new System.EventHandler(this.cmbCandidatura_SelectedIndexChanged);
             // 
@@ -180,28 +173,29 @@
             "LIMON",
             "GUANACASTE",
             "HEREDIA"});
-            this.cmbProvincia.Location = new System.Drawing.Point(356, 348);
+            this.cmbProvincia.Location = new System.Drawing.Point(267, 283);
+            this.cmbProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(268, 24);
+            this.cmbProvincia.Size = new System.Drawing.Size(202, 21);
             this.cmbProvincia.TabIndex = 103;
             this.cmbProvincia.SelectedIndexChanged += new System.EventHandler(this.cmbProvincia_SelectedIndexChanged);
             // 
             // cmbPartido
             // 
             this.cmbPartido.FormattingEnabled = true;
-            this.cmbPartido.Location = new System.Drawing.Point(356, 286);
+            this.cmbPartido.Location = new System.Drawing.Point(267, 232);
+            this.cmbPartido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbPartido.Name = "cmbPartido";
-            this.cmbPartido.Size = new System.Drawing.Size(268, 24);
+            this.cmbPartido.Size = new System.Drawing.Size(202, 21);
             this.cmbPartido.TabIndex = 104;
             this.cmbPartido.SelectedIndexChanged += new System.EventHandler(this.cmbPartido_SelectedIndexChanged);
             // 
             // txtNombreCompleto
             // 
             this.txtNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCompleto.Location = new System.Drawing.Point(470, 231);
-            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(352, 188);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(509, 30);
+            this.txtNombreCompleto.Size = new System.Drawing.Size(383, 26);
             this.txtNombreCompleto.TabIndex = 105;
             this.txtNombreCompleto.TextChanged += new System.EventHandler(this.txtNombreCompleto_TextChanged);
             // 
@@ -209,19 +203,19 @@
             // 
             this.lblNombreCandidato.AutoSize = true;
             this.lblNombreCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCandidato.Location = new System.Drawing.Point(168, 229);
-            this.lblNombreCandidato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombreCandidato.Location = new System.Drawing.Point(126, 186);
             this.lblNombreCandidato.Name = "lblNombreCandidato";
-            this.lblNombreCandidato.Size = new System.Drawing.Size(278, 31);
+            this.lblNombreCandidato.Size = new System.Drawing.Size(222, 25);
             this.lblNombreCandidato.TabIndex = 106;
             this.lblNombreCandidato.Text = "Nombre del candidato";
             // 
             // frmRegistroCandidatos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1067, 567);
+            this.ClientSize = new System.Drawing.Size(800, 461);
+            this.ControlBox = false;
             this.Controls.Add(this.lblNombreCandidato);
             this.Controls.Add(this.txtNombreCompleto);
             this.Controls.Add(this.cmbPartido);
@@ -237,7 +231,8 @@
             this.Controls.Add(this.lblCandidatoNuevo);
             this.Controls.Add(this.txtIDUsuarioCandidato);
             this.Controls.Add(this.lblNuevoCandidato);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmRegistroCandidatos";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Registro de Candidatos";

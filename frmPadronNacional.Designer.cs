@@ -113,7 +113,7 @@
             // dtpVencimiento
             // 
             this.dtpVencimiento.Location = new System.Drawing.Point(544, 27);
-            this.dtpVencimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpVencimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtpVencimiento.Name = "dtpVencimiento";
             this.dtpVencimiento.Size = new System.Drawing.Size(190, 20);
             this.dtpVencimiento.TabIndex = 6;
@@ -123,7 +123,7 @@
             // 
             this.dgvPadron.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPadron.Location = new System.Drawing.Point(17, 126);
-            this.dgvPadron.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPadron.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPadron.Name = "dgvPadron";
             this.dgvPadron.RowHeadersWidth = 51;
             this.dgvPadron.RowTemplate.Height = 24;
@@ -134,7 +134,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(624, 325);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(110, 39);
             this.btnEliminar.TabIndex = 8;
@@ -145,7 +145,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Location = new System.Drawing.Point(17, 325);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(110, 39);
             this.btnNuevo.TabIndex = 9;
@@ -156,7 +156,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(209, 325);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(110, 39);
             this.btnGuardar.TabIndex = 10;
@@ -167,7 +167,7 @@
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(422, 325);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(110, 39);
             this.btnModificar.TabIndex = 11;
@@ -178,7 +178,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(66, 28);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(108, 20);
             this.txtCedula.TabIndex = 12;
@@ -187,7 +187,7 @@
             // txtCodigoElectoral
             // 
             this.txtCodigoElectoral.Location = new System.Drawing.Point(275, 24);
-            this.txtCodigoElectoral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoElectoral.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoElectoral.Name = "txtCodigoElectoral";
             this.txtCodigoElectoral.Size = new System.Drawing.Size(108, 20);
             this.txtCodigoElectoral.TabIndex = 13;
@@ -196,7 +196,7 @@
             // txtJunta
             // 
             this.txtJunta.Location = new System.Drawing.Point(626, 96);
-            this.txtJunta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtJunta.Margin = new System.Windows.Forms.Padding(2);
             this.txtJunta.Name = "txtJunta";
             this.txtJunta.Size = new System.Drawing.Size(108, 20);
             this.txtJunta.TabIndex = 14;
@@ -205,7 +205,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(70, 96);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(108, 20);
             this.txtNombre.TabIndex = 15;
@@ -214,7 +214,7 @@
             // txtApellido1
             // 
             this.txtApellido1.Location = new System.Drawing.Point(243, 96);
-            this.txtApellido1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido1.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido1.Name = "txtApellido1";
             this.txtApellido1.Size = new System.Drawing.Size(108, 20);
             this.txtApellido1.TabIndex = 16;
@@ -223,7 +223,7 @@
             // txtApellido2
             // 
             this.txtApellido2.Location = new System.Drawing.Point(458, 96);
-            this.txtApellido2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido2.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido2.Name = "txtApellido2";
             this.txtApellido2.Size = new System.Drawing.Size(108, 20);
             this.txtApellido2.TabIndex = 17;
@@ -244,6 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 366);
+            this.ControlBox = false;
             this.Controls.Add(this.lblFechaVencimientoCed);
             this.Controls.Add(this.txtApellido2);
             this.Controls.Add(this.txtApellido1);
@@ -263,7 +264,9 @@
             this.Controls.Add(this.lblJunta);
             this.Controls.Add(this.lblCodigoElectoral);
             this.Controls.Add(this.lblCedula);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPadronNacional";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPadronNacional";

@@ -87,7 +87,7 @@
             // txtCodigoElectoral
             // 
             this.txtCodigoElectoral.Location = new System.Drawing.Point(122, 38);
-            this.txtCodigoElectoral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoElectoral.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoElectoral.Name = "txtCodigoElectoral";
             this.txtCodigoElectoral.Size = new System.Drawing.Size(139, 20);
             this.txtCodigoElectoral.TabIndex = 4;
@@ -95,7 +95,7 @@
             // txtProvincia
             // 
             this.txtProvincia.Location = new System.Drawing.Point(88, 85);
-            this.txtProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(139, 20);
             this.txtProvincia.TabIndex = 5;
@@ -103,7 +103,7 @@
             // txtCanton
             // 
             this.txtCanton.Location = new System.Drawing.Point(351, 38);
-            this.txtCanton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCanton.Margin = new System.Windows.Forms.Padding(2);
             this.txtCanton.Name = "txtCanton";
             this.txtCanton.Size = new System.Drawing.Size(139, 20);
             this.txtCanton.TabIndex = 6;
@@ -111,7 +111,7 @@
             // txtDistrito
             // 
             this.txtDistrito.Location = new System.Drawing.Point(350, 85);
-            this.txtDistrito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDistrito.Margin = new System.Windows.Forms.Padding(2);
             this.txtDistrito.Name = "txtDistrito";
             this.txtDistrito.Size = new System.Drawing.Size(139, 20);
             this.txtDistrito.TabIndex = 7;
@@ -124,7 +124,7 @@
             this.dgvDistritoElectoral.AllowUserToResizeRows = false;
             this.dgvDistritoElectoral.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDistritoElectoral.Location = new System.Drawing.Point(39, 156);
-            this.dgvDistritoElectoral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDistritoElectoral.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDistritoElectoral.MultiSelect = false;
             this.dgvDistritoElectoral.Name = "dgvDistritoElectoral";
             this.dgvDistritoElectoral.ReadOnly = true;
@@ -136,7 +136,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Location = new System.Drawing.Point(39, 265);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(98, 34);
             this.btnNuevo.TabIndex = 9;
@@ -147,7 +147,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(171, 265);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(98, 34);
             this.btnGuardar.TabIndex = 10;
@@ -158,7 +158,7 @@
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(298, 265);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(98, 34);
             this.btnModificar.TabIndex = 11;
@@ -169,7 +169,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(452, 265);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(98, 34);
             this.btnSalir.TabIndex = 12;
@@ -182,6 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnGuardar);
@@ -195,7 +196,9 @@
             this.Controls.Add(this.lblCanton);
             this.Controls.Add(this.Provincia);
             this.Controls.Add(this.lblCodigoElectoral);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmDistritoElectoral";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDistritoElectoral";

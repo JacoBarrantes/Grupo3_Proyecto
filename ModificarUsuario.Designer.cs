@@ -154,6 +154,8 @@
             this.Controls.Add(this.lblNumeroCedula);
             this.Controls.Add(this.txtNumeroCedula);
             this.Controls.Add(this.txtModificarUsuario);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ModificarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarUsuario";

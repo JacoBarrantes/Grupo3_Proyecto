@@ -60,7 +60,7 @@
             this.dgvCandidatos.AllowUserToAddRows = false;
             this.dgvCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCandidatos.Location = new System.Drawing.Point(58, 73);
-            this.dgvCandidatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCandidatos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCandidatos.MultiSelect = false;
             this.dgvCandidatos.Name = "dgvCandidatos";
             this.dgvCandidatos.ReadOnly = true;
@@ -74,7 +74,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.Location = new System.Drawing.Point(278, 319);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(81, 37);
             this.btnConfirmar.TabIndex = 4;
@@ -87,11 +87,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 366);
+            this.ControlBox = false;
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.dgvCandidatos);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblTipoEleccion);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmVotacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmVotacion";

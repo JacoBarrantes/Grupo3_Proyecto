@@ -77,7 +77,7 @@
             // txtRutaBandera
             // 
             this.txtRutaBandera.Location = new System.Drawing.Point(116, 131);
-            this.txtRutaBandera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRutaBandera.Margin = new System.Windows.Forms.Padding(2);
             this.txtRutaBandera.Name = "txtRutaBandera";
             this.txtRutaBandera.Size = new System.Drawing.Size(143, 20);
             this.txtRutaBandera.TabIndex = 3;
@@ -85,7 +85,7 @@
             // txtIdPartido
             // 
             this.txtIdPartido.Location = new System.Drawing.Point(90, 50);
-            this.txtIdPartido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdPartido.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdPartido.Name = "txtIdPartido";
             this.txtIdPartido.Size = new System.Drawing.Size(143, 20);
             this.txtIdPartido.TabIndex = 4;
@@ -94,7 +94,7 @@
             // txtNombrePartido
             // 
             this.txtNombrePartido.Location = new System.Drawing.Point(406, 54);
-            this.txtNombrePartido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombrePartido.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombrePartido.Name = "txtNombrePartido";
             this.txtNombrePartido.Size = new System.Drawing.Size(143, 20);
             this.txtNombrePartido.TabIndex = 5;
@@ -102,7 +102,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Location = new System.Drawing.Point(452, 320);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(82, 36);
             this.btnNuevo.TabIndex = 7;
@@ -113,7 +113,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(149, 320);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(82, 36);
             this.btnGuardar.TabIndex = 8;
@@ -124,7 +124,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(290, 320);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(82, 36);
             this.btnEliminar.TabIndex = 9;
@@ -135,7 +135,7 @@
             // btnBuscarImagen
             // 
             this.btnBuscarImagen.Location = new System.Drawing.Point(22, 320);
-            this.btnBuscarImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarImagen.Name = "btnBuscarImagen";
             this.btnBuscarImagen.Size = new System.Drawing.Size(82, 36);
             this.btnBuscarImagen.TabIndex = 10;
@@ -150,7 +150,7 @@
             this.dgvPartidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPartidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPartidos.Location = new System.Drawing.Point(22, 197);
-            this.dgvPartidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPartidos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPartidos.MultiSelect = false;
             this.dgvPartidos.Name = "dgvPartidos";
             this.dgvPartidos.ReadOnly = true;
@@ -158,14 +158,14 @@
             this.dgvPartidos.RowHeadersWidth = 51;
             this.dgvPartidos.RowTemplate.Height = 24;
             this.dgvPartidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPartidos.Size = new System.Drawing.Size(512, 106);
+            this.dgvPartidos.Size = new System.Drawing.Size(527, 106);
             this.dgvPartidos.TabIndex = 11;
             this.dgvPartidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPartidos_CellContentClick);
             // 
             // picBandera
             // 
             this.picBandera.Location = new System.Drawing.Point(290, 105);
-            this.picBandera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBandera.Margin = new System.Windows.Forms.Padding(2);
             this.picBandera.Name = "picBandera";
             this.picBandera.Size = new System.Drawing.Size(195, 66);
             this.picBandera.TabIndex = 6;
@@ -176,6 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ControlBox = false;
             this.Controls.Add(this.dgvPartidos);
             this.Controls.Add(this.btnBuscarImagen);
             this.Controls.Add(this.btnEliminar);
@@ -188,7 +189,9 @@
             this.Controls.Add(this.lblBandera);
             this.Controls.Add(this.lblIdPartido);
             this.Controls.Add(this.lblPartido);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPartidosPoliticos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPartidosPoliticos";

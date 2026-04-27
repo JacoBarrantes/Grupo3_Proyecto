@@ -16,5 +16,10 @@ namespace grupo3_Proyecto
         {
             InitializeComponent();
         }
+
+        private void frmAdministrarPadron_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
