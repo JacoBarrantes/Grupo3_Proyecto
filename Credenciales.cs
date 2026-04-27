@@ -87,22 +87,24 @@ namespace grupo3_Proyecto
 
         private void cmbProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (_cargando) return;
+
+            if (string.IsNullOrEmpty(cmbProvincia.Text)) return;
+
             _cargando = true;
 
-            var provincias = _dtDistritos.AsEnumerable()
-                .Where(r => r["Provincia"].ToString().ToUpper() == prov.ToUpper())
+            string prov = cmbProvincia.Text;
+
+            var cantones = _dtDistritos.AsEnumerable()
+                .Where(r => string.Equals(r["Provincia"].ToString(), prov, StringComparison.OrdinalIgnoreCase))
+                .Select(r => r["Canton"].ToString().ToUpper())
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
                 .OrderBy(x => x)
                 .ToList();
 
-            cmbProvincia.DataSource = provincias;
-
-            cmbCanton.DataSource = null;
+            cmbCanton.DataSource = cantones;
             cmbDistrito.DataSource = null;
-
-            cmbProvincia.SelectedIndex = -1;
-            cmbProvincia.Text = "";
 
             _cargando = false;
         }
