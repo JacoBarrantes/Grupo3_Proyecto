@@ -147,6 +147,7 @@
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
