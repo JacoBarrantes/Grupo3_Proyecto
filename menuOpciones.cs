@@ -124,15 +124,25 @@ namespace grupo3_Proyecto
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLogin frm = Application.OpenForms["frmLogin"] as frmLogin;
+            DialogResult resultado = MessageBox.Show(
+                "¿Está seguro que desea salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-            if (frm != null)
+            if (resultado == DialogResult.Yes)
             {
-                frm.LimpiarCampos();
-                frm.Show();
-            }
+                frmLogin frm = Application.OpenForms["frmLogin"] as frmLogin;
 
-            this.Hide();
+                if (frm != null)
+                {
+                    frm.LimpiarCampos(); 
+                    frm.Show();
+                }
+
+                this.Hide();
+            }
         }
 
         private void partidosPolíticosToolStripMenuItem_Click(object sender, EventArgs e)
