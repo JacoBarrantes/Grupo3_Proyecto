@@ -85,6 +85,7 @@
             this.txtNumeroCedula.Name = "txtNumeroCedula";
             this.txtNumeroCedula.Size = new System.Drawing.Size(330, 26);
             this.txtNumeroCedula.TabIndex = 114;
+            this.txtNumeroCedula.TextChanged += new System.EventHandler(this.txtNumeroCedula_TextChanged);
             // 
             // txtModificarUsuario
             // 
@@ -130,9 +131,6 @@
             // 
             this.cmbPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPerfil.FormattingEnabled = true;
-            this.cmbPerfil.Items.AddRange(new object[] {
-            "Administrador/a",
-            "Votante"});
             this.cmbPerfil.Location = new System.Drawing.Point(343, 251);
             this.cmbPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPerfil.Name = "cmbPerfil";
