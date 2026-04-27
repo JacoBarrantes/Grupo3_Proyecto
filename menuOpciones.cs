@@ -19,12 +19,61 @@ namespace grupo3_Proyecto
         }
 
 
+        public static class Sesion
+        {
+            public static string Cedula { get; set; }
+            public static string Perfil { get; set; } // "1" admin, "2" votante
+
+            public static void Cerrar()
+            {
+                Cedula = null;
+                Perfil = null;
+            }
+        }
+
+        private void ConfigurarMenuPorPerfil()
+        {
+            bool esAdmin = Sesion.Perfil == "1";
+            bool esVotante = Sesion.Perfil == "2";
+
+            //ADMIN
+            mantenimientoToolStripMenuItem.Visible = esAdmin;
+            estadísticaToolStripMenuItem.Visible = esAdmin;
+            reportesToolStripMenuItem.Visible = esAdmin;
+
+            padrónNacionalToolStripMenuItem.Visible = esAdmin;
+            distritoElectoralToolStripMenuItem.Visible = esAdmin;
+            candidatosToolStripMenuItem.Visible = esAdmin;
+            partidosPolíticosToolStripMenuItem.Visible = esAdmin;
+            tipoElecciónToolStripMenuItem.Visible = esAdmin;
+
+  
+            votaciónToolStripMenuItem.Visible = false;
+
+            //VOTANTE
+            if (esVotante)
+            {
+                votaciónToolStripMenuItem.Visible = true;
+                votarPresidenteToolStripMenuItem.Visible = true;
+                votarDiputadosToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                votarPresidenteToolStripMenuItem.Visible = false;
+                votarDiputadosToolStripMenuItem.Visible = false;
+            }
+
+            //AMBOS
+            loginToolStripMenuItem.Visible = true;
+            acercaDeToolStripMenuItem.Visible = true;
 
 
-    
+            modificarUsuarioToolStripMenuItem.Visible = esAdmin; 
+        }
+
+
         private void AbrirFormulario(Form formulario)
         {
-          
             foreach (Form f in this.MdiChildren)
             {
                 f.Close();
@@ -59,7 +108,7 @@ namespace grupo3_Proyecto
 
         private void frmMenuOpciones_Load(object sender, EventArgs e)
         {
-
+            ConfigurarMenuPorPerfil();
         }
 
         private void padrónNacionalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,8 +147,6 @@ namespace grupo3_Proyecto
 
         private void iniciarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            // Confirmación opcional
             DialogResult r = MessageBox.Show(
                 "¿Desea cerrar la sesión actual?",
                 "Cerrar sesión",
@@ -109,9 +156,7 @@ namespace grupo3_Proyecto
             if (r != DialogResult.Yes)
                 return;
 
-            Sesion.Cerrar();         
-           
-         
+            Sesion.Cerrar();
             this.Close();
 
         }
@@ -131,7 +176,7 @@ namespace grupo3_Proyecto
 
                 if (frm != null)
                 {
-                    frm.LimpiarCampos(); 
+                    frm.LimpiarCampos();
                     frm.Show();
                 }
 
@@ -156,6 +201,14 @@ namespace grupo3_Proyecto
 
         private void modificarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            if (Sesion.Perfil != "1")
+            {
+                MessageBox.Show("No tiene permisos para acceder aquí",
+                    "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             AbrirFormulario(new ModificarUsuario());
         }
     }
