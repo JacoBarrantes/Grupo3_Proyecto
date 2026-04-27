@@ -81,20 +81,17 @@ namespace grupo3_Proyecto
 
                 if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                 {
-                    // ✅ Guardar datos de sesión
+
                     Sesion.Cedula = cedula;
-                    Sesion.Rol = Convert.ToInt32(ds.Tables[0].Rows[0]["Perfil"]);
+                    Sesion.Perfil = ds.Tables[0].Rows[0]["Perfil"].ToString();
 
                     MessageBox.Show("Bienvenido al sistema de votación", "Bienvenido",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // ✅ Ocultar login
                     this.Hide();
 
-                    // ✅ Abrir menú principal
                     frmMenuOpciones menuOpciones = new frmMenuOpciones();
 
-                    // ✅ Cuando el menú se cierre, volver a mostrar el login
                     menuOpciones.FormClosed += (s, e) =>
                     {
                         this.Show();
