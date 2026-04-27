@@ -147,25 +147,64 @@ namespace grupo3_Proyecto
             return match?["CodigoElectoral"]?.ToString();
         }
 
+        private bool ValidarContrasena(string pass)
+        {
+            if (pass.Length < 8 || pass.Length > 15)
+                return false;
+
+            bool tieneNumero = pass.Any(char.IsDigit);
+            bool tieneMayus = pass.Any(char.IsUpper);
+            bool tieneMinus = pass.Any(char.IsLower);
+
+            return tieneNumero && tieneMayus && tieneMinus;
+        }
+
+        private bool ValidarCorreo(string correo)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(
+                correo,
+                @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            );
+        }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (!ValidarContrasena(txtContrasena.Text))
+            {
+                MessageBox.Show("La contraseña debe tener entre 8 y 15 caracteres, incluir mayúsculas, minúsculas y números",
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!ValidarCorreo(txtCorreo.Text))
+            {
+                MessageBox.Show("Ingrese un correo electrónico válido",
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (CedulaExiste(txtId.Text.Trim()))
+            {
+                MessageBox.Show("La cédula ya está registrada en el sistema",
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             try
             {
-                if (txtCorreo.Text.Trim() == "" || txtId.Text.Trim() == "" || txtPassword1.Text.Trim() == "" || txtPassword2.Text.Trim() == "")
+                if (txtCorreo.Text.Trim() == "" || txtId.Text.Trim() == "" || txtContrasena.Text.Trim() == "" || txtConfirmarContrasena.Text.Trim() == "")
                 {
                     MessageBox.Show("Debe llenar todos los campos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                if (txtPassword1.Text != txtPassword2.Text)
+                if (txtContrasena.Text != txtConfirmarContrasena.Text)
                 {
                     MessageBox.Show("Las contraseñas no coinciden", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }                
 
-                string contrasena = Utilidades.codificar(txtPassword1.Text.Trim()); 
+                string contrasena = Utilidades.codificar(txtContrasena.Text.Trim()); 
                 string perfil = "2";
 
                 string cmd =
@@ -201,8 +240,8 @@ namespace grupo3_Proyecto
         {
             txtCorreo.Clear();
             txtId.Clear();
-            txtPassword1.Clear();
-            txtPassword2.Clear();
+            txtContrasena.Clear();
+            txtConfirmarContrasena.Clear();
             if (cmbProvincia.Items.Count > 0) cmbProvincia.SelectedIndex = 0;
         }
 
@@ -217,6 +256,82 @@ namespace grupo3_Proyecto
         {
             //Cerrar la ventana acutal y volver al login
             this.Close();
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            ConsultarCedula();
+        }
+        private void ConsultarCedula()
+        {
+            string cedula = txtId.Text.Trim();
+
+            if (string.IsNullOrEmpty(cedula))
+                return;
+
+            string consulta = "SELECT Nombre, PrimerApellido, SegundoApellido, FechaVencimientoCedula " +
+                              "FROM PadronNacional WHERE Cedula = @cedula";
+
+            DataSet ds = Utilidades.ejecutar(consulta,
+                new SqlParameter("@cedula", cedula));
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                txtNombre.Text = ds.Tables[0].Rows[0]["Nombre"].ToString();
+                textApellido1.Text = ds.Tables[0].Rows[0]["PrimerApellido"].ToString();
+                txtApellido2.Text = ds.Tables[0].Rows[0]["SegundoApellido"].ToString();
+
+                string fechaTexto = ds.Tables[0].Rows[0]["FechaVencimientoCedula"].ToString();
+
+                if (fechaTexto.Length == 8)
+                {
+                    int anio = int.Parse(fechaTexto.Substring(0, 4));
+                    int mes = int.Parse(fechaTexto.Substring(4, 2));
+                    int dia = int.Parse(fechaTexto.Substring(6, 2));
+
+                    dtpVencimiento.Value = new DateTime(anio, mes, dia);
+
+                    if (dtpVencimiento.Value.Date < DateTime.Now.Date)
+                    {
+                        MessageBox.Show("La cédula está vencida", "Aviso",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        btnRegistrar.Enabled = false;
+                    }
+                    else
+                    {
+                        btnRegistrar.Enabled = true;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cédula no encontrada", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtNombre.Clear();
+                textApellido1.Clear();
+                txtApellido2.Clear();
+            }
+        }
+
+   
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private bool CedulaExiste(string cedula)
+        {
+            string consulta = "SELECT COUNT(*) FROM Usuarios WHERE Cedula = @cedula";
+
+            DataSet ds = Utilidades.ejecutar(consulta,
+                new SqlParameter("@cedula", cedula));
+
+            int cantidad = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+
+            return cantidad > 0;
         }
     }
 }

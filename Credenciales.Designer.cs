@@ -32,10 +32,10 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblContraseñaNueva = new System.Windows.Forms.Label();
-            this.txtPassword1 = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.txtPassword2 = new System.Windows.Forms.TextBox();
+            this.txtConfirmarContrasena = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -76,6 +76,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(216, 26);
             this.txtId.TabIndex = 82;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // lblCedula
             // 
@@ -98,14 +99,14 @@
             this.lblContraseñaNueva.TabIndex = 84;
             this.lblContraseñaNueva.Text = "Contraseña";
             // 
-            // txtPassword1
+            // txtContrasena
             // 
-            this.txtPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword1.Location = new System.Drawing.Point(405, 301);
-            this.txtPassword1.Name = "txtPassword1";
-            this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(127, 26);
-            this.txtPassword1.TabIndex = 85;
+            this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasena.Location = new System.Drawing.Point(405, 301);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(127, 26);
+            this.txtContrasena.TabIndex = 85;
             // 
             // btnRegistrar
             // 
@@ -132,14 +133,14 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // txtPassword2
+            // txtConfirmarContrasena
             // 
-            this.txtPassword2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword2.Location = new System.Drawing.Point(695, 300);
-            this.txtPassword2.Name = "txtPassword2";
-            this.txtPassword2.PasswordChar = '*';
-            this.txtPassword2.Size = new System.Drawing.Size(127, 26);
-            this.txtPassword2.TabIndex = 91;
+            this.txtConfirmarContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmarContrasena.Location = new System.Drawing.Point(695, 300);
+            this.txtConfirmarContrasena.Name = "txtConfirmarContrasena";
+            this.txtConfirmarContrasena.PasswordChar = '*';
+            this.txtConfirmarContrasena.Size = new System.Drawing.Size(127, 26);
+            this.txtConfirmarContrasena.TabIndex = 91;
             // 
             // label1
             // 
@@ -167,6 +168,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(127, 26);
             this.txtCorreo.TabIndex = 93;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // btnLimpiar
             // 
@@ -369,11 +371,11 @@
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.txtPassword2);
+            this.Controls.Add(this.txtConfirmarContrasena);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.txtPassword1);
+            this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblContraseñaNueva);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.txtId);
@@ -393,10 +395,10 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.Label lblContraseñaNueva;
-        private System.Windows.Forms.TextBox txtPassword1;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.TextBox txtPassword2;
+        private System.Windows.Forms.TextBox txtConfirmarContrasena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
