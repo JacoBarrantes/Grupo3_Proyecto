@@ -8,11 +8,8 @@ namespace grupo3_Proyecto
 {
     public static class Sesion
     {
-
-        public static string Cedula { get;  set; }
-        public static string Perfil { get;  set; }   // "ADMIN" o "VOTANTE"
-        public static int Rol { get; set; }
-
+        public static string Cedula { get; set; }
+        public static string Perfil { get; set; } // "1" admin, "2" votante
 
         public static bool Activa => !string.IsNullOrWhiteSpace(Cedula);
 
@@ -27,8 +24,6 @@ namespace grupo3_Proyecto
             Cedula = null;
             Perfil = null;
         }
-
-  
-
     }
 }
+

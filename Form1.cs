@@ -82,8 +82,7 @@ namespace grupo3_Proyecto
                 if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                 {
 
-                    Sesion.Cedula = cedula;
-                    Sesion.Perfil = ds.Tables[0].Rows[0]["Perfil"].ToString();
+                    Sesion.Iniciar(cedula, ds.Tables[0].Rows[0]["Perfil"].ToString());
 
                     MessageBox.Show("Bienvenido al sistema de votación", "Bienvenido",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);

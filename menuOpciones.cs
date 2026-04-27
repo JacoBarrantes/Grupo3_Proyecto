@@ -19,18 +19,6 @@ namespace grupo3_Proyecto
         }
 
 
-        public static class Sesion
-        {
-            public static string Cedula { get; set; }
-            public static string Perfil { get; set; } // "1" admin, "2" votante
-
-            public static void Cerrar()
-            {
-                Cedula = null;
-                Perfil = null;
-            }
-        }
-
         private void ConfigurarMenuPorPerfil()
         {
             bool esAdmin = Sesion.Perfil == "1";
