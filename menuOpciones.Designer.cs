@@ -197,8 +197,9 @@
             // informeProvinciaToolStripMenuItem
             // 
             this.informeProvinciaToolStripMenuItem.Name = "informeProvinciaToolStripMenuItem";
-            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia";
+            this.informeProvinciaToolStripMenuItem.Click += new System.EventHandler(this.informeProvinciaToolStripMenuItem_Click);
             // 
             // informeCandidatoToolStripMenuItem
             // 

@@ -136,5 +136,10 @@ namespace grupo3_Proyecto
         {
             AbrirFormulario(new frmDistritoElectoral());
         }
+
+        private void informeProvinciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
