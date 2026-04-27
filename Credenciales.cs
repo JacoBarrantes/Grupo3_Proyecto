@@ -238,11 +238,28 @@ namespace grupo3_Proyecto
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+
             txtCorreo.Clear();
             txtId.Clear();
             txtContrasena.Clear();
             txtConfirmarContrasena.Clear();
-            if (cmbProvincia.Items.Count > 0) cmbProvincia.SelectedIndex = 0;
+
+            txtNombre.Clear();
+            textApellido1.Clear();
+            txtApellido2.Clear();
+
+      
+            dtpVencimiento.Value = DateTime.Now;
+
+       
+            if (cmbProvincia.Items.Count > 0)
+                cmbProvincia.SelectedIndex = 0;
+
+            cmbCanton.DataSource = null;
+            cmbDistrito.DataSource = null;
+
+           
+            btnRegistrar.Enabled = false;
         }
 
 
