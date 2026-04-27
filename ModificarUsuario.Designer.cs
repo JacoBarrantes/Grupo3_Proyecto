@@ -52,6 +52,7 @@
             this.btnAtrásModificar.TabIndex = 118;
             this.btnAtrásModificar.Text = "Atrás";
             this.btnAtrásModificar.UseVisualStyleBackColor = true;
+            this.btnAtrásModificar.Click += new System.EventHandler(this.btnAtrásModificar_Click);
             // 
             // btnModificarUsuario
             // 
