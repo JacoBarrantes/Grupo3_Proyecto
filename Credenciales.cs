@@ -90,7 +90,7 @@ namespace grupo3_Proyecto
             _cargando = true;
 
             var provincias = _dtDistritos.AsEnumerable()
-                .Select(r => r["Provincia"].ToString().Trim())
+                .Select(r => r["Provincia"].ToString().Trim().ToUpper())
                 .Where(x => !string.IsNullOrWhiteSpace(x))
                 .Distinct()
                 .OrderBy(x => x)
