@@ -124,7 +124,14 @@ namespace grupo3_Proyecto
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Application.Exit();
+            frmLogin frm = Application.OpenForms["frmLogin"] as frmLogin;
+
+            if (frm != null)
+            {
+                frm.Show();
+            }
+
+            this.Hide(); 
         }
 
         private void partidosPolíticosToolStripMenuItem_Click(object sender, EventArgs e)
