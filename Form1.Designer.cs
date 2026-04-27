@@ -139,6 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(780, 396);
+            this.ControlBox = false;
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.btnRegistrar);
@@ -147,7 +148,9 @@
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
