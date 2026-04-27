@@ -80,9 +80,9 @@
             // txtNumeroCedula
             // 
             this.txtNumeroCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroCedula.Location = new System.Drawing.Point(296, 160);
+            this.txtNumeroCedula.Location = new System.Drawing.Point(343, 160);
             this.txtNumeroCedula.Name = "txtNumeroCedula";
-            this.txtNumeroCedula.Size = new System.Drawing.Size(453, 26);
+            this.txtNumeroCedula.Size = new System.Drawing.Size(330, 26);
             this.txtNumeroCedula.TabIndex = 114;
             // 
             // txtModificarUsuario
@@ -129,10 +129,13 @@
             // 
             this.cmbPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPerfil.FormattingEnabled = true;
-            this.cmbPerfil.Location = new System.Drawing.Point(296, 253);
-            this.cmbPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbPerfil.Items.AddRange(new object[] {
+            "Administrador/a",
+            "Votante"});
+            this.cmbPerfil.Location = new System.Drawing.Point(343, 251);
+            this.cmbPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPerfil.Name = "cmbPerfil";
-            this.cmbPerfil.Size = new System.Drawing.Size(120, 21);
+            this.cmbPerfil.Size = new System.Drawing.Size(330, 21);
             this.cmbPerfil.TabIndex = 122;
             this.cmbPerfil.SelectedIndexChanged += new System.EventHandler(this.cmbPerfil_SelectedIndexChanged);
             this.cmbPerfil.SelectionChangeCommitted += new System.EventHandler(this.cmbPerfil_SelectionChangeCommitted);

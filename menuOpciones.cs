@@ -21,10 +21,10 @@ namespace grupo3_Proyecto
 
 
 
-        // Método central para abrir formularios dentro del menú
+    
         private void AbrirFormulario(Form formulario)
         {
-            // Cierra formularios hijos existentes
+          
             foreach (Form f in this.MdiChildren)
             {
                 f.Close();
@@ -69,11 +69,7 @@ namespace grupo3_Proyecto
 
         }
 
-        private void presidenciaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new ModificarUsuario());
-        }
-
+   
         private void diputacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario(new EliminarUsuario());
@@ -113,10 +109,8 @@ namespace grupo3_Proyecto
             if (r != DialogResult.Yes)
                 return;
 
-            // 1️⃣ Limpiar la sesión
             Sesion.Cerrar();         
            
-
          
             this.Close();
 
@@ -158,6 +152,11 @@ namespace grupo3_Proyecto
         private void informeProvinciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void modificarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new ModificarUsuario());
         }
     }
 }

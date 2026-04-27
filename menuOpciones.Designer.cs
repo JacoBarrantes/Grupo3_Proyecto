@@ -50,6 +50,7 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,14 +84,14 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.iniciarSesiónToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -107,14 +108,14 @@
             // votarPresidenteToolStripMenuItem
             // 
             this.votarPresidenteToolStripMenuItem.Name = "votarPresidenteToolStripMenuItem";
-            this.votarPresidenteToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.votarPresidenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.votarPresidenteToolStripMenuItem.Text = "Votar Presidente";
             this.votarPresidenteToolStripMenuItem.Click += new System.EventHandler(this.votarPresidenteToolStripMenuItem_Click);
             // 
             // votarDiputadosToolStripMenuItem
             // 
             this.votarDiputadosToolStripMenuItem.Name = "votarDiputadosToolStripMenuItem";
-            this.votarDiputadosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.votarDiputadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.votarDiputadosToolStripMenuItem.Text = "Votar Diputados";
             this.votarDiputadosToolStripMenuItem.Click += new System.EventHandler(this.votarDiputadosToolStripMenuItem_Click);
             // 
@@ -125,7 +126,8 @@
             this.distritoElectoralToolStripMenuItem,
             this.candidatosToolStripMenuItem,
             this.partidosPolíticosToolStripMenuItem,
-            this.tipoElecciónToolStripMenuItem});
+            this.tipoElecciónToolStripMenuItem,
+            this.modificarUsuarioToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
@@ -176,13 +178,13 @@
             // gráficoProvinciaToolStripMenuItem
             // 
             this.gráficoProvinciaToolStripMenuItem.Name = "gráficoProvinciaToolStripMenuItem";
-            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gráficoProvinciaToolStripMenuItem.Text = "Gráfico provincia";
             // 
             // gráficoCandidatosToolStripMenuItem
             // 
             this.gráficoCandidatosToolStripMenuItem.Name = "gráficoCandidatosToolStripMenuItem";
-            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gráficoCandidatosToolStripMenuItem.Text = "Gráfico candidatos";
             // 
             // reportesToolStripMenuItem
@@ -197,7 +199,7 @@
             // informeProvinciaToolStripMenuItem
             // 
             this.informeProvinciaToolStripMenuItem.Name = "informeProvinciaToolStripMenuItem";
-            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia";
             this.informeProvinciaToolStripMenuItem.Click += new System.EventHandler(this.informeProvinciaToolStripMenuItem_Click);
             // 
@@ -219,14 +221,21 @@
             // créditosToolStripMenuItem
             // 
             this.créditosToolStripMenuItem.Name = "créditosToolStripMenuItem";
-            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.créditosToolStripMenuItem.Text = "Créditos";
             // 
             // manualDeUsuarioToolStripMenuItem
             // 
             this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
+            // 
+            // modificarUsuarioToolStripMenuItem
+            // 
+            this.modificarUsuarioToolStripMenuItem.Name = "modificarUsuarioToolStripMenuItem";
+            this.modificarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.modificarUsuarioToolStripMenuItem.Text = "Modificar Usuario";
+            this.modificarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuarioToolStripMenuItem_Click);
             // 
             // frmMenuOpciones
             // 
@@ -272,5 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem votarPresidenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem votarDiputadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarUsuarioToolStripMenuItem;
     }
 }
