@@ -51,6 +51,13 @@ namespace grupo3_Proyecto
 
         }
 
+        public void LimpiarCampos()
+        {
+            txtCedula.Clear(); 
+            txtContrasena.Clear();
+
+        }
+
 
         private void IniciarSesion()
         {

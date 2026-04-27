@@ -128,10 +128,11 @@ namespace grupo3_Proyecto
 
             if (frm != null)
             {
+                frm.LimpiarCampos();
                 frm.Show();
             }
 
-            this.Hide(); 
+            this.Hide();
         }
 
         private void partidosPolíticosToolStripMenuItem_Click(object sender, EventArgs e)
