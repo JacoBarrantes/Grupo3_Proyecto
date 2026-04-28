@@ -108,6 +108,12 @@
     <Compile Include="frmVotacion.Designer.cs">
       <DependentUpon>frmVotacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="graficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="graficos.Designer.cs">
+      <DependentUpon>graficos.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuOpciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmVotacion.resx">
       <DependentUpon>frmVotacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="graficos.resx">
+      <DependentUpon>graficos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuOpciones.resx">
       <DependentUpon>menuOpciones.cs</DependentUpon>
