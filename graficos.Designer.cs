@@ -28,28 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.chartVotosCandidatos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartVotosPartidos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartParticipacionProvincia = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartTipoEleccion = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvResumen = new System.Windows.Forms.DataGridView();
-            this.Candidato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Partido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalVotos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Porcentaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnExportarPDF = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
@@ -78,16 +74,16 @@
             // 
             this.chartVotosCandidatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chartVotosCandidatos.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartVotosCandidatos.Legends.Add(legend1);
+            chartArea17.Name = "ChartArea1";
+            this.chartVotosCandidatos.ChartAreas.Add(chartArea17);
+            legend17.Name = "Legend1";
+            this.chartVotosCandidatos.Legends.Add(legend17);
             this.chartVotosCandidatos.Location = new System.Drawing.Point(12, 41);
             this.chartVotosCandidatos.Name = "chartVotosCandidatos";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartVotosCandidatos.Series.Add(series1);
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "Series1";
+            this.chartVotosCandidatos.Series.Add(series17);
             this.chartVotosCandidatos.Size = new System.Drawing.Size(410, 142);
             this.chartVotosCandidatos.TabIndex = 7;
             this.chartVotosCandidatos.Text = "Votos por Candidato";
@@ -96,16 +92,16 @@
             // chartVotosPartidos
             // 
             this.chartVotosPartidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chartVotosPartidos.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartVotosPartidos.Legends.Add(legend2);
+            chartArea18.Name = "ChartArea1";
+            this.chartVotosPartidos.ChartAreas.Add(chartArea18);
+            legend18.Name = "Legend1";
+            this.chartVotosPartidos.Legends.Add(legend18);
             this.chartVotosPartidos.Location = new System.Drawing.Point(464, 41);
             this.chartVotosPartidos.Name = "chartVotosPartidos";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartVotosPartidos.Series.Add(series2);
+            series18.ChartArea = "ChartArea1";
+            series18.Legend = "Legend1";
+            series18.Name = "Series1";
+            this.chartVotosPartidos.Series.Add(series18);
             this.chartVotosPartidos.Size = new System.Drawing.Size(334, 142);
             this.chartVotosPartidos.TabIndex = 8;
             this.chartVotosPartidos.Text = "Distribuccion de Votos por Partido";
@@ -114,16 +110,16 @@
             // chartParticipacionProvincia
             // 
             this.chartParticipacionProvincia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chartParticipacionProvincia.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartParticipacionProvincia.Legends.Add(legend3);
+            chartArea19.Name = "ChartArea1";
+            this.chartParticipacionProvincia.ChartAreas.Add(chartArea19);
+            legend19.Name = "Legend1";
+            this.chartParticipacionProvincia.Legends.Add(legend19);
             this.chartParticipacionProvincia.Location = new System.Drawing.Point(12, 189);
             this.chartParticipacionProvincia.Name = "chartParticipacionProvincia";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartParticipacionProvincia.Series.Add(series3);
+            series19.ChartArea = "ChartArea1";
+            series19.Legend = "Legend1";
+            series19.Name = "Series1";
+            this.chartParticipacionProvincia.Series.Add(series19);
             this.chartParticipacionProvincia.Size = new System.Drawing.Size(410, 137);
             this.chartParticipacionProvincia.TabIndex = 9;
             this.chartParticipacionProvincia.Text = "Participacion Electoral por Provincia";
@@ -132,16 +128,16 @@
             // chartTipoEleccion
             // 
             this.chartTipoEleccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea4.Name = "ChartArea1";
-            this.chartTipoEleccion.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartTipoEleccion.Legends.Add(legend4);
+            chartArea20.Name = "ChartArea1";
+            this.chartTipoEleccion.ChartAreas.Add(chartArea20);
+            legend20.Name = "Legend1";
+            this.chartTipoEleccion.Legends.Add(legend20);
             this.chartTipoEleccion.Location = new System.Drawing.Point(464, 189);
             this.chartTipoEleccion.Name = "chartTipoEleccion";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartTipoEleccion.Series.Add(series4);
+            series20.ChartArea = "ChartArea1";
+            series20.Legend = "Legend1";
+            series20.Name = "Series1";
+            this.chartTipoEleccion.Series.Add(series20);
             this.chartTipoEleccion.Size = new System.Drawing.Size(334, 137);
             this.chartTipoEleccion.TabIndex = 10;
             this.chartTipoEleccion.Text = "Votos por Tipo de Eleccion";
@@ -154,41 +150,12 @@
             this.dgvResumen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResumen.BackgroundColor = System.Drawing.Color.White;
             this.dgvResumen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResumen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Candidato,
-            this.Partido,
-            this.TotalVotos,
-            this.Porcentaje});
             this.dgvResumen.Location = new System.Drawing.Point(46, 359);
             this.dgvResumen.Name = "dgvResumen";
             this.dgvResumen.ReadOnly = true;
             this.dgvResumen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvResumen.Size = new System.Drawing.Size(376, 159);
             this.dgvResumen.TabIndex = 11;
-            // 
-            // Candidato
-            // 
-            this.Candidato.HeaderText = "Candidato";
-            this.Candidato.Name = "Candidato";
-            this.Candidato.ReadOnly = true;
-            // 
-            // Partido
-            // 
-            this.Partido.HeaderText = "Partido";
-            this.Partido.Name = "Partido";
-            this.Partido.ReadOnly = true;
-            // 
-            // TotalVotos
-            // 
-            this.TotalVotos.HeaderText = "Total Votos";
-            this.TotalVotos.Name = "TotalVotos";
-            this.TotalVotos.ReadOnly = true;
-            // 
-            // Porcentaje
-            // 
-            this.Porcentaje.HeaderText = "Porcentaje";
-            this.Porcentaje.Name = "Porcentaje";
-            this.Porcentaje.ReadOnly = true;
             // 
             // btnActualizar
             // 
@@ -202,6 +169,7 @@
             this.btnActualizar.TabIndex = 12;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnExportarPDF
             // 
@@ -215,6 +183,7 @@
             this.btnExportarPDF.TabIndex = 13;
             this.btnExportarPDF.Text = "Exportar PDF";
             this.btnExportarPDF.UseVisualStyleBackColor = false;
+            this.btnExportarPDF.Click += new System.EventHandler(this.btnExportarPDF_Click);
             // 
             // btnImprimir
             // 
@@ -228,6 +197,7 @@
             this.btnImprimir.TabIndex = 14;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // frmGraficos
             // 
@@ -265,10 +235,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartParticipacionProvincia;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartTipoEleccion;
         private System.Windows.Forms.DataGridView dgvResumen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Candidato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Partido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalVotos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Porcentaje;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnExportarPDF;
         private System.Windows.Forms.Button btnImprimir;

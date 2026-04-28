@@ -6,12 +6,17 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+
+
+
 
 
 namespace grupo3_Proyecto
@@ -36,7 +41,7 @@ namespace grupo3_Proyecto
         {
             CargarGraficVotosCandidatos();
         }
-        public void CargarGraficVotosCandidatos() 
+        public void CargarGraficVotosCandidatos()
         {
 
             string query = @"
@@ -140,7 +145,7 @@ namespace grupo3_Proyecto
         {
             GraficoParticipacionPorProvincia();
         }
-        public void GraficoParticipacionPorProvincia() 
+        public void GraficoParticipacionPorProvincia()
         {
             string query = @"
                 SELECT 
@@ -184,7 +189,7 @@ namespace grupo3_Proyecto
         {
             GraficoTipoEleccion();
         }
-        public void GraficoTipoEleccion() 
+        public void GraficoTipoEleccion()
         {
             string query = @"
                 SELECT 
@@ -235,8 +240,127 @@ namespace grupo3_Proyecto
             dgvResumen.Columns["Porcentaje"].DefaultCellStyle.Format = "N2";
         }
 
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            actualizar();
+        }
+        public void actualizar()
+        {
+            CargarGraficVotosCandidatos();
+            MessageBox.Show("Gráficos actualizados correctamente", "Información",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            imprimir();
+        }
+        public void imprimir()
+        {
+            // Capturar formulario completo
+            Bitmap bmpForm = new Bitmap(this.Width, this.Height);
+            this.DrawToBitmap(bmpForm, new Rectangle(0, 0, this.Width, this.Height));
+
+            PrintDocument printDocument = new PrintDocument();
+            printDocument.DefaultPageSettings.Landscape = true;
+
+            printDocument.PrintPage += (s, ev) =>
+            {
+                float scaleX = ev.PageBounds.Width / (float)bmpForm.Width;
+                float scaleY = ev.PageBounds.Height / (float)bmpForm.Height;
+                float scale = Math.Min(scaleX, scaleY);
+
+                int drawWidth = (int)(bmpForm.Width * scale);
+                int drawHeight = (int)(bmpForm.Height * scale);
+                int drawX = (ev.PageBounds.Width - drawWidth) / 2;
+                int drawY = (ev.PageBounds.Height - drawHeight) / 2;
+
+                ev.Graphics.DrawImage(bmpForm,
+                    new Rectangle(drawX, drawY, drawWidth, drawHeight));
+
+                bmpForm.Dispose();
+            };
+
+            PrintPreviewDialog preview = new PrintPreviewDialog();
+            preview.Document = printDocument;
+            preview.WindowState = FormWindowState.Maximized;
+            preview.ShowDialog();
+        }
+
+        private void btnExportarPDF_Click(object sender, EventArgs e)
+        {
+            exportar();
+        }
+        public void exportar()
+        {
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF Document|*.pdf";
+            saveFileDialog.Title = "Exportar Reporte PDF";
+            saveFileDialog.FileName = "Reporte_Electoral.pdf";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // 1. Capturar el formulario completo como imagen PNG temporal
+                string tempPng = System.IO.Path.Combine(
+                    System.IO.Path.GetTempPath(), "reporte_temp.png");
+
+                Bitmap bmpForm = new Bitmap(this.Width, this.Height);
+                this.DrawToBitmap(bmpForm, new Rectangle(0, 0, this.Width, this.Height));
+                bmpForm.Save(tempPng, System.Drawing.Imaging.ImageFormat.Png);
+                bmpForm.Dispose();
+
+                // 2. Construir el PDF manualmente (estructura PDF mínima válida)
+                using (System.IO.FileStream fs = new System.IO.FileStream(
+                    saveFileDialog.FileName, System.IO.FileMode.Create))
+                {
+                    byte[] imgBytes = System.IO.File.ReadAllBytes(tempPng);
+                    string imgB64 = Convert.ToBase64String(imgBytes);
+
+                    // Construir PDF como HTML y convertir via WebBrowser
+                    string htmlTemp = System.IO.Path.Combine(
+                        System.IO.Path.GetTempPath(), "reporte_temp.html");
+
+                    string htmlContent = $@"
+                <html>
+                <head>
+                    <style>
+                        body {{ margin: 0; padding: 0; }}
+                        img {{ width: 100%; height: auto; }}
+                    </style>
+                </head>
+                <body>
+                    <img src='data:image/png;base64,{imgB64}' />
+                </body>
+                </html>";
+
+                    System.IO.File.WriteAllText(htmlTemp, htmlContent);
+
+                    // Usar PrintDocument con el HTML para generar PDF
+                    WebBrowser wb = new WebBrowser();
+                    wb.Size = new Size(this.Width, this.Height);
+                    wb.Navigate(htmlTemp);
+
+                    // Esperar que cargue
+                    while (wb.ReadyState != WebBrowserReadyState.Complete)
+                        Application.DoEvents();
+
+                    wb.Print(); // Abre el diálogo de impresión del sistema
+                    wb.Dispose();
+                }
+
+                // Limpiar temporales
+                if (System.IO.File.Exists(tempPng))
+                    System.IO.File.Delete(tempPng);
+
+                MessageBox.Show("Reporte enviado a impresión/PDF", "Éxito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
+
+
+
     }
-
-
-
 }
