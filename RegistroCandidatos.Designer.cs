@@ -47,7 +47,7 @@
             // 
             this.btnSalirAlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirAlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirAlMenu.Location = new System.Drawing.Point(449, 377);
+            this.btnSalirAlMenu.Location = new System.Drawing.Point(567, 391);
             this.btnSalirAlMenu.Name = "btnSalirAlMenu";
             this.btnSalirAlMenu.Size = new System.Drawing.Size(121, 45);
             this.btnSalirAlMenu.TabIndex = 98;
@@ -60,7 +60,7 @@
             this.btnRegistrarCandidato.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnRegistrarCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarCandidato.Location = new System.Drawing.Point(220, 377);
+            this.btnRegistrarCandidato.Location = new System.Drawing.Point(61, 391);
             this.btnRegistrarCandidato.Name = "btnRegistrarCandidato";
             this.btnRegistrarCandidato.Size = new System.Drawing.Size(121, 45);
             this.btnRegistrarCandidato.TabIndex = 97;
@@ -101,7 +101,7 @@
             // 
             this.lblNuevoCandidato.AutoSize = true;
             this.lblNuevoCandidato.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNuevoCandidato.Location = new System.Drawing.Point(214, 28);
+            this.lblNuevoCandidato.Location = new System.Drawing.Point(167, 27);
             this.lblNuevoCandidato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNuevoCandidato.Name = "lblNuevoCandidato";
             this.lblNuevoCandidato.Size = new System.Drawing.Size(378, 36);
@@ -131,16 +131,18 @@
             // 
             // cmbCandidatura
             // 
+            this.cmbCandidatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCandidatura.FormattingEnabled = true;
-            this.cmbCandidatura.Location = new System.Drawing.Point(305, 322);
+            this.cmbCandidatura.Location = new System.Drawing.Point(305, 316);
             this.cmbCandidatura.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCandidatura.Name = "cmbCandidatura";
-            this.cmbCandidatura.Size = new System.Drawing.Size(383, 21);
+            this.cmbCandidatura.Size = new System.Drawing.Size(383, 28);
             this.cmbCandidatura.TabIndex = 102;
             this.cmbCandidatura.SelectedIndexChanged += new System.EventHandler(this.cmbCandidatura_SelectedIndexChanged);
             // 
             // cmbProvincia
             // 
+            this.cmbProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProvincia.FormattingEnabled = true;
             this.cmbProvincia.Items.AddRange(new object[] {
             "ALAJUELA",
@@ -150,27 +152,28 @@
             "LIMON",
             "GUANACASTE",
             "HEREDIA"});
-            this.cmbProvincia.Location = new System.Drawing.Point(305, 266);
+            this.cmbProvincia.Location = new System.Drawing.Point(305, 261);
             this.cmbProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProvincia.Name = "cmbProvincia";
-            this.cmbProvincia.Size = new System.Drawing.Size(383, 21);
+            this.cmbProvincia.Size = new System.Drawing.Size(383, 28);
             this.cmbProvincia.TabIndex = 103;
             this.cmbProvincia.SelectedIndexChanged += new System.EventHandler(this.cmbProvincia_SelectedIndexChanged);
             // 
             // cmbPartido
             // 
+            this.cmbPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPartido.FormattingEnabled = true;
-            this.cmbPartido.Location = new System.Drawing.Point(305, 208);
+            this.cmbPartido.Location = new System.Drawing.Point(305, 199);
             this.cmbPartido.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPartido.Name = "cmbPartido";
-            this.cmbPartido.Size = new System.Drawing.Size(383, 21);
+            this.cmbPartido.Size = new System.Drawing.Size(383, 28);
             this.cmbPartido.TabIndex = 104;
             this.cmbPartido.SelectedIndexChanged += new System.EventHandler(this.cmbPartido_SelectedIndexChanged);
             // 
             // txtNombreCompleto
             // 
             this.txtNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCompleto.Location = new System.Drawing.Point(305, 141);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(305, 145);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
             this.txtNombreCompleto.Size = new System.Drawing.Size(383, 26);
             this.txtNombreCompleto.TabIndex = 105;
@@ -180,7 +183,7 @@
             // 
             this.lblNombreCandidato.AutoSize = true;
             this.lblNombreCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreCandidato.Location = new System.Drawing.Point(56, 142);
+            this.lblNombreCandidato.Location = new System.Drawing.Point(56, 146);
             this.lblNombreCandidato.Name = "lblNombreCandidato";
             this.lblNombreCandidato.Size = new System.Drawing.Size(222, 25);
             this.lblNombreCandidato.TabIndex = 106;
@@ -191,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 461);
+            this.ClientSize = new System.Drawing.Size(737, 461);
             this.ControlBox = false;
             this.Controls.Add(this.lblNombreCandidato);
             this.Controls.Add(this.txtNombreCompleto);
