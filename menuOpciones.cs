@@ -160,15 +160,7 @@ namespace grupo3_Proyecto
 
             if (resultado == DialogResult.Yes)
             {
-                frmLogin frm = Application.OpenForms["frmLogin"] as frmLogin;
-
-                if (frm != null)
-                {
-                    frm.LimpiarCampos();
-                    frm.Show();
-                }
-
-                this.Hide();
+                Application.Exit();
             }
         }
 
