@@ -115,6 +115,12 @@
     <Compile Include="graficos.Designer.cs">
       <DependentUpon>graficos.cs</DependentUpon>
     </Compile>
+    <Compile Include="informes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informes.Designer.cs">
+      <DependentUpon>informes.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuOpciones.cs">
       <SubType>Form</SubType>
     </Compile>
