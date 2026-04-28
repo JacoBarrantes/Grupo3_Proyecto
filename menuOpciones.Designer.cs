@@ -41,6 +41,7 @@
             this.candidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partidosPolíticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoElecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficoProvinciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficoCandidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,6 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,14 +84,14 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.iniciarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.iniciarSesiónToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -165,6 +165,14 @@
             this.tipoElecciónToolStripMenuItem.Name = "tipoElecciónToolStripMenuItem";
             this.tipoElecciónToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.tipoElecciónToolStripMenuItem.Text = "Tipo Elección";
+            this.tipoElecciónToolStripMenuItem.Click += new System.EventHandler(this.tipoElecciónToolStripMenuItem_Click);
+            // 
+            // modificarUsuarioToolStripMenuItem
+            // 
+            this.modificarUsuarioToolStripMenuItem.Name = "modificarUsuarioToolStripMenuItem";
+            this.modificarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.modificarUsuarioToolStripMenuItem.Text = "Modificar Usuario";
+            this.modificarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuarioToolStripMenuItem_Click);
             // 
             // estadísticaToolStripMenuItem
             // 
@@ -178,13 +186,13 @@
             // gráficoProvinciaToolStripMenuItem
             // 
             this.gráficoProvinciaToolStripMenuItem.Name = "gráficoProvinciaToolStripMenuItem";
-            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gráficoProvinciaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.gráficoProvinciaToolStripMenuItem.Text = "Gráfico provincia";
             // 
             // gráficoCandidatosToolStripMenuItem
             // 
             this.gráficoCandidatosToolStripMenuItem.Name = "gráficoCandidatosToolStripMenuItem";
-            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gráficoCandidatosToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.gráficoCandidatosToolStripMenuItem.Text = "Gráfico candidatos";
             // 
             // reportesToolStripMenuItem
@@ -221,21 +229,14 @@
             // créditosToolStripMenuItem
             // 
             this.créditosToolStripMenuItem.Name = "créditosToolStripMenuItem";
-            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.créditosToolStripMenuItem.Text = "Créditos";
             // 
             // manualDeUsuarioToolStripMenuItem
             // 
             this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
-            // 
-            // modificarUsuarioToolStripMenuItem
-            // 
-            this.modificarUsuarioToolStripMenuItem.Name = "modificarUsuarioToolStripMenuItem";
-            this.modificarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.modificarUsuarioToolStripMenuItem.Text = "Modificar Usuario";
-            this.modificarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuarioToolStripMenuItem_Click);
             // 
             // frmMenuOpciones
             // 

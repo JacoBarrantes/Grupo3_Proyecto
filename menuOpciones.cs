@@ -199,5 +199,10 @@ namespace grupo3_Proyecto
 
             AbrirFormulario(new ModificarUsuario());
         }
+
+        private void tipoElecciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new TipoEleccion());
+        }
     }
 }
