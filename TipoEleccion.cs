@@ -42,8 +42,12 @@ namespace grupo3_Proyecto
                     return;
                 }
 
+                object resultado = Utilidades.ejecutarEscalar("SELECT ISNULL(MAX(IdTipoEleccion), 0) + 1 FROM TipoEleccion");
+                int nuevoId = Convert.ToInt32(resultado);
+
                 Utilidades.ejecutarAccion(
-                    "INSERT INTO TipoEleccion (Descripcion) VALUES (@Descripcion)",
+                    "INSERT INTO TipoEleccion (IdTipoEleccion, Descripcion) VALUES (@Id, @Descripcion)",
+                    new SqlParameter("@Id", nuevoId),
                     new SqlParameter("@Descripcion", txtDescripcion.Text)
                 );
 
