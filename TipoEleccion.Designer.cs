@@ -118,10 +118,13 @@
             // 
             // dgvTipoEleccion
             // 
+            this.dgvTipoEleccion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTipoEleccion.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvTipoEleccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipoEleccion.Location = new System.Drawing.Point(55, 160);
+            this.dgvTipoEleccion.MultiSelect = false;
             this.dgvTipoEleccion.Name = "dgvTipoEleccion";
+            this.dgvTipoEleccion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTipoEleccion.Size = new System.Drawing.Size(667, 173);
             this.dgvTipoEleccion.TabIndex = 120;
             this.dgvTipoEleccion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTipoEleccion_CellContentClick);
