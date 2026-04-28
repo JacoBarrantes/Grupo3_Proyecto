@@ -38,26 +38,29 @@
             // lblTipoEleccion
             // 
             this.lblTipoEleccion.AutoSize = true;
-            this.lblTipoEleccion.Location = new System.Drawing.Point(56, 41);
+            this.lblTipoEleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoEleccion.Location = new System.Drawing.Point(54, 31);
             this.lblTipoEleccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoEleccion.Name = "lblTipoEleccion";
-            this.lblTipoEleccion.Size = new System.Drawing.Size(86, 13);
+            this.lblTipoEleccion.Size = new System.Drawing.Size(123, 20);
             this.lblTipoEleccion.TabIndex = 0;
             this.lblTipoEleccion.Text = "Tipo de eleccion";
             // 
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(367, 41);
+            this.lblTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempo.Location = new System.Drawing.Point(369, 31);
             this.lblTiempo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(42, 13);
+            this.lblTiempo.Size = new System.Drawing.Size(61, 20);
             this.lblTiempo.TabIndex = 1;
             this.lblTiempo.Text = "Tiempo";
             // 
             // dgvCandidatos
             // 
             this.dgvCandidatos.AllowUserToAddRows = false;
+            this.dgvCandidatos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvCandidatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCandidatos.Location = new System.Drawing.Point(58, 73);
             this.dgvCandidatos.Margin = new System.Windows.Forms.Padding(2);
@@ -73,10 +76,11 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(278, 319);
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmar.Location = new System.Drawing.Point(497, 336);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(81, 37);
+            this.btnConfirmar.Size = new System.Drawing.Size(125, 38);
             this.btnConfirmar.TabIndex = 4;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
@@ -86,7 +90,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 366);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(678, 397);
             this.ControlBox = false;
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.dgvCandidatos);
