@@ -42,7 +42,7 @@
             // 
             this.btnAtrásEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtrásEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtrásEliminar.Location = new System.Drawing.Point(429, 348);
+            this.btnAtrásEliminar.Location = new System.Drawing.Point(627, 331);
             this.btnAtrásEliminar.Name = "btnAtrásEliminar";
             this.btnAtrásEliminar.Size = new System.Drawing.Size(121, 45);
             this.btnAtrásEliminar.TabIndex = 118;
@@ -54,7 +54,7 @@
             this.btnEliminarUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(246, 348);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(53, 331);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(121, 45);
             this.btnEliminarUsuario.TabIndex = 117;

@@ -113,7 +113,7 @@
             this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(231, 363);
+            this.btnRegistrar.Location = new System.Drawing.Point(55, 363);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(121, 45);
             this.btnRegistrar.TabIndex = 88;
@@ -125,11 +125,11 @@
             // 
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(568, 363);
+            this.btnSalir.Location = new System.Drawing.Point(701, 363);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(121, 45);
             this.btnSalir.TabIndex = 89;
-            this.btnSalir.Text = "Volver";
+            this.btnSalir.Text = "Atrás";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -172,10 +172,10 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(396, 363);
+            this.btnLimpiar.Location = new System.Drawing.Point(214, 363);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(121, 45);
             this.btnLimpiar.TabIndex = 96;

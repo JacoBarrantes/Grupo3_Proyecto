@@ -46,7 +46,7 @@
             // 
             this.btnAtrásModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtrásModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtrásModificar.Location = new System.Drawing.Point(429, 348);
+            this.btnAtrásModificar.Location = new System.Drawing.Point(552, 348);
             this.btnAtrásModificar.Name = "btnAtrásModificar";
             this.btnAtrásModificar.Size = new System.Drawing.Size(121, 45);
             this.btnAtrásModificar.TabIndex = 118;
@@ -59,7 +59,7 @@
             this.btnModificarUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarUsuario.Location = new System.Drawing.Point(246, 348);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(54, 348);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(121, 45);
             this.btnModificarUsuario.TabIndex = 117;
@@ -91,7 +91,7 @@
             // 
             this.txtModificarUsuario.AutoSize = true;
             this.txtModificarUsuario.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModificarUsuario.Location = new System.Drawing.Point(256, 49);
+            this.txtModificarUsuario.Location = new System.Drawing.Point(194, 46);
             this.txtModificarUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtModificarUsuario.Name = "txtModificarUsuario";
             this.txtModificarUsuario.Size = new System.Drawing.Size(294, 36);
@@ -130,11 +130,12 @@
             // cmbPerfil
             // 
             this.cmbPerfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPerfil.FormattingEnabled = true;
             this.cmbPerfil.Location = new System.Drawing.Point(343, 251);
             this.cmbPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPerfil.Name = "cmbPerfil";
-            this.cmbPerfil.Size = new System.Drawing.Size(330, 21);
+            this.cmbPerfil.Size = new System.Drawing.Size(330, 28);
             this.cmbPerfil.TabIndex = 122;
             this.cmbPerfil.SelectedIndexChanged += new System.EventHandler(this.cmbPerfil_SelectedIndexChanged);
             this.cmbPerfil.SelectionChangeCommitted += new System.EventHandler(this.cmbPerfil_SelectionChangeCommitted);
@@ -144,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(728, 450);
             this.Controls.Add(this.cmbPerfil);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblRol);

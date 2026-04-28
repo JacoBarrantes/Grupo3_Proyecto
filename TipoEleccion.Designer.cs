@@ -36,6 +36,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.dgvTipoEleccion = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoEleccion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,13 +130,27 @@
             this.dgvTipoEleccion.TabIndex = 120;
             this.dgvTipoEleccion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTipoEleccion_CellContentClick);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(631, 428);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(91, 33);
+            this.btnSalir.TabIndex = 121;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // TipoEleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 484);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvTipoEleccion);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEditar);
@@ -165,5 +180,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView dgvTipoEleccion;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
