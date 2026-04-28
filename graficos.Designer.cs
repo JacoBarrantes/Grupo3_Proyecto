@@ -91,6 +91,7 @@
             this.chartVotosCandidatos.Size = new System.Drawing.Size(410, 142);
             this.chartVotosCandidatos.TabIndex = 7;
             this.chartVotosCandidatos.Text = "Votos por Candidato";
+            this.chartVotosCandidatos.Click += new System.EventHandler(this.chartVotosCandidatos_Click);
             // 
             // chartVotosPartidos
             // 
@@ -108,6 +109,7 @@
             this.chartVotosPartidos.Size = new System.Drawing.Size(334, 142);
             this.chartVotosPartidos.TabIndex = 8;
             this.chartVotosPartidos.Text = "Distribuccion de Votos por Partido";
+            this.chartVotosPartidos.Click += new System.EventHandler(this.chartVotosPartidos_Click);
             // 
             // chartParticipacionProvincia
             // 
@@ -125,6 +127,7 @@
             this.chartParticipacionProvincia.Size = new System.Drawing.Size(410, 137);
             this.chartParticipacionProvincia.TabIndex = 9;
             this.chartParticipacionProvincia.Text = "Participacion Electoral por Provincia";
+            this.chartParticipacionProvincia.Click += new System.EventHandler(this.chartParticipacionProvincia_Click);
             // 
             // chartTipoEleccion
             // 
@@ -142,6 +145,7 @@
             this.chartTipoEleccion.Size = new System.Drawing.Size(334, 137);
             this.chartTipoEleccion.TabIndex = 10;
             this.chartTipoEleccion.Text = "Votos por Tipo de Eleccion";
+            this.chartTipoEleccion.Click += new System.EventHandler(this.chartTipoEleccion_Click);
             // 
             // dgvResumen
             // 
