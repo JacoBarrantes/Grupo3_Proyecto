@@ -53,7 +53,7 @@ namespace grupo3_Proyecto
                 GROUP BY c.IdCandidato, c.Nombre, c.Apellidos
                 ORDER BY TotalVotos DESC";
 
-            // ✅ Usas Utilidades.ejecutar() en lugar de SqlConnection manual
+            
             DataSet ds = Utilidades.ejecutar(query);
             DataTable dt = ds.Tables[0];
 
@@ -76,7 +76,7 @@ namespace grupo3_Proyecto
 
         }
 
-        // ✅ Con parámetros (ejemplo para filtrar por partido)
+        
         private void CargarGraficoConFiltro(int idPartido)
         {
             string query = @"
@@ -89,12 +89,12 @@ namespace grupo3_Proyecto
                 GROUP BY c.IdCandidato, c.Nombre, c.Apellidos
                 ORDER BY TotalVotos DESC";
 
-            // ✅ Usas la sobrecarga con parámetros para evitar SQL Injection
+           
             DataSet ds = Utilidades.ejecutar(query,
                 new SqlParameter("@IdPartido", idPartido));
 
             DataTable dt = ds.Tables[0];
-            // ... mismo código del chart
+            
         }
 
         private void chartVotosPartidos_Click(object sender, EventArgs e)
@@ -258,7 +258,7 @@ namespace grupo3_Proyecto
         }
         public void imprimir()
         {
-            // Capturar formulario completo
+            
             Bitmap bmpForm = new Bitmap(this.Width, this.Height);
             this.DrawToBitmap(bmpForm, new Rectangle(0, 0, this.Width, this.Height));
 
@@ -302,7 +302,7 @@ namespace grupo3_Proyecto
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // 1. Capturar el formulario completo como imagen PNG temporal
+                
                 string tempPng = System.IO.Path.Combine(
                     System.IO.Path.GetTempPath(), "reporte_temp.png");
 
@@ -311,14 +311,13 @@ namespace grupo3_Proyecto
                 bmpForm.Save(tempPng, System.Drawing.Imaging.ImageFormat.Png);
                 bmpForm.Dispose();
 
-                // 2. Construir el PDF manualmente (estructura PDF mínima válida)
+                
                 using (System.IO.FileStream fs = new System.IO.FileStream(
                     saveFileDialog.FileName, System.IO.FileMode.Create))
                 {
                     byte[] imgBytes = System.IO.File.ReadAllBytes(tempPng);
                     string imgB64 = Convert.ToBase64String(imgBytes);
 
-                    // Construir PDF como HTML y convertir via WebBrowser
                     string htmlTemp = System.IO.Path.Combine(
                         System.IO.Path.GetTempPath(), "reporte_temp.html");
 
@@ -337,16 +336,16 @@ namespace grupo3_Proyecto
 
                     System.IO.File.WriteAllText(htmlTemp, htmlContent);
 
-                    // Usar PrintDocument con el HTML para generar PDF
+                    
                     WebBrowser wb = new WebBrowser();
                     wb.Size = new Size(this.Width, this.Height);
                     wb.Navigate(htmlTemp);
 
-                    // Esperar que cargue
+                    
                     while (wb.ReadyState != WebBrowserReadyState.Complete)
                         Application.DoEvents();
 
-                    wb.Print(); // Abre el diálogo de impresión del sistema
+                    wb.Print(); 
                     wb.Dispose();
                 }
 
