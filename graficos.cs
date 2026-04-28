@@ -360,7 +360,25 @@ namespace grupo3_Proyecto
             }
         }
 
-
-
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show(
+              "¿Está seguro que desea salir?",
+              "Confirmar salida",
+              MessageBoxButtons.YesNo,
+              MessageBoxIcon.Question
+               );
+            if (resultado == DialogResult.Yes)
+            {
+                frmMenuOpciones frm = Application.OpenForms["frmMenuOpciones"] as frmMenuOpciones;
+                if (frm != null)
+                {
+                    frm.Show();
+                }
+                this.Hide();
+            }
+        }
     }
 }
+    
+

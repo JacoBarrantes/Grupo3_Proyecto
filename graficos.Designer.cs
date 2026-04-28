@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.chartVotosCandidatos = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartVotosPartidos = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -49,6 +49,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnExportarPDF = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartVotosCandidatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartVotosPartidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartParticipacionProvincia)).BeginInit();
@@ -72,16 +73,16 @@
             // 
             // chartVotosCandidatos
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartVotosCandidatos.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartVotosCandidatos.Legends.Add(legend1);
+            chartArea17.Name = "ChartArea1";
+            this.chartVotosCandidatos.ChartAreas.Add(chartArea17);
+            legend17.Name = "Legend1";
+            this.chartVotosCandidatos.Legends.Add(legend17);
             this.chartVotosCandidatos.Location = new System.Drawing.Point(12, 41);
             this.chartVotosCandidatos.Name = "chartVotosCandidatos";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartVotosCandidatos.Series.Add(series1);
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "Series1";
+            this.chartVotosCandidatos.Series.Add(series17);
             this.chartVotosCandidatos.Size = new System.Drawing.Size(477, 159);
             this.chartVotosCandidatos.TabIndex = 7;
             this.chartVotosCandidatos.Text = "Votos por Candidato";
@@ -90,16 +91,16 @@
             // chartVotosPartidos
             // 
             this.chartVotosPartidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chartVotosPartidos.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartVotosPartidos.Legends.Add(legend2);
+            chartArea18.Name = "ChartArea1";
+            this.chartVotosPartidos.ChartAreas.Add(chartArea18);
+            legend18.Name = "Legend1";
+            this.chartVotosPartidos.Legends.Add(legend18);
             this.chartVotosPartidos.Location = new System.Drawing.Point(531, 41);
             this.chartVotosPartidos.Name = "chartVotosPartidos";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartVotosPartidos.Series.Add(series2);
+            series18.ChartArea = "ChartArea1";
+            series18.Legend = "Legend1";
+            series18.Name = "Series1";
+            this.chartVotosPartidos.Series.Add(series18);
             this.chartVotosPartidos.Size = new System.Drawing.Size(511, 162);
             this.chartVotosPartidos.TabIndex = 8;
             this.chartVotosPartidos.Text = "Distribuccion de Votos por Partido";
@@ -107,16 +108,16 @@
             // 
             // chartParticipacionProvincia
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartParticipacionProvincia.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartParticipacionProvincia.Legends.Add(legend3);
+            chartArea19.Name = "ChartArea1";
+            this.chartParticipacionProvincia.ChartAreas.Add(chartArea19);
+            legend19.Name = "Legend1";
+            this.chartParticipacionProvincia.Legends.Add(legend19);
             this.chartParticipacionProvincia.Location = new System.Drawing.Point(12, 215);
             this.chartParticipacionProvincia.Name = "chartParticipacionProvincia";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartParticipacionProvincia.Series.Add(series3);
+            series19.ChartArea = "ChartArea1";
+            series19.Legend = "Legend1";
+            series19.Name = "Series1";
+            this.chartParticipacionProvincia.Series.Add(series19);
             this.chartParticipacionProvincia.Size = new System.Drawing.Size(477, 168);
             this.chartParticipacionProvincia.TabIndex = 9;
             this.chartParticipacionProvincia.Text = "Participacion Electoral por Provincia";
@@ -125,16 +126,16 @@
             // chartTipoEleccion
             // 
             this.chartTipoEleccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea4.Name = "ChartArea1";
-            this.chartTipoEleccion.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartTipoEleccion.Legends.Add(legend4);
+            chartArea20.Name = "ChartArea1";
+            this.chartTipoEleccion.ChartAreas.Add(chartArea20);
+            legend20.Name = "Legend1";
+            this.chartTipoEleccion.Legends.Add(legend20);
             this.chartTipoEleccion.Location = new System.Drawing.Point(531, 215);
             this.chartTipoEleccion.Name = "chartTipoEleccion";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartTipoEleccion.Series.Add(series4);
+            series20.ChartArea = "ChartArea1";
+            series20.Legend = "Legend1";
+            series20.Name = "Series1";
+            this.chartTipoEleccion.Series.Add(series20);
             this.chartTipoEleccion.Size = new System.Drawing.Size(511, 163);
             this.chartTipoEleccion.TabIndex = 10;
             this.chartTipoEleccion.Text = "Votos por Tipo de Eleccion";
@@ -157,12 +158,13 @@
             // btnActualizar
             // 
             this.btnActualizar.AutoSize = true;
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(721, 494);
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnActualizar.Location = new System.Drawing.Point(641, 491);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(92, 24);
+            this.btnActualizar.Size = new System.Drawing.Size(73, 25);
             this.btnActualizar.TabIndex = 12;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -171,12 +173,13 @@
             // btnExportarPDF
             // 
             this.btnExportarPDF.AutoSize = true;
-            this.btnExportarPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.btnExportarPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportarPDF.ForeColor = System.Drawing.Color.White;
-            this.btnExportarPDF.Location = new System.Drawing.Point(819, 494);
+            this.btnExportarPDF.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnExportarPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportarPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportarPDF.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExportarPDF.Location = new System.Drawing.Point(734, 491);
             this.btnExportarPDF.Name = "btnExportarPDF";
-            this.btnExportarPDF.Size = new System.Drawing.Size(92, 24);
+            this.btnExportarPDF.Size = new System.Drawing.Size(92, 25);
             this.btnExportarPDF.TabIndex = 13;
             this.btnExportarPDF.Text = "Exportar PDF";
             this.btnExportarPDF.UseVisualStyleBackColor = false;
@@ -185,23 +188,39 @@
             // btnImprimir
             // 
             this.btnImprimir.AutoSize = true;
-            this.btnImprimir.BackColor = System.Drawing.Color.Gray;
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.ForeColor = System.Drawing.Color.White;
-            this.btnImprimir.Location = new System.Drawing.Point(917, 494);
+            this.btnImprimir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnImprimir.Location = new System.Drawing.Point(841, 491);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(92, 24);
+            this.btnImprimir.Size = new System.Drawing.Size(78, 25);
             this.btnImprimir.TabIndex = 14;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(941, 489);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(77, 27);
+            this.btnSalir.TabIndex = 123;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmGraficos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1054, 530);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnExportarPDF);
             this.Controls.Add(this.btnActualizar);
@@ -235,5 +254,6 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnExportarPDF;
         private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
