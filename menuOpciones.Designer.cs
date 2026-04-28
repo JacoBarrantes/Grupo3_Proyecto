@@ -43,13 +43,12 @@
             this.tipoElecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estadísticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informeProvinciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informeCandidatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créditosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,11 +181,17 @@
             this.estadísticaToolStripMenuItem.Text = "Estadística";
             this.estadísticaToolStripMenuItem.Click += new System.EventHandler(this.estadísticaToolStripMenuItem_Click);
             // 
+            // graficosToolStripMenuItem
+            // 
+            this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
+            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.graficosToolStripMenuItem.Text = "Graficos";
+            this.graficosToolStripMenuItem.Click += new System.EventHandler(this.graficosToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.informeProvinciaToolStripMenuItem,
-            this.informeCandidatoToolStripMenuItem});
+            this.informeProvinciaToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -194,15 +199,9 @@
             // informeProvinciaToolStripMenuItem
             // 
             this.informeProvinciaToolStripMenuItem.Name = "informeProvinciaToolStripMenuItem";
-            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia";
+            this.informeProvinciaToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.informeProvinciaToolStripMenuItem.Text = "Informe Provincia y Candidato";
             this.informeProvinciaToolStripMenuItem.Click += new System.EventHandler(this.informeProvinciaToolStripMenuItem_Click);
-            // 
-            // informeCandidatoToolStripMenuItem
-            // 
-            this.informeCandidatoToolStripMenuItem.Name = "informeCandidatoToolStripMenuItem";
-            this.informeCandidatoToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.informeCandidatoToolStripMenuItem.Text = "Informe Candidato";
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -224,13 +223,6 @@
             this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
             this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.manualDeUsuarioToolStripMenuItem.Text = "Manual de usuario";
-            // 
-            // graficosToolStripMenuItem
-            // 
-            this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
-            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.graficosToolStripMenuItem.Text = "Graficos";
-            this.graficosToolStripMenuItem.Click += new System.EventHandler(this.graficosToolStripMenuItem_Click);
             // 
             // frmMenuOpciones
             // 
@@ -271,7 +263,6 @@
         private System.Windows.Forms.ToolStripMenuItem estadísticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informeProvinciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informeCandidatoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem créditosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
