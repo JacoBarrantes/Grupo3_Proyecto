@@ -72,23 +72,11 @@
     <Compile Include="AdministrarPadron.Designer.cs">
       <DependentUpon>AdministrarPadron.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrearUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CrearUsuario.Designer.cs">
-      <DependentUpon>CrearUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Credenciales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Credenciales.Designer.cs">
       <DependentUpon>Credenciales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EleccionPresidencia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EleccionPresidencia.Designer.cs">
-      <DependentUpon>EleccionPresidencia.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarUsuario.cs">
       <SubType>Form</SubType>
@@ -151,14 +139,8 @@
     <EmbeddedResource Include="AdministrarPadron.resx">
       <DependentUpon>AdministrarPadron.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrearUsuario.resx">
-      <DependentUpon>CrearUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Credenciales.resx">
       <DependentUpon>Credenciales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EleccionPresidencia.resx">
-      <DependentUpon>EleccionPresidencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
