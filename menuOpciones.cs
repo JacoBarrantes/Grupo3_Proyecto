@@ -196,5 +196,15 @@ namespace grupo3_Proyecto
         {
             AbrirFormulario(new TipoEleccion());
         }
+
+        private void estadísticaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void graficosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
