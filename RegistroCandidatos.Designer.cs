@@ -45,6 +45,7 @@
             // 
             // btnSalirAlMenu
             // 
+            this.btnSalirAlMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSalirAlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalirAlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirAlMenu.Location = new System.Drawing.Point(567, 391);
@@ -52,12 +53,12 @@
             this.btnSalirAlMenu.Size = new System.Drawing.Size(121, 45);
             this.btnSalirAlMenu.TabIndex = 98;
             this.btnSalirAlMenu.Text = "Salir";
-            this.btnSalirAlMenu.UseVisualStyleBackColor = true;
+            this.btnSalirAlMenu.UseVisualStyleBackColor = false;
             this.btnSalirAlMenu.Click += new System.EventHandler(this.btnSalirAlMenu_Click);
             // 
             // btnRegistrarCandidato
             // 
-            this.btnRegistrarCandidato.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegistrarCandidato.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnRegistrarCandidato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarCandidato.Location = new System.Drawing.Point(61, 391);

@@ -34,7 +34,6 @@
             this.lblContraseñaNueva = new System.Windows.Forms.Label();
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.txtConfirmarContrasena = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
             this.lblVencimiento = new System.Windows.Forms.Label();
             this.lblProvincia = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCredenciales
@@ -110,7 +110,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(55, 363);
@@ -120,18 +120,6 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(701, 363);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(121, 45);
-            this.btnSalir.TabIndex = 89;
-            this.btnSalir.Text = "Atrás";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtConfirmarContrasena
             // 
@@ -348,6 +336,19 @@
             this.lblProvincia.TabIndex = 98;
             this.lblProvincia.Text = "Provincia";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(735, 369);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 33);
+            this.button1.TabIndex = 123;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmCredenciales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +356,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(892, 440);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblVencimiento);
             this.Controls.Add(this.dtpVencimiento);
             this.Controls.Add(this.lblApellido2);
@@ -374,7 +376,6 @@
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtConfirmarContrasena);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblContraseñaNueva);
@@ -400,7 +401,6 @@
         private System.Windows.Forms.Label lblContraseñaNueva;
         private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtConfirmarContrasena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCorreo;
@@ -420,5 +420,6 @@
         private System.Windows.Forms.DateTimePicker dtpVencimiento;
         private System.Windows.Forms.Label lblVencimiento;
         private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.Button button1;
     }
 }

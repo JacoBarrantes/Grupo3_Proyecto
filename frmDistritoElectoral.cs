@@ -87,7 +87,6 @@ namespace grupo3_Proyecto
                 }
                 else
                 {
-                    // INSERT
                     Utilidades.ejecutarAccion(
                         "INSERT INTO DistritoElectoral (CodigoElectoral, Provincia, Canton, Distrito) " +
                         "VALUES (@c,@p,@ca,@d)",
@@ -106,7 +105,6 @@ namespace grupo3_Proyecto
             }
             catch (SqlException ex)
             {
-                // ✅ Si explotó por PK duplicada, forzamos UPDATE (esto resuelve tu caso)
                 if (ex.Message.ToLower().Contains("primary key") || ex.Message.ToLower().Contains("duplicate"))
                 {
                     try
@@ -147,7 +145,6 @@ namespace grupo3_Proyecto
                 return;
             }
 
-            // Para modificar debe existir: si no existe, no tiene sentido un update
             if (!_existe)
             {
                 MessageBox.Show("Ese Código Electoral no existe. Use Guardar para crear.", "Aviso",
@@ -188,18 +185,16 @@ namespace grupo3_Proyecto
 
         private void AsegurarBotonModificar()
         {
-            // Si ya existe en Designer, no hacemos nada
+          
             var existente = this.Controls.Find("btnModificar", true);
             if (existente != null && existente.Length > 0) return;
 
-            // Si no existe, lo creamos debajo de btnGuardar
             Button btn = new Button();
             btn.Name = "btnModificar";
             btn.Text = "Modificar";
             btn.Width = btnGuardar.Width;
             btn.Height = btnGuardar.Height;
 
-            // Ubicación: debajo del botón Guardar
             btn.Left = btnGuardar.Left;
             btn.Top = btnGuardar.Bottom + 8;
 
@@ -245,7 +240,6 @@ namespace grupo3_Proyecto
             ConfigurarGrid();
             CargarDistritos();
 
-            // ✅ Debounce para que al digitar el código no consulte en cada tecla
             _debounce = new Timer();
             _debounce.Interval = 350; // ms
             _debounce.Tick += (s, ev) =>
@@ -254,7 +248,6 @@ namespace grupo3_Proyecto
                 CargarPorCodigoDigitado();
             };
 
-            // Limpiar inicial
             Limpiar(true);
 
 
@@ -287,15 +280,11 @@ namespace grupo3_Proyecto
             dgvDistritoElectoral.DataSource = ds.Tables[0];
         }
 
-        // =========================
-        // AUTOCARGA: al digitar CodigoElectoral
-        // =========================
         private void txtCodigoElectoral_TextChanged(object sender, EventArgs e)
         {
 
             if (_cargando) return;
 
-            // Reinicia el timer (debounce)
             _debounce.Stop();
             _debounce.Start();
 
@@ -332,13 +321,11 @@ namespace grupo3_Proyecto
                     txtCanton.Text = r["Canton"]?.ToString();
                     txtDistrito.Text = r["Distrito"]?.ToString();
 
-                    // ✅ Si existe: NO se cambia código electoral
                     txtCodigoElectoral.Enabled = false;
                     _existe = true;
                 }
                 else
                 {
-                    // ✅ Si NO existe: permitir crear
                     txtProvincia.Clear();
                     txtCanton.Clear();
                     txtDistrito.Clear();
@@ -357,10 +344,6 @@ namespace grupo3_Proyecto
             }
         }
 
-
-        // =========================
-        // Click en el grid -> carga al txt
-        // =========================
         private void dgvDistritoElectoral_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -383,10 +366,25 @@ namespace grupo3_Proyecto
 
         }
 
-        // =========================
-        // GUARDAR (INSERT / UPDATE 100% CORRECTO)
-        // =========================
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show(
+   "¿Está seguro que desea salir?",
+   "Confirmar salida",
+   MessageBoxButtons.YesNo,
+   MessageBoxIcon.Question
+    );
+            if (resultado == DialogResult.Yes)
+            {
+                frmMenuOpciones frm = Application.OpenForms["frmMenuOpciones"] as frmMenuOpciones;
+                if (frm != null)
+                {
+                    frm.Show();
+                }
+                this.Hide();
+            }
+        }
+
 
     }
 }

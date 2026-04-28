@@ -41,6 +41,7 @@
             this.dgvPartidos = new System.Windows.Forms.DataGridView();
             this.picBandera = new System.Windows.Forms.PictureBox();
             this.txtCrearUsuario = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBandera)).BeginInit();
             this.SuspendLayout();
@@ -194,13 +195,27 @@
             this.txtCrearUsuario.TabIndex = 116;
             this.txtCrearUsuario.Text = "Partidos Políticos";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(664, 392);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(91, 33);
+            this.btnSalir.TabIndex = 122;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmPartidosPoliticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(792, 400);
+            this.ClientSize = new System.Drawing.Size(792, 437);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtCrearUsuario);
             this.Controls.Add(this.dgvPartidos);
             this.Controls.Add(this.btnBuscarImagen);
@@ -243,5 +258,6 @@
         private System.Windows.Forms.Button btnBuscarImagen;
         private System.Windows.Forms.DataGridView dgvPartidos;
         private System.Windows.Forms.Label txtCrearUsuario;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

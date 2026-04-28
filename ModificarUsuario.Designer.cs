@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarUsuario));
-            this.btnAtrásModificar = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.lblNumeroCedula = new System.Windows.Forms.Label();
             this.txtNumeroCedula = new System.Windows.Forms.TextBox();
@@ -38,25 +37,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblRol = new System.Windows.Forms.Label();
             this.cmbPerfil = new System.Windows.Forms.ComboBox();
+            this.btnSalirAlMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAtrásModificar
-            // 
-            this.btnAtrásModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtrásModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtrásModificar.Location = new System.Drawing.Point(552, 348);
-            this.btnAtrásModificar.Name = "btnAtrásModificar";
-            this.btnAtrásModificar.Size = new System.Drawing.Size(121, 45);
-            this.btnAtrásModificar.TabIndex = 118;
-            this.btnAtrásModificar.Text = "Atrás";
-            this.btnAtrásModificar.UseVisualStyleBackColor = true;
-            this.btnAtrásModificar.Click += new System.EventHandler(this.btnAtrásModificar_Click);
-            // 
             // btnModificarUsuario
             // 
-            this.btnModificarUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnModificarUsuario.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarUsuario.Location = new System.Drawing.Point(54, 348);
@@ -140,16 +128,29 @@
             this.cmbPerfil.SelectedIndexChanged += new System.EventHandler(this.cmbPerfil_SelectedIndexChanged);
             this.cmbPerfil.SelectionChangeCommitted += new System.EventHandler(this.cmbPerfil_SelectionChangeCommitted);
             // 
+            // btnSalirAlMenu
+            // 
+            this.btnSalirAlMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSalirAlMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalirAlMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirAlMenu.Location = new System.Drawing.Point(552, 348);
+            this.btnSalirAlMenu.Name = "btnSalirAlMenu";
+            this.btnSalirAlMenu.Size = new System.Drawing.Size(121, 45);
+            this.btnSalirAlMenu.TabIndex = 123;
+            this.btnSalirAlMenu.Text = "Salir";
+            this.btnSalirAlMenu.UseVisualStyleBackColor = false;
+            this.btnSalirAlMenu.Click += new System.EventHandler(this.btnSalirAlMenu_Click);
+            // 
             // ModificarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(728, 450);
+            this.Controls.Add(this.btnSalirAlMenu);
             this.Controls.Add(this.cmbPerfil);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblRol);
-            this.Controls.Add(this.btnAtrásModificar);
             this.Controls.Add(this.btnModificarUsuario);
             this.Controls.Add(this.pctUsuario);
             this.Controls.Add(this.lblNumeroCedula);
@@ -169,8 +170,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAtrásModificar;
         private System.Windows.Forms.Button btnModificarUsuario;
         private System.Windows.Forms.PictureBox pctUsuario;
         private System.Windows.Forms.Label lblNumeroCedula;
@@ -179,5 +178,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.ComboBox cmbPerfil;
+        private System.Windows.Forms.Button btnSalirAlMenu;
     }
 }

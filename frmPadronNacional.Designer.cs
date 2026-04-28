@@ -48,6 +48,7 @@
             this.txtApellido2 = new System.Windows.Forms.TextBox();
             this.lblFechaVencimientoCed = new System.Windows.Forms.Label();
             this.txtCrearUsuario = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPadron)).BeginInit();
             this.SuspendLayout();
             // 
@@ -270,13 +271,27 @@
             this.txtCrearUsuario.TabIndex = 115;
             this.txtCrearUsuario.Text = "Padrón Nacional";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(728, 430);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(91, 33);
+            this.btnSalir.TabIndex = 122;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmPadronNacional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(858, 450);
+            this.ClientSize = new System.Drawing.Size(858, 481);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtCrearUsuario);
             this.Controls.Add(this.lblFechaVencimientoCed);
             this.Controls.Add(this.txtApellido2);
@@ -332,5 +347,6 @@
         private System.Windows.Forms.TextBox txtApellido2;
         private System.Windows.Forms.Label lblFechaVencimientoCed;
         private System.Windows.Forms.Label txtCrearUsuario;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
