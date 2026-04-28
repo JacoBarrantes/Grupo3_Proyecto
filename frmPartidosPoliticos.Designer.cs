@@ -40,6 +40,7 @@
             this.btnBuscarImagen = new System.Windows.Forms.Button();
             this.dgvPartidos = new System.Windows.Forms.DataGridView();
             this.picBandera = new System.Windows.Forms.PictureBox();
+            this.txtCrearUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPartidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBandera)).BeginInit();
             this.SuspendLayout();
@@ -47,64 +48,71 @@
             // lblPartido
             // 
             this.lblPartido.AutoSize = true;
-            this.lblPartido.Location = new System.Drawing.Point(288, 54);
+            this.lblPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartido.Location = new System.Drawing.Point(319, 82);
             this.lblPartido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPartido.Name = "lblPartido";
-            this.lblPartido.Size = new System.Drawing.Size(96, 13);
+            this.lblPartido.Size = new System.Drawing.Size(143, 20);
             this.lblPartido.TabIndex = 0;
             this.lblPartido.Text = "Nombre del partido";
             // 
             // lblIdPartido
             // 
             this.lblIdPartido.AutoSize = true;
-            this.lblIdPartido.Location = new System.Drawing.Point(20, 54);
+            this.lblIdPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdPartido.Location = new System.Drawing.Point(35, 82);
             this.lblIdPartido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdPartido.Name = "lblIdPartido";
-            this.lblIdPartido.Size = new System.Drawing.Size(70, 13);
+            this.lblIdPartido.Size = new System.Drawing.Size(104, 20);
             this.lblIdPartido.TabIndex = 1;
             this.lblIdPartido.Text = "ID del partido";
             // 
             // lblBandera
             // 
             this.lblBandera.AutoSize = true;
-            this.lblBandera.Location = new System.Drawing.Point(20, 136);
+            this.lblBandera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBandera.Location = new System.Drawing.Point(35, 142);
             this.lblBandera.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBandera.Name = "lblBandera";
-            this.lblBandera.Size = new System.Drawing.Size(97, 13);
+            this.lblBandera.Size = new System.Drawing.Size(143, 20);
             this.lblBandera.TabIndex = 2;
             this.lblBandera.Text = "Ruta local bandera";
             // 
             // txtRutaBandera
             // 
-            this.txtRutaBandera.Location = new System.Drawing.Point(116, 131);
+            this.txtRutaBandera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRutaBandera.Location = new System.Drawing.Point(191, 142);
             this.txtRutaBandera.Margin = new System.Windows.Forms.Padding(2);
             this.txtRutaBandera.Name = "txtRutaBandera";
-            this.txtRutaBandera.Size = new System.Drawing.Size(143, 20);
+            this.txtRutaBandera.Size = new System.Drawing.Size(324, 26);
             this.txtRutaBandera.TabIndex = 3;
             // 
             // txtIdPartido
             // 
-            this.txtIdPartido.Location = new System.Drawing.Point(90, 50);
+            this.txtIdPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPartido.Location = new System.Drawing.Point(163, 79);
             this.txtIdPartido.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdPartido.Name = "txtIdPartido";
-            this.txtIdPartido.Size = new System.Drawing.Size(143, 20);
+            this.txtIdPartido.Size = new System.Drawing.Size(122, 26);
             this.txtIdPartido.TabIndex = 4;
             this.txtIdPartido.TextChanged += new System.EventHandler(this.txtIdPartido_TextChanged);
             // 
             // txtNombrePartido
             // 
-            this.txtNombrePartido.Location = new System.Drawing.Point(406, 54);
+            this.txtNombrePartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrePartido.Location = new System.Drawing.Point(492, 79);
             this.txtNombrePartido.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombrePartido.Name = "txtNombrePartido";
-            this.txtNombrePartido.Size = new System.Drawing.Size(143, 20);
+            this.txtNombrePartido.Size = new System.Drawing.Size(263, 26);
             this.txtNombrePartido.TabIndex = 5;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(452, 320);
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(202, 341);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(82, 36);
+            this.btnNuevo.Size = new System.Drawing.Size(132, 36);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Limpiar";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -112,10 +120,11 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(149, 320);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(464, 341);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(82, 36);
+            this.btnGuardar.Size = new System.Drawing.Size(132, 36);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -123,10 +132,11 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(290, 320);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(623, 341);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(82, 36);
+            this.btnEliminar.Size = new System.Drawing.Size(132, 36);
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -134,10 +144,11 @@
             // 
             // btnBuscarImagen
             // 
-            this.btnBuscarImagen.Location = new System.Drawing.Point(22, 320);
+            this.btnBuscarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarImagen.Location = new System.Drawing.Point(39, 341);
             this.btnBuscarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarImagen.Name = "btnBuscarImagen";
-            this.btnBuscarImagen.Size = new System.Drawing.Size(82, 36);
+            this.btnBuscarImagen.Size = new System.Drawing.Size(132, 36);
             this.btnBuscarImagen.TabIndex = 10;
             this.btnBuscarImagen.Text = "Buscar Imagen";
             this.btnBuscarImagen.UseVisualStyleBackColor = true;
@@ -148,8 +159,9 @@
             this.dgvPartidos.AllowUserToDeleteRows = false;
             this.dgvPartidos.AllowUserToResizeColumns = false;
             this.dgvPartidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPartidos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPartidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPartidos.Location = new System.Drawing.Point(22, 197);
+            this.dgvPartidos.Location = new System.Drawing.Point(39, 208);
             this.dgvPartidos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPartidos.MultiSelect = false;
             this.dgvPartidos.Name = "dgvPartidos";
@@ -158,25 +170,38 @@
             this.dgvPartidos.RowHeadersWidth = 51;
             this.dgvPartidos.RowTemplate.Height = 24;
             this.dgvPartidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPartidos.Size = new System.Drawing.Size(527, 106);
+            this.dgvPartidos.Size = new System.Drawing.Size(716, 106);
             this.dgvPartidos.TabIndex = 11;
             this.dgvPartidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPartidos_CellContentClick);
             // 
             // picBandera
             // 
-            this.picBandera.Location = new System.Drawing.Point(290, 105);
+            this.picBandera.Location = new System.Drawing.Point(560, 120);
             this.picBandera.Margin = new System.Windows.Forms.Padding(2);
             this.picBandera.Name = "picBandera";
             this.picBandera.Size = new System.Drawing.Size(195, 66);
             this.picBandera.TabIndex = 6;
             this.picBandera.TabStop = false;
             // 
+            // txtCrearUsuario
+            // 
+            this.txtCrearUsuario.AutoSize = true;
+            this.txtCrearUsuario.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCrearUsuario.Location = new System.Drawing.Point(244, 18);
+            this.txtCrearUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtCrearUsuario.Name = "txtCrearUsuario";
+            this.txtCrearUsuario.Size = new System.Drawing.Size(287, 36);
+            this.txtCrearUsuario.TabIndex = 116;
+            this.txtCrearUsuario.Text = "Partidos Políticos";
+            // 
             // frmPartidosPoliticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(792, 400);
             this.ControlBox = false;
+            this.Controls.Add(this.txtCrearUsuario);
             this.Controls.Add(this.dgvPartidos);
             this.Controls.Add(this.btnBuscarImagen);
             this.Controls.Add(this.btnEliminar);
@@ -217,5 +242,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnBuscarImagen;
         private System.Windows.Forms.DataGridView dgvPartidos;
+        private System.Windows.Forms.Label txtCrearUsuario;
     }
 }
