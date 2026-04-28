@@ -151,7 +151,7 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(98, 34);
             this.btnNuevo.TabIndex = 9;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "Limpiar";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
