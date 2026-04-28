@@ -34,21 +34,28 @@ namespace grupo3_Proyecto
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
+            try
             {
-                MessageBox.Show("Debe ingresar una descripción");
-                return;
+                if (string.IsNullOrWhiteSpace(txtDescripcion.Text))
+                {
+                    MessageBox.Show("Debe ingresar una descripción");
+                    return;
+                }
+
+                Utilidades.ejecutarAccion(
+                    "INSERT INTO TipoEleccion (Descripcion) VALUES (@Descripcion)",
+                    new SqlParameter("@Descripcion", txtDescripcion.Text)
+                );
+
+                MessageBox.Show("Registro guardado correctamente");
+
+                CargarTipoEleccion();
+                Limpiar();
             }
-
-            Utilidades.ejecutarAccion(
-                "INSERT INTO TipoEleccion (Descripcion) VALUES (@Descripcion)",
-                new SqlParameter("@Descripcion", txtDescripcion.Text)
-            );
-
-            MessageBox.Show("Registro guardado correctamente");
-
-            CargarTipoEleccion();
-            Limpiar();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void dgvTipoEleccion_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -112,6 +119,8 @@ namespace grupo3_Proyecto
             txtDescripcion.Clear();
             idSeleccionado = 0;
         }
+
+
 
 
     }
