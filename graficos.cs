@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using System.Configuration;
+
 
 namespace grupo3_Proyecto
 {
@@ -15,6 +18,11 @@ namespace grupo3_Proyecto
         public frmGraficos()
         {
             InitializeComponent();
+        }
+
+        private void frmGraficos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

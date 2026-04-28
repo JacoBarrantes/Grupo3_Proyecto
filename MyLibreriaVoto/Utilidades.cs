@@ -10,8 +10,8 @@ namespace MyLibreriaVoto
 {
     public class Utilidades
     {
-                                               //Data Source=Kevin-Leon\MSSSQLSERVER2026;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;
-        private static readonly string _cnn = @"Data Source=Kevin-Leon\MSSSQLSERVER2026;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;
+        //Data Source=Kevin-Leon\MSSSQLSERVER2026;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True;
+        private static readonly string _cnn = @"Data Source=Kevin-Leon\MSSSQLSERVER2026;Initial Catalog=SistemaVotacion2026_2030;Integrated Security=True";
         public static DataSet ejecutar(string comando)
         {
             using (SqlConnection conn = new SqlConnection(_cnn))
@@ -100,9 +100,6 @@ namespace MyLibreriaVoto
             return Encoding.UTF8.GetString(datos, 0, datos.Length);
         }
     }
-}           
-        
+}            
     
-
-
 
