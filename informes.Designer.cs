@@ -41,18 +41,21 @@
             // lblProvincia
             // 
             this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Location = new System.Drawing.Point(94, 30);
+            this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.Location = new System.Drawing.Point(126, 34);
+            this.lblProvincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(107, 13);
+            this.lblProvincia.Size = new System.Drawing.Size(144, 15);
             this.lblProvincia.TabIndex = 0;
             this.lblProvincia.Text = "Informe por Provincia";
             // 
             // btnActualizarProvincia
             // 
             this.btnActualizarProvincia.AutoSize = true;
-            this.btnActualizarProvincia.Location = new System.Drawing.Point(395, 12);
+            this.btnActualizarProvincia.Location = new System.Drawing.Point(526, 14);
+            this.btnActualizarProvincia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizarProvincia.Name = "btnActualizarProvincia";
-            this.btnActualizarProvincia.Size = new System.Drawing.Size(68, 35);
+            this.btnActualizarProvincia.Size = new System.Drawing.Size(90, 40);
             this.btnActualizarProvincia.TabIndex = 1;
             this.btnActualizarProvincia.Text = "Actualizar";
             this.btnActualizarProvincia.UseVisualStyleBackColor = true;
@@ -61,25 +64,28 @@
             // dgvProvincia
             // 
             this.dgvProvincia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProvincia.Location = new System.Drawing.Point(36, 53);
+            this.dgvProvincia.Location = new System.Drawing.Point(48, 62);
+            this.dgvProvincia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvProvincia.Name = "dgvProvincia";
-            this.dgvProvincia.Size = new System.Drawing.Size(570, 145);
+            this.dgvProvincia.Size = new System.Drawing.Size(760, 167);
             this.dgvProvincia.TabIndex = 2;
             // 
             // dgvCandidato
             // 
             this.dgvCandidato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCandidato.Location = new System.Drawing.Point(36, 269);
+            this.dgvCandidato.Location = new System.Drawing.Point(48, 310);
+            this.dgvCandidato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCandidato.Name = "dgvCandidato";
-            this.dgvCandidato.Size = new System.Drawing.Size(570, 169);
+            this.dgvCandidato.Size = new System.Drawing.Size(760, 195);
             this.dgvCandidato.TabIndex = 3;
             // 
             // btnActualizarCandidato
             // 
             this.btnActualizarCandidato.AutoSize = true;
-            this.btnActualizarCandidato.Location = new System.Drawing.Point(395, 218);
+            this.btnActualizarCandidato.Location = new System.Drawing.Point(526, 251);
+            this.btnActualizarCandidato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnActualizarCandidato.Name = "btnActualizarCandidato";
-            this.btnActualizarCandidato.Size = new System.Drawing.Size(81, 34);
+            this.btnActualizarCandidato.Size = new System.Drawing.Size(108, 39);
             this.btnActualizarCandidato.TabIndex = 4;
             this.btnActualizarCandidato.Text = "Actualizar";
             this.btnActualizarCandidato.UseVisualStyleBackColor = true;
@@ -88,23 +94,27 @@
             // lblCandidato
             // 
             this.lblCandidato.AutoSize = true;
-            this.lblCandidato.Location = new System.Drawing.Point(94, 222);
+            this.lblCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCandidato.Location = new System.Drawing.Point(126, 256);
+            this.lblCandidato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCandidato.Name = "lblCandidato";
-            this.lblCandidato.Size = new System.Drawing.Size(111, 13);
+            this.lblCandidato.Size = new System.Drawing.Size(150, 15);
             this.lblCandidato.TabIndex = 5;
             this.lblCandidato.Text = "Informe por Candidato";
             // 
             // frmInformes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1066, 519);
             this.Controls.Add(this.lblCandidato);
             this.Controls.Add(this.btnActualizarCandidato);
             this.Controls.Add(this.dgvCandidato);
             this.Controls.Add(this.dgvProvincia);
             this.Controls.Add(this.btnActualizarProvincia);
             this.Controls.Add(this.lblProvincia);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmInformes";
             this.Text = "Informes Provincia y Candidato";
             this.Load += new System.EventHandler(this.frmInformes_Load);
