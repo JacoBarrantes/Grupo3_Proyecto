@@ -19,7 +19,7 @@ namespace grupo3_Proyecto
 
 
         private readonly string _cedulaVotante;
-        private readonly int _idTipoEleccion; // 1=Presidencial, 2=Diputados (según tu modelo)
+        private readonly int _idTipoEleccion; 
         private Timer _timer;
         private int _segundosRestantes = 60;
 
@@ -46,7 +46,7 @@ namespace grupo3_Proyecto
                     return;
                 }
 
-                // Confirmación (requisito)
+            
                 DialogResult resp = MessageBox.Show(
                     "¿Desea confirmar su voto?\n(Seleccione NO si desea corregir la escogencia)",
                     "Confirmar voto",
@@ -57,7 +57,7 @@ namespace grupo3_Proyecto
                     return;
 
 
-                // Registrar voto (si ya votó este tipo, tu UQ (Cedula,IdTipoEleccion) lo bloquea también)
+              
                 string sqlIns =
                     "INSERT INTO Votacion (Cedula, FechaHora, IdCandidato, IdTipoEleccion) " +
                     "VALUES (@cedula, @fecha, @idCandidato, @tipo)";
@@ -73,7 +73,7 @@ namespace grupo3_Proyecto
                 MessageBox.Show("Voto registrado correctamente.", "Éxito",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Close(); // vuelve al menú
+                Close(); 
             }
             catch (SqlException ex)
             {
@@ -92,10 +92,9 @@ namespace grupo3_Proyecto
         {          
 
 
-            // Título tipo elección
             lblTipoEleccion.Text = (_idTipoEleccion == 1) ? "Votación Presidencial" : "Votación Diputados";
 
-            // 1) Si ya votó este tipo -> mensaje y volver al menú  (requisito)
+           
             if (YaVotoEsteTipo())
             {
                 MessageBox.Show("Esta votación ya se efectuó.", "Aviso",
@@ -104,11 +103,14 @@ namespace grupo3_Proyecto
                 return;
             }
 
-            // 2) Cargar candidatos (foto+bandera+nombres)
+          
             ConfigurarGrid();
+
+            dgvCandidatos.DataError += (s, e) => { e.ThrowException = false; };
+
             CargarCandidatos();
 
-            // 3) Iniciar contador 60s (requisito)
+           
             IniciarTimer();
 
 
@@ -121,7 +123,7 @@ namespace grupo3_Proyecto
             if (e.RowIndex < 0) return;
             if (dgvCandidatos.Columns[e.ColumnIndex].Name != "Seleccion") return;
 
-            // Desmarcar todas las demás
+           
             foreach (DataGridViewRow r in dgvCandidatos.Rows)
             {
                 if (r.Index != e.RowIndex)
@@ -134,7 +136,7 @@ namespace grupo3_Proyecto
         private void dgvCandidatos_CurrentCellDirtyStateChanged(object sender, EventArgs e)
                  
         {
-            // Esto obliga a que el click en el checkbox se registre de inmediato
+        
             if (dgvCandidatos.IsCurrentCellDirty)
                 dgvCandidatos.CommitEdit(DataGridViewDataErrorContexts.Commit);
         }
@@ -146,7 +148,7 @@ namespace grupo3_Proyecto
 
             bool marcado = Convert.ToBoolean(dgvCandidatos.Rows[e.RowIndex].Cells["Seleccion"].Value);
 
-            // Si marcó uno, desmarca los demás (solo 1 X)
+        
             if (marcado)
             {
                 foreach (DataGridViewRow r in dgvCandidatos.Rows)
@@ -214,18 +216,16 @@ namespace grupo3_Proyecto
                 Name = "Seleccion",
                 HeaderText = "X",
                 Width = 40,
-                ReadOnly = false // ✅ esta es la única editable
+                ReadOnly = false 
             };
             dgvCandidatos.Columns.Add(colSel);
 
-            // ✅ Bloquear todas menos la X (por si acaso)
+       
             foreach (DataGridViewColumn col in dgvCandidatos.Columns)
                 col.ReadOnly = col.Name != "Seleccion";
 
-            // Carga imágenes
             dgvCandidatos.CellFormatting += dgvCandidatos_CellFormatting;
 
-            // ✅ Eventos correctos para checkbox
             dgvCandidatos.CurrentCellDirtyStateChanged += dgvCandidatos_CurrentCellDirtyStateChanged;
             dgvCandidatos.CellValueChanged += dgvCandidatos_CellValueChanged;
         }
@@ -266,19 +266,24 @@ namespace grupo3_Proyecto
             {
                 e.Value = CargarImagenLocal(rowView["Foto"]?.ToString());
             }
+        
         }
-
 
         private Image CargarImagenLocal(string ruta)
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(ruta)) return null;
-                if (!File.Exists(ruta)) return null;
+                if (string.IsNullOrWhiteSpace(ruta))
+                    return null;
 
-                // Clonamos la imagen para no dejar el archivo bloqueado
-                using (var fs = new FileStream(ruta, FileMode.Open, FileAccess.Read))
-                using (var imgTemp = Image.FromStream(fs))
+                
+                string rutaCompleta = Path.Combine(Application.StartupPath, "Imagenes", ruta);
+
+                if (!File.Exists(rutaCompleta))
+                    return null;
+
+                using (FileStream fs = new FileStream(rutaCompleta, FileMode.Open, FileAccess.Read))
+                using (Image imgTemp = Image.FromStream(fs))
                 {
                     return (Image)imgTemp.Clone();
                 }
@@ -288,8 +293,6 @@ namespace grupo3_Proyecto
                 return null;
             }
         }
-
-
 
         private bool YaVotoEsteTipo()
         {
@@ -318,7 +321,6 @@ namespace grupo3_Proyecto
                 {
                     _timer.Stop();
 
-                    // Requisito: si se acaba el tiempo -> cerrar aplicación y exigir login
                     MessageBox.Show("Se agotó el tiempo. Debe iniciar sesión nuevamente.", "Tiempo agotado",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
