@@ -106,7 +106,7 @@ namespace grupo3_Proyecto
           
             ConfigurarGrid();
 
-            dgvCandidatos.DataError += (s, e) => { e.ThrowException = false; };
+            dgvCandidatos.DataError += (s, ev) => { ev.ThrowException = false; };
 
             CargarCandidatos();
 
