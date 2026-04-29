@@ -176,7 +176,7 @@ namespace grupo3_Proyecto
 
         private void informeProvinciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new informes());
+            AbrirFormulario(new frmInformes());
         }
 
         private void modificarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
