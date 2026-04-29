@@ -18,7 +18,7 @@ namespace grupo3_Proyecto
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
                        
-            
+         
         }
     }
 }
