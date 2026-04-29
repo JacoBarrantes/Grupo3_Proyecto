@@ -204,7 +204,7 @@ namespace grupo3_Proyecto
 
         private void graficosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new frmGraficos());
         }
     }
 }
