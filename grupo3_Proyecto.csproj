@@ -173,6 +173,9 @@
     <EmbeddedResource Include="graficos.resx">
       <DependentUpon>graficos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="informes.resx">
+      <DependentUpon>informes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menuOpciones.resx">
       <DependentUpon>menuOpciones.cs</DependentUpon>
     </EmbeddedResource>
